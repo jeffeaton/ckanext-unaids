@@ -1,0 +1,19 @@
+{% ckan_extends %}
+{% block promoted %}
+<div class="module-content box">
+  <header>
+
+    <h1 class="page-heading">{{ _("Welcome to the UNAIDS Data Repository") }}</h1>
+    <p>
+      {% trans %}This is a repository for data sharing between all the partners in the Health Cluster. 
+      {% endtrans %}
+    </p>
+  </header>
+  <section class="featured media-overlay hidden-xs">
+    <h2 class="media-heading">{% block home_image_caption %}{{ _("This is a featured section") }}{% endblock %}</h2>
+    <a class="media-image" href="#">
+      <img class="img-responsive" src="{{ h.url_for_static('/base/images/placeholder-420x220.png') }}" alt="Placeholder" width="420" height="220" />
+    </a>
+  </section>
+</div>
+{% endblock %}
