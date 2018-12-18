@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    src: url('AvenirLTStd-Book.woff2') format('woff2'),
+        url('AvenirLTStd-Book.woff') format('woff'),
+        url('AvenirLTStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'AvenirLTStd-Book', 'sans-serif';
+}
+
+.masthead{
+    border-bottom: 1px solid #e31837;
+    padding: 40px 0px;
+}
+
+.masthead .nav > li > a,
+.masthead .nav > li > a:focus,
+.masthead .nav > li > a:hover,
+.masthead .nav > .active > a,
+.masthead .nav > .active > a:hover,
+.masthead .nav > .active > a:focus {
+  color: #e31837;
+}
+
+.site-footer{
+    background: #666;
+}
+
+[role=main]{
+    min-height: 75vh;
+}
+
+.homepage [role=main]{
+    min-height: 350px;
+}
