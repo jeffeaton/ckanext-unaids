@@ -122,24 +122,12 @@
 		    "required": true,
 		    "choices": [
 			{
+			    "value": "restricted",
+			    "label": "Restrictied to specified users and organizations"
+			},
+			{
 			    "value": "public",
 			    "label": "Public"
-			},
-			{
-			    "value": "registered",
-			    "label": "Registered Users"
-			},
-			{
-			    "value": "any_organization",
-			    "label": "Any Organization Members (Trusted Users)"
-			},
-			{
-			    "value": "same_organization",
-			    "label": "Same Organization Members"
-			},
-			{
-			    "value": "only_allowed_users",
-			    "label": "Allowed Users Only"
 			}
 		    ]
 		},
@@ -148,6 +136,12 @@
 		    "label": "Allowed Users",
 		    "preset": "user_string_autocomplete",
 		    "data-module-source":"/api/3/action/user_autocomplete?q=?"
+		},
+		{
+		    "field_name": "allowed_organisations",
+		    "label": "Allowed Orgaanisations",
+		    "preset": "organization_string_autocomplete",
+		    "data-module-source":"/api/3/action/organisation_autocomplete?q=?"
 		}
 	    ]
 	}
