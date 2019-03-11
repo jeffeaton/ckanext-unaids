@@ -1,0 +1,72 @@
+{
+    "fields": [
+	{
+	    "name": "lat",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": -180,
+		"maximum": 180
+	    }
+
+	},{
+	    "name": "long",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": -90,
+		"maximum": 90
+	    }
+	},{
+	    "name": "prevalence",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 0,
+		"maximum": 1
+	    }
+	},{
+	    "name": "isanc",
+	    "type": "integer",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 0,
+		"maximum": 1
+	    }
+	},{
+	    "name": "ispmtct",
+	    "type": "integer",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 0,
+		"maximum": 1
+	    }
+	},{
+	    "name": "ispepfar",
+	    "type": "integer",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 0,
+		"maximum": 1
+	    }
+	},{
+	    "name": "year",
+	    "type": "integer",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 1970,
+		"maximum": 2021
+	    }
+	},{
+	    "name": "facility name",
+	    "type": "string"
+	}
+    ]
+}

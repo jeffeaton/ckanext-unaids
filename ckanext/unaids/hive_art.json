@@ -1,0 +1,58 @@
+{
+    "fields": [
+	{
+	    "name": "Lat",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": -180,
+		"maximum": 180
+	    }
+
+	},{
+	    "name": "Long",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": -90,
+		"maximum": 90
+	    }
+	},{
+	    "name": "TOTAL",
+	    "type": "integer",
+	    "constraints": {
+		"required": true,
+		"minimum": 0
+	    }
+	},{
+	    "name": "MALE_TOTAL",
+	    "type": "integer",
+	    "constraints": {
+		"required": true,
+		"minimum": 0
+	    }
+	},{
+	    "name": "FEMALE_TOTAL",
+	    "type": "integer",
+	    "constraints": {
+		"required": true,
+		"minimum": 0
+	    }
+	},{
+	    "name": "YEAR",
+	    "type": "integer",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 1970,
+		"maximum": 2021
+	    }
+	},{
+	    "name": "facility name",
+	    "type": "string"
+	}
+    ],
+    "custom-constraint": {"constraint": "TOTAL == MALE_TOTAL + FEMALE_TOTAL"}
+}

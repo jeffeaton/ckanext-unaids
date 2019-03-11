@@ -1,0 +1,56 @@
+{
+    "fields": [
+	{
+	    "name": "Lat",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": -180,
+		"maximum": 180
+	    }
+
+	},{
+	    "name": "Long",
+	    "type": "number",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": -90,
+		"maximum": 90
+	    }
+	},{
+	   "name": "Year",
+	    "type": "integer",
+	    "decimalChar": ".",
+	    "constraints": {
+		"required": true,
+		"minimum": 1970,
+		"maximum": 2021
+	    }
+	},{
+	    "name": "p",
+	    "type": "number",
+	    "constraints": {
+		"required": true,
+		"minimum": 0,
+		"maximum": 1
+	    }
+	},{
+	    "name": "Age",
+	    "type": "integer",
+	    "constraints": {
+		"required": true,
+		"minimum": 0,
+		"maximum": 130
+	    }
+	},{
+	    "name": "Sex",
+	    "type": "string",
+	    "constraints": {
+		"required": true,
+		"enum": ["male", "female"]
+	    }
+	}
+    ]
+}
