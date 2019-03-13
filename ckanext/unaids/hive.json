@@ -74,10 +74,17 @@
             "about": "A validated HIVE ANC spreadsheet.",
             "resource_type": "hive-anc",
             "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "ANC Data"
+            }, {
                 "field_name": "validator_schema",
-                "label": "Choose schema",
-                "preset": "hidden_data_schema",
-                "validator": "hive_anc.json"
+                "preset": "hidden_value",
+                "field_value": "hive_anc"
+            }, {
+                "field_name": "data_type",
+                "preset": "hidden_value",
+                "field_value": "hive-anc"
             }]
         },
         {
@@ -85,9 +92,17 @@
             "about": "A validated HIVE ART spreadsheet",
             "resource_type": "hive-art",
             "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "ART Data"
+            }, {
                 "field_name": "validator_schema",
-                "preset": "hidden_data_schema",
-                "validator": "hive_art.json"
+                "preset": "hidden_value",
+                "field_value": "hive_art"
+            }, {
+                "field_name": "data_type",
+                "preset": "hidden_value",
+                "field_value": "hive-art"
             }]
         },
         {
@@ -95,9 +110,17 @@
             "about": "A validated HIVE SVY spreadsheet",
             "resource_type": "hive-svy",
             "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "SVY Data"
+            }, {
                 "field_name": "validator_schema",
-                "preset": "hidden_data_schema",
-                "validator": "hive_svy.json"
+                "preset": "hidden_value",
+                "field_value": "hive_svy.json"
+            }, {
+                "field_name": "data_type",
+                "preset": "hidden_value",
+                "field_value": "hive-svy"
             }]
         }
     ],
@@ -117,7 +140,8 @@
             "label": "Description",
             "form_snippet": "markdown.html",
             "form_placeholder": "Some useful notes about the data"
-        },{
+        },
+        {
             "field_name": "validator_schema",
             "label": "Choose schema",
             "preset": "data_schema"
