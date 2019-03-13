@@ -16,17 +16,15 @@ def add_licenses():
             core_licenses.LicenseNotSpecified())
         ]
 
-    
-
 
 class UNAIDSPlugin(p.SingletonPlugin):
     """
     This plugin implements the configurations needed for AIDS data exchange
 
     """
-    
+
     p.implements(p.IConfigurer)
-    
+
     # IConfigurer
     def update_config(self, config):
         '''
@@ -36,5 +34,3 @@ class UNAIDSPlugin(p.SingletonPlugin):
         log.info("UNAIDS Plugin is enabled")
         p.toolkit.add_template_directory(config, 'theme/templates')
         p.toolkit.add_public_directory(config, 'theme/public')
-
-        

@@ -3,7 +3,6 @@
   "about": "these are the default scheming field presets",
   "about_url": "http://github.com/ckan/ckanext-scheming#preset",
   "presets": [
- 
     {
       "preset_name": "user_string_autocomplete",
       "values": {
@@ -16,17 +15,16 @@
         }
       }
     },{
-	"preset_name": "organization_string_autocomplete",
-	"values": {
-            "validators": "ignore_missing",
-            "classes": ["control-full"],
-            "form_attrs": {
-		"data-module": "autocomplete",
-		"data-module-tags": "",
-		"data-module-source": "/api/2/util/organization/autocomplete?q=?"
-            }
-	}
-	
+      "preset_name": "organization_string_autocomplete",
+      "values": {
+        "validators": "ignore_missing",
+        "classes": ["control-full"],
+        "form_attrs": {
+          "data-module": "autocomplete",
+          "data-module-tags": "",
+          "data-module-source": "/api/2/util/organization/autocomplete?q=?"
+        }
+      }
     }
   ]
 }
