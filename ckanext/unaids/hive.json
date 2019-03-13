@@ -72,6 +72,7 @@
         {
             "resource_name":  "ANC Data",
             "about": "A validated HIVE ANC spreadsheet.",
+            "resource_type": "hive-anc",
             "resource_fields": [{
                 "field_name": "validator_schema",
                 "label": "Choose schema",
@@ -82,6 +83,7 @@
         {
             "resource_name":  "ART Data",
             "about": "A validated HIVE ART spreadsheet",
+            "resource_type": "hive-art",
             "resource_fields": [{
                 "field_name": "validator_schema",
                 "preset": "hidden_data_schema",
@@ -91,6 +93,7 @@
         {
             "resource_name":  "SVY Data",
             "about": "A validated HIVE SVY spreadsheet",
+            "resource_type": "hive-svy",
             "resource_fields": [{
                 "field_name": "validator_schema",
                 "preset": "hidden_data_schema",
