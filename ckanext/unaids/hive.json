@@ -70,7 +70,7 @@
     ],
     "resources":[
         {
-            "resource_name":  "ANC Data",
+            "name":  "ANC Data",
             "about": "A validated HIVE ANC spreadsheet.",
             "resource_type": "hive-anc",
             "resource_fields": [{
@@ -82,13 +82,13 @@
                 "preset": "hidden_value",
                 "field_value": "hive_anc"
             }, {
-                "field_name": "data_type",
+                "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "hive-anc"
             }]
         },
         {
-            "resource_name":  "ART Data",
+            "name":  "ART Data",
             "about": "A validated HIVE ART spreadsheet",
             "resource_type": "hive-art",
             "resource_fields": [{
@@ -100,13 +100,13 @@
                 "preset": "hidden_value",
                 "field_value": "hive_art"
             }, {
-                "field_name": "data_type",
+                "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "hive-art"
             }]
         },
         {
-            "resource_name":  "SVY Data",
+            "name":  "SVY Data",
             "about": "A validated HIVE SVY spreadsheet",
             "resource_type": "hive-svy",
             "resource_fields": [{
@@ -118,7 +118,7 @@
                 "preset": "hidden_value",
                 "field_value": "hive_svy.json"
             }, {
-                "field_name": "data_type",
+                "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "hive-svy"
             }]
