@@ -27,7 +27,8 @@
             "field_name": "tag_string",
             "label": "Tags",
             "preset": "tag_string_autocomplete",
-            "form_placeholder": "eg. economy, mental health, government"
+            "form_placeholder": "HIVE, ANC, ART, SVY",
+	    "default":"HIVE, ANC, ART, SVY"
         },
         {
             "field_name": "license_id",
@@ -35,6 +36,16 @@
             "form_snippet": "license.html",
             "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
         },
+	{
+	    "field_name": "year",
+	    "label": "Year",
+	    "preset": "year"
+	},{
+	    "field_name": "geo-location",
+	    "label": "Geographical Location",
+	    "form_placeholder": "Country or province",
+            "display_property": "dc:contributor"
+	},
         {
             "field_name": "owner_org",
             "label": "Organization",
