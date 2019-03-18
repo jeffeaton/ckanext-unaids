@@ -39,9 +39,6 @@ class UNAIDSPlugin(p.SingletonPlugin):
 
 
     def dataset_facets(self, facet_dict, package_type):
-        log.warning(facet_dict)
-        log.warning(package_type)
-
         new_fd = OrderedDict()
 
         new_fd['organization'] = p.toolkit._('Organizations')
