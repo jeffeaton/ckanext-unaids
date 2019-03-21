@@ -48,3 +48,6 @@ class UNAIDSPlugin(p.SingletonPlugin):
         new_fd["year"] = p.toolkit._('Year')
         new_fd["geo-location"] = p.toolkit._('Location')
         return new_fd
+    def organization_facets(self, facet_dict, org_type, package_type):
+
+        return facet_dict
