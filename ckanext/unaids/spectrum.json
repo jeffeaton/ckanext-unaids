@@ -27,8 +27,8 @@
             "field_name": "tag_string",
             "label": "Tags",
             "preset": "tag_string_autocomplete",
-            "form_placeholder": "SPECTRUM, PMTCT, ANC, ART, SVY",
-	    "default":"HIVE, ANC, ART, SVY"
+            "form_placeholder": "Spectrum, PMTCT, ANC, ART",
+	    "default":"Spectrum, PMTCT, ANC, ART"
         },
         {
             "field_name": "license_id",
