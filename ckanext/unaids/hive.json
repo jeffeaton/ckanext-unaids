@@ -145,7 +145,7 @@
             }, {
                 "field_name": "validator_schema",
                 "preset": "hidden_value",
-                "field_value": "hive_svy.json"
+                "field_value": "hive_svy"
             }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
