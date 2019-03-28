@@ -22,7 +22,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Single dose nevirapine - Number",
@@ -36,7 +37,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Dual ARV - Number",
@@ -50,7 +52,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Option A - maternal - Number",
@@ -64,7 +67,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Option B - triple prophylaxis from 14 weeks - Number",
@@ -78,7 +82,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Triple ART started before current pregnancy - Number",
@@ -92,7 +97,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Triple ART started during current pregnancy > 4 weeks before delivery - Number",
@@ -106,7 +112,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Triple ART started during current pregnancy < 4 weeks before delivery - Number",
@@ -120,21 +127,24 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Retention at delivery among women who were already on ART before conception (%)",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Retention at delivery among women who were started on ART during this pregnancy (%)",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "No postnatal prophylaxis - Number",
@@ -162,7 +172,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Postnatal Option B - Number",
@@ -176,21 +187,24 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+		"maximum": 100
 	 }
 	},
 	{"name": "Monthly drop-out rate of postnatal prophylaxis (%) Option A",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Monthly drop-out rate of postnatal prophylaxis (%) Option B",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{
@@ -198,7 +212,8 @@
 	    "type": "number",
 	    "constraints": {
 		"required": false,
-		"minimum": 0
+		"minimum": 0,
+		"maximum": 100
 	    }
 	}
     ]

@@ -22,14 +22,16 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Adults receiving ART – Female Percent",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Median CD4 count at ART initiation",
@@ -211,70 +213,80 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of adults receiving ART with CD4 count  350-500 initiation",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of adults receiving ART with CD4 count  250-349 initiation",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of adults receiving ART with CD4 count  200-249 initiation",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of adults receiving ART with CD4 count  100-199 initiation",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of adults receiving ART with CD4 count  40-99 initiation",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of adults receiving ART with CD4 count  <50 initiation",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent ART coverage for Pregnant women",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent ART coverage for TB/HIV co-infection",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent ART coverage for Sero-discordant couples",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Number of new ART patients -  Male",
@@ -295,14 +307,16 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Percent of new ART patients –  Female",
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	},
 	{"name": "Median CD4 count at ART initiation",
@@ -316,7 +330,8 @@
 	 "type": "number",
 	 "constraints": {
 	     "required": false,
-	     "minimum": 0
+	     "minimum": 0,
+	     "maximum": 100
 	 }
 	}
     ]
