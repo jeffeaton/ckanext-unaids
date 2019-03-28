@@ -1,0 +1,190 @@
+{
+    "transpose": true,
+
+    "fields": [
+	{"name": "Indicator",
+	 "type": "integer"
+	},
+	{"name": "Children (0-14) living with HIV who know their status*",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Males (15+) living with HIV who know their status*",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Females (15+) living with HIV who know their status*",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Children (0-14) on antiretroviral treatment tested for viral suppression",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Males (15+) on antiretroviral treatment tested for viral suppression",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Females (15+) on antiretroviral treatment tested for viral suppression",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Children (0-14) living with HIV with suppressed*** viral load on antiretroviral therapy (national)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Males (15+) living with HIV with suppressed*** viral load on antiretroviral therapy (national)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Females (15+) living with HIV with suppressed*** viral load on antiretroviral therapy (national)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "HIV programmatic testing data*",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number of women tested at ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number of women tested positive at ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number tested (ages 15+ years) outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number tested (ages 15+ years) positive outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number men tested (ages 15+ years) outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number men tested (ages 15+ years)  positive outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number women tested (ages 15+ years) outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false
+	 }
+	},
+	{"name": "Number women tested (ages 15+ years) positive outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number of women 15-24 years tested at ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number of women 15-24 years tested positive at ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number of women (25+) tested at ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number of women (25+) tested positive at ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number tested (ages 15-24 years) outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number tested (ages 15-24 years) positive outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number tested (ages 25+ years) outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Number tested (ages 25+ years) positive outside ANC clinics (#)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	}
+    ]
+}

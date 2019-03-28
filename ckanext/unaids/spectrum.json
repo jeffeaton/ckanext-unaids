@@ -82,7 +82,7 @@
     "resources":[
         {
             "name":  "PMTCT Data",
-            "about": "A validated Spectrum ANC spreadsheet.",
+            "about": "A validated Spectrum PMTCT spreadsheet.",
             "resource_type": "spectrum-pmtct",
             "resource_fields": [{
                 "field_name": "name",
@@ -115,10 +115,9 @@
                 "preset": "hidden_value",
                 "field_value": "spectrum-breastfeeding"
             }]
-        },
-        {
+        },{
             "name":  "ART Data",
-            "about": "A validated SPECTRUM ART spreadsheet",
+            "about": "A validated Spectrum ART spreadsheet.",
             "resource_type": "spectrum-art",
             "resource_fields": [{
                 "field_name": "name",
@@ -132,6 +131,161 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "spectrum-art"
+            }]
+        },
+        {
+            "name":  "Known Status",
+            "about": "Data from people who know the HIV status.",
+            "resource_type": "spectrum-ks",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Known Status"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_ks"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-ks"
+            }]
+        },
+        {
+            "name":  "Household Surveys",
+            "about": "HIV prevelence data from household surveys.",
+            "resource_type": "spectrum-hh",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Household Surveys"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_hh"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-hh"
+            }]
+        }, {
+            "name":  "ANC Testing",
+            "about": "Data about ANC testing",
+            "resource_type": "spectrum-anc-test",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "ANC Testing"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_anc_test"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-anc-test"
+            }]
+        },{
+            "name":  "ANC Prevalence",
+            "about": "ANC Prevalence Data",
+            "resource_type": "spectrum-anc-prev",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "ANC Prevalances"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_anc_prev"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-anc-prev"
+            }]
+        },{
+            "name":  "Concentrated Prevalence",
+            "about": "Prevalance for the Concentrated HIV epidemic",
+            "resource_type": "spectrum-conc-prev",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Concentrated Prevalence"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_conc_prev"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-conc-prev"
+            }]
+        },{
+            "name":  "Size Estimates",
+            "about": "Size estimated for the Concentrated HIV epidemic",
+            "resource_type": "spectrum-size",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Size Estimates"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_size"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-size"
+            }]
+        },{
+            "name":  "Turnover",
+            "about": "Turnover times for high risk groups",
+            "resource_type": "spectrum-turnover",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Turnover"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_turnover"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-turnover"
+            }]
+        },{
+            "name":  "Cases and Mortality",
+            "about": "HIV Cases and mortality data",
+            "resource_type": "spectrum-case-mortality",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Cases and Mortality"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_case_mortality"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-case-mortality"
+            }]
+        },{
+            "name":  "District Breakdown",
+            "about": "HIV Cases and mortality data",
+            "resource_type": "spectrum-district",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "District Breakdown"
+            }, {
+                "field_name": "validator_schema",
+                "preset": "hidden_value",
+                "field_value": "spectrum_district"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "spectrum-district"
             }]
         }
     ],

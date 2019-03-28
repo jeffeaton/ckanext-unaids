@@ -1,0 +1,52 @@
+{
+    "transpose": true,
+    "fields": [
+	{"name": "Indicator",
+	 "type": "integer"
+	},
+	
+	{"name": "New HIV diagnoses (15 years and older)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	
+	{"name": "Estimated number of new diagnoses not reported due to reporting delays (15 years and older)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Median CD4 count at diagnosis (15 years older)",
+	   "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Estimated AIDS-related deaths from the vital registration system (15 years and older)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "People living with HIV (15 years and older)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	},
+	{"name": "Estimated number of new diagnoses not reported due to reporting delays (15 years and older)",
+	 "type": "integer",
+	 "constraints": {
+	     "required": false,
+	     "minimum": 0
+	 }
+	}
+    ]
+}
