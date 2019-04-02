@@ -1,6 +1,7 @@
 {
     "scheming_version": 1,
     "dataset_type": "hive-dataset",
+    "name": "HIVE",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
     "add_data_on_create": false,
@@ -220,7 +221,7 @@
 		"data-module-source": "/api/2/util/organization/autocomplete?q=?"
             }
 	}
-	    
+
 
     ]
 }
