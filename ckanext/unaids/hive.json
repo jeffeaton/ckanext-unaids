@@ -138,7 +138,11 @@
             "name":  "ADMIN Level 1 Shapefile",
             "about": "A validated HIVE ART spreadsheet",
             "resource_type": "hive-admin1",
-            "resource_fields": [{
+            "resource_fields": [ {
+		"field_name": "url",
+		"label": "URL",
+		"preset": "resource_url_upload_shapefile"
+            },{
                 "field_name": "name",
                 "preset": "hidden_value",
                 "field_value": "ADMIN Level 1 Shapefile"
@@ -150,16 +154,27 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "hive-admin1"
-            }]
+	    },{
+		"field_name": "format",
+		"label": "Format",
+		"preset": "hidden_value",
+		"required": true,
+		"field_value": "shp"
+	    }]
+			       
         },
         {
             "name":  "ADMIN Level 2 Shapefile",
             "about": "A validated HIVE ART spreadsheet",
             "resource_type": "hive-admin2",
-            "resource_fields": [{
+            "resource_fields":[ {
+		"field_name": "url",
+		"label": "URL",
+		"preset": "resource_url_upload_shapefile"
+            },{
                 "field_name": "name",
                 "preset": "hidden_value",
-                "field_value": "ADMIN Level 2 Shapefile"
+                "field_value": "ADMIN Level 1 Shapefile"
             }, {
                 "field_name": "manual_validation",
                 "preset": "hidden_value",
@@ -167,8 +182,14 @@
             }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
-                "field_value": "hive-admin2"
-            }]
+                "field_value": "hive-admin1"
+	    },{
+		"field_name": "format",
+		"label": "Format",
+		"preset": "hidden_value",
+		"required": true,
+		"field_value": "shp"
+	    }]
         }
     ],
     "resource_fields": [
