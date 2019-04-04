@@ -45,6 +45,7 @@
 	    "field_name": "geo-location",
 	    "label": "Geographical Location",
 	    "form_placeholder": "Country or province",
+	    "preset": "country_list",
             "display_property": "dc:contributor"
 	},
         {
