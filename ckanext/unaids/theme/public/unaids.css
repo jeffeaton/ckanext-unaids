@@ -6845,14 +6845,14 @@ a.tag:hover {
 .pill {
   display: inline-block;
   background-color: #6f8890;
-  color: #e31837;
+  color: #fff;
   padding: 2px 10px 1px 10px;
   margin-right: 5px;
   font-weight: normal;
   border-radius: 100px;
 }
 .pill a {
-  color: #e31837;
+  color: #fff;
 }
 .pill a.remove {
   font-size: 11px;

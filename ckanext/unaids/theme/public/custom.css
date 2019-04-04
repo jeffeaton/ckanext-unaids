@@ -16,6 +16,14 @@ body {
     padding: 40px 0px;
 }
 
+.dataset-heading .label{
+  margin-right: 10px;
+}
+
+.dataset-heading .label.dataset-type{
+  background-color: #e31837;
+}
+
 .masthead .nav > li > a,
 .masthead .nav > li > a:focus,
 .masthead .nav > li > a:hover,
