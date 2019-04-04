@@ -176,7 +176,7 @@
             },{
                 "field_name": "name",
                 "preset": "hidden_value",
-                "field_value": "ADMIN Level 1 Shapefile"
+                "field_value": "ADMIN Level 2 Shapefile"
             }, {
                 "field_name": "manual_validation",
                 "preset": "hidden_value",
@@ -184,7 +184,7 @@
             }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
-                "field_value": "hive-admin1"
+                "field_value": "hive-admin2"
 	    },{
 		"field_name": "format",
 		"label": "Format",
