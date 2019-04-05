@@ -11,6 +11,14 @@ body {
     font-family: 'AvenirLTStd-Book', 'sans-serif';
 }
 
+#membership-request-form .control-group{
+  margin: 10px 0px;
+}
+
+.alert{
+  margin: 20px 0px;
+}
+
 .masthead{
     border-bottom: 1px solid #e31837;
     padding: 40px 0px;
