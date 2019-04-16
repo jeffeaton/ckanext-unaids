@@ -26,6 +26,7 @@ body {
 
 .dataset-heading .label{
   margin-right: 10px;
+  padding: 0.4em 0.4em 0.2em;
 }
 
 .dataset-heading .label.dataset-type{
