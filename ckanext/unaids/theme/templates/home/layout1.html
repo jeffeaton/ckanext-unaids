@@ -1,19 +1,89 @@
-{% ckan_extends %}
-{% block promoted %}
-<div class="module-content box">
-  <header>
+<div role="main" class="hero">
+  <div class="container">
+    <div class="row row1">
+      <div class="col-md-6 col1">
+        {% block promoted %}
+        <div class="module-content box">
+          <!-- <header>
 
-    <h1 class="page-heading">{{ _("Welcome to the AIDS Data Exchange") }}</h1>
-    <p>
-      {% trans %}This is a repository for sharing AIDS data to support HIV Estimates. 
-      {% endtrans %}
-    </p>
-  </header>
-  <section class="featured media-overlay hidden-xs">
-    <h2 class="media-heading">{% block home_image_caption %}{{ _("This is a featured section") }}{% endblock %}</h2>
-    <a class="media-image" href="#">
-      <img class="img-responsive" src="{{ h.url_for_static('/base/images/placeholder-420x220.png') }}" alt="Placeholder" width="420" height="220" />
-    </a>
-  </section>
+            <h1 class="page-heading">{{ _("Welcome to the AIDS Data Exchange") }}</h1>
+            <p>
+              {% trans %}This is a repository for sharing AIDS data to support HIV Estimates.
+              {% endtrans %}
+            </p>
+          </header> -->
+          <section class="featured media-overlay hidden-xs">
+            <a class="media-image" href="/about">
+              <img class="img-responsive" src="{{ h.url_for_static('/aim.png') }}" alt="aim" width="420" height="220" />
+            </a>
+            <a class="pull-right" href="/about">
+              Find out more...
+            </a>
+          </section>
+
+        </div>
+        {% endblock %}
+      </div>
+      <div class="col-md-6 col2">
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
 </div>
-{% endblock %}
+<div class="homepage-partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center>
+          <H2> {{_('The AIDS Data Exchange is supported by')}} </H2>
+        </center>
+      </div>
+      <div class="col-md-6">
+        <center>
+          <a class="" href="https://www.unaids.org"  target="_blank">
+            <img class="img-responsive" src="{{ h.url_for_static('/unaids.png') }}" alt="aim" width="80%" />
+          </a>
+        </center>
+      </div>
+      <div class="col-md-6">
+        <center>
+          <a class="" href="http://www.fjelltopp.org"  target="_blank">
+            <img class="img-responsive" src="{{ h.url_for_static('/fjelltopp.png') }}" alt="aim" width="80%" />
+          </a>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div role="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center>
+          <H2> {{_('Featured Countries')}} </H2>
+        </center>
+      </div>
+    </div>
+    <div class="row row2">
+      {% set organizations = h.get_featured_organizations(10) %}
+      {% for organization in organizations %}
+      <div class="col-md-6 col1">
+          <div class="box">
+          {% snippet 'snippets/organization_item.html', organization=organization, truncate=50, truncate_title=35 %}
+        </div>
+      </div>
+      {% endfor %}
+
+      {% set groups = h.get_featured_groups(10) %}
+      {% for group in groups %}
+      <div class="col-md-6 col2">
+        <div class="box">
+          {% snippet 'snippets/group_item.html', group=group, truncate=50, truncate_title=35 %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
