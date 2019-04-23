@@ -25,7 +25,7 @@ class UNAIDSPlugin(p.SingletonPlugin):
     """
 
     p.implements(p.IConfigurer)
-    p.implements(p.IFacets)
+    p.implements(p.IFacets, inherit=True)
 
     # IConfigurer
     def update_config(self, config):
@@ -37,17 +37,15 @@ class UNAIDSPlugin(p.SingletonPlugin):
         p.toolkit.add_template_directory(config, 'theme/templates')
         p.toolkit.add_public_directory(config, 'theme/public')
 
-
     def dataset_facets(self, facet_dict, package_type):
         new_fd = OrderedDict()
-
         new_fd['organization'] = p.toolkit._('Organizations')
-
         new_fd['dataset_type'] = p.toolkit._('Data Type')
         new_fd['tags'] = p.toolkit._('Tags')
         new_fd["year"] = p.toolkit._('Year')
         new_fd["geo-location"] = p.toolkit._('Location')
         return new_fd
+
     def organization_facets(self, facet_dict, org_type, package_type):
 
         return facet_dict
