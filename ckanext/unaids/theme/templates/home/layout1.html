@@ -4,19 +4,11 @@
       <div class="col-md-6 col1">
         {% block promoted %}
         <div class="module-content box">
-          <!-- <header>
-
-            <h1 class="page-heading">{{ _("Welcome to the AIDS Data Exchange") }}</h1>
-            <p>
-              {% trans %}This is a repository for sharing AIDS data to support HIV Estimates.
-              {% endtrans %}
-            </p>
-          </header> -->
           <section class="featured media-overlay hidden-xs">
             <a class="media-image" href="/about">
               <img class="img-responsive" src="{{ h.url_for_static('/aim.png') }}" alt="aim" width="420" height="220" />
             </a>
-            <a class="pull-right" href="/about">
+            <a class="pull-right" href="/pages/about">
               Find out more...
             </a>
           </section>
@@ -32,31 +24,7 @@
     </div>
   </div>
 </div>
-<div class="homepage-partners">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <center>
-          <H2> {{_('The AIDS Data Exchange is supported by')}} </H2>
-        </center>
-      </div>
-      <div class="col-md-6">
-        <center>
-          <a class="" href="https://www.unaids.org"  target="_blank">
-            <img class="img-responsive" src="{{ h.url_for_static('/unaids.png') }}" alt="aim" width="80%" />
-          </a>
-        </center>
-      </div>
-      <div class="col-md-6">
-        <center>
-          <a class="" href="http://www.fjelltopp.org"  target="_blank">
-            <img class="img-responsive" src="{{ h.url_for_static('/fjelltopp.png') }}" alt="aim" width="80%" />
-          </a>
-        </center>
-      </div>
-    </div>
-  </div>
-</div>
+
 <div role="main">
   <div class="container">
     <div class="row">
@@ -84,6 +52,57 @@
         </div>
       </div>
       {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="homepage-partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center>
+          <H2> {{_('The AIDS Data Exchange is a project by')}} </H2>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <center>
+          <a class="unaids-logo" href="https://www.unaids.org"  target="_blank">
+            <img class="img-responsive" src="{{ h.url_for_static('/unaids.png') }}" alt="aim" width="80%" />
+          </a>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <center>
+          <H2> {{_('With support from')}} </H2>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <center>
+          <a class="" href="https://www.avenirhealth.org/"  target="_blank">
+            <img class="img-responsive" src="{{ h.url_for_static('/avenir.png') }}" alt="aim" width="80%" />
+          </a>
+        </center>
+      </div>
+      <div class="col-md-4">
+        <center>
+          <a class="" href="http://www.fjelltopp.org"  target="_blank">
+            <img class="img-responsive" src="{{ h.url_for_static('/fjelltopp.png') }}" alt="aim" width="80%" />
+          </a>
+        </center>
+      </div>
+      <div class="col-md-4">
+        <center>
+          <a class="" href="https://www.imperial.ac.uk/"  target="_blank">
+            <img class="img-responsive" src="{{ h.url_for_static('/imperial.png') }}" alt="aim" width="80%" />
+          </a>
+        </center>
+      </div>
     </div>
   </div>
 </div>

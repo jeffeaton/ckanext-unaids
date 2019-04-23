@@ -19,6 +19,9 @@ body {
   margin: 20px 0px;
 }
 
+.unaids-logo img{
+  max-width: 500px;
+}
 .masthead{
     border-bottom: 1px solid #e31837;
     padding: 20px 0px;
@@ -46,7 +49,6 @@ body {
 }
 
 .homepage-partners{
-  border-top: solid 1px #e31837;
   padding-bottom: 30px;
 }
 
