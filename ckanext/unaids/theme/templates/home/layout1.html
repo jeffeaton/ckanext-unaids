@@ -30,12 +30,12 @@
     <div class="row">
       <div class="col-xs-12">
         <center>
-          <H2> {{_('Featured Countries')}} </H2>
+          <H2> {{_('Featured Organizations')}} </H2>
         </center>
       </div>
     </div>
     <div class="row row2">
-      {% set organizations = h.get_featured_organizations(10) %}
+      {% set organizations = h.get_featured_organizations(4) %}
       {% for organization in organizations %}
       <div class="col-md-6 col1">
           <div class="box">
@@ -44,7 +44,7 @@
       </div>
       {% endfor %}
 
-      {% set groups = h.get_featured_groups(10) %}
+      {% set groups = h.get_featured_groups(4) %}
       {% for group in groups %}
       <div class="col-md-6 col2">
         <div class="box">
