@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="row row2">
-      {% set organizations = h.get_featured_organizations(4) %}
+      {% set organizations = h.get_featured_organizations(2) %}
       {% for organization in organizations %}
       <div class="col-md-6 col1">
           <div class="box">
@@ -44,7 +44,7 @@
       </div>
       {% endfor %}
 
-      {% set groups = h.get_featured_groups(4) %}
+      {% set groups = h.get_featured_groups(0) %}
       {% for group in groups %}
       <div class="col-md-6 col2">
         <div class="box">
