@@ -5,9 +5,19 @@
         {% block promoted %}
         <div class="module-content box">
           <section class="featured media-overlay hidden-xs">
-            <a class="media-image" href="/about">
-              <img class="img-responsive" src="{{ h.url_for_static('/aim.png') }}" alt="aim" width="420" height="220" />
-            </a>
+            <center>
+            <!--<a class="media-image" href="/about">
+              <!--<img class="img-responsive" src="{{ h.url_for_static('/aim.png') }}" alt="aim" width="420" height="220" /> -->
+              {{_("<span style='font-size: 2em; color: grey;'>The AIDS Data Repository<br />aims to improve the</span><br />
+              <span style='font-size: 2.75em; font-weight: bold;'>quality, accessibility <br /> and consistency</span>
+              <span style='font-size: 2em;'> of HIV data<br />and HIV estimates by</span>
+              <span style='font-size: 2em; color: grey;'>providing a</span><br />
+              <span style='font-size: 2.5em; font-weight: bold;'>centralised platform</span><br />
+              <span style='font-size: 2em;'>with tools to help countries</span>
+              <span style='font-size: 2em; font-weight: bold;'>manage<br />and share</span>
+              <span style='font-size: 2em; color: grey;''>their HIV data.</span>")}}
+            <!--</a>-->
+            </center>
             <a class="pull-right" href="/pages/about">
               Find out more...
             </a>
@@ -61,7 +71,7 @@
     <div class="row">
       <div class="col-xs-12">
         <center>
-          <H2> {{_('The AIDS Data Exchange is a project by')}} </H2>
+          <H2> {{_('The AIDS Data Repository is a project by')}} </H2>
         </center>
       </div>
     </div>
