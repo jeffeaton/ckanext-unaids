@@ -25,9 +25,13 @@
     },
     {
       "field_name": "spectrum_file",
-      "label": "Spectrum File (Optional)",
-      "form_snippet": "markdown.html",
-      "form_placeholder": "Initialise this package with a PJNZ file"
+      "form_snippet": "upload.html",
+      "placeholder": "https://pbs.twimg.com/profile_images/543165540072570881/zAQaGngE_400x400.png",
+      "upload_label": "Optionally initialise this package with Spectrum File",
+      "label": "Spectrum File URL (Optional)",
+      "is_upload_enabled": true,
+      "upload_field": "upload",
+      "clear_upload": "clear_upload"
     },
     {
       "field_name": "tag_string",
