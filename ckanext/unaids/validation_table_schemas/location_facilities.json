@@ -1,0 +1,49 @@
+{
+    "fields": [
+        {
+            "name": "Facility ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Facility Name",
+            "type": "string"
+        },
+        {
+            "name": "Area ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Latitude",
+            "type": "number",
+            "decimalChar": ".",
+            "constraints": {
+                "required": true,
+                "minimum": -180,
+                "maximum": 180
+            }
+        },{
+            "name": "Longitude",
+            "type": "number",
+            "decimalChar": ".",
+            "constraints": {
+                "required": true,
+                "minimum": -90,
+                "maximum": 90
+            }
+        },
+        {
+            "name": "Facility Type",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        }
+    ],
+    "primaryKey": "Facility ID"
+}

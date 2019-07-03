@@ -1,0 +1,62 @@
+{
+    "fields": [
+        {
+            "name": "Area ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Name",
+            "type": "string"
+        },
+        {
+            "name": "Admin Level",
+            "type": "integer",
+            "constraints": {
+                "required": true,
+                "minimum": 0,
+                "maximum": 4
+            }
+        },
+        {
+            "name": "Parent Area ID",
+            "type": "date",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "PEPFAR ID",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "DHIS ID",
+            "type": "string",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "Geometry ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        }
+    ],
+    "primaryKey": "Area ID",
+    "foreignKeys": [
+        {
+          "fields": "Parent Area ID",
+          "reference": {
+              "resource": "",
+              "fields": "Area ID"
+          }
+        }
+    ]
+}
