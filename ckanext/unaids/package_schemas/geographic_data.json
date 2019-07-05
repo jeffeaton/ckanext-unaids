@@ -1,7 +1,7 @@
 {
   "scheming_version": 1,
-  "dataset_type": "location-dataset",
-  "name": "Location",
+  "dataset_type": "geographic-data-package",
+  "name": "Geographic Data Package",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "add_data_on_create": false,
@@ -28,7 +28,7 @@
       "label": "Tags",
       "preset": "tag_string_autocomplete",
       "form_placeholder": "Naomi, ANC, ART, SVY",
-      "default": "Location"
+      "default": "Naomi, ANC, ART, SVY"
     },
     {
       "field_name": "license_id",
@@ -37,14 +37,14 @@
       "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
     },
     {
-      "field_name": "start_date",
-      "label": "Start Date",
-      "preset": "date"
+      "field_name": "year",
+      "label": "Year",
+      "preset": "year"
     },
     {
       "field_name": "geo-location",
-      "label": "Country",
-      "form_placeholder": "Country",
+      "label": "Geographical Location",
+      "form_placeholder": "Country or province",
       "preset": "country_list",
       "display_property": "dc:contributor"
     },
@@ -54,13 +54,18 @@
       "preset": "dataset_organization"
     },
     {
-      "field_name": "source",
+      "field_name": "url",
       "label": "Source",
       "form_placeholder": "http://example.com/dataset.json",
       "display_property": "foaf:homepage",
       "display_snippet": "link.html"
     },
-
+    {
+      "field_name": "version",
+      "label": "Version",
+      "validators": "ignore_missing unicode package_version_validator",
+      "form_placeholder": "1.0"
+    },
     {
       "field_name": "maintainer",
       "label": "Maintainer",
@@ -77,57 +82,53 @@
     }
   ],
   "resources": [{
-      "name": "Facility List",
-      "about": "A list of all facilities in the country.",
-      "resource_type": "location-facilities",
+      "name": "Facilities List",
+      "about": "A validated Facilities list.",
+      "resource_type": "geographic-facilities-list",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Facility List"
+        "field_value": "Facilities List"
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "location_facilities"
+        "field_value": "geographic_facilities"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "location-facilities"
+        "field_value": "geographic-facilities-list"
       }]
     },
     {
-      "name": "Area List",
-      "about": "A list of all subnational administrative areas within the country.",
-      "resource_type": "location-area-list",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Area List"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "location_areas_metadata"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "location-area-list"
-      }]
-    },
-    {
-      "name": "Area Geometry",
-      "about": "A GeoJSON file containing the geometry for all areas in the areas list.",
-      "resource_type": "location-areas-geometry",
+      "name": "Areas Metadata",
+      "about": "A validated Areas metadata set",
+      "resource_type": "geographic-areas-metadata",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
         "field_value": "ART Data"
       }, {
+        "field_name": "validator_schema",
+        "preset": "hidden_value",
+        "field_value": "geographic_areas_metadata"
+      }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "location-areas-geometry"
-      }, {
-        "field_name": "manual_validation",
+        "field_value": "geographic-areas-metadata"
+      }]
+    },
+    {
+      "name": "Areas Geometry",
+      "about": "A validated Areas geometry SHP file",
+      "resource_type": "geographic-areas-geometry",
+      "resource_fields": [{
+        "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "unvalidated"
+        "field_value": "Areas Geometry"
+      }, {
+        "field_name": "resource_type",
+        "preset": "hidden_value",
+        "field_value": "geographic-areas-geometry"
       }]
     }
   ],

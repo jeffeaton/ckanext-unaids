@@ -1,0 +1,77 @@
+{
+    "fields": [
+        {
+            "name": "Survey ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Assay",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Algorithm",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "MDRI",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "MDRI SE",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "FRR",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "FRR SE",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "VL Threshold",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "ARV's Tested",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        }
+    ],
+    "primaryKey": ["survey-id"],
+    "foreignKeys": [
+        {
+          "fields": "survey-id",
+          "reference": {
+              "resource": "unaids_survey_metadata",
+              "fields": "survey-id"
+          }
+        }
+    ]
+}

@@ -1,28 +1,39 @@
 {
     "fields": [
         {
-            "name": "facility-id",
-            "title": "Facility ID",
+            "name": "survey-id",
+            "title": "Survey ID",
             "type": "string",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "name",
-            "title": "Facility Name",
-            "type": "string"
-        },
-        {
-            "name": "area-id",
-            "title": "Area ID",
+            "name": "cluster-id",
+            "title": "Cluster ID",
             "type": "string",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "lat",
+            "name": "stratum",
+            "title": "Stratum",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "residence-type",
+            "title": "Residence Type",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "latitude",
             "title": "Latitude",
             "type": "number",
             "decimalChar": ".",
@@ -31,8 +42,9 @@
                 "minimum": -180,
                 "maximum": 180
             }
-        },{
-            "name": "long",
+        },
+        {
+            "name": "longitude",
             "title": "Longitude",
             "type": "number",
             "decimalChar": ".",
@@ -43,20 +55,27 @@
             }
         },
         {
-            "name": "type",
-            "title": "Facility Type",
+            "name": "area-id",
+            "title": "Area ID",
             "type": "string",
             "constraints": {
                 "required": true
             }
         }
     ],
-    "primaryKey": "facility-id",
+    "primaryKey": ["survey-id", "cluster-id"],
     "foreignKeys": [
+        {
+          "fields": "survey-id",
+          "reference": {
+              "resource": "unaids_survey_metadata",
+              "fields": "survey-id"
+          }
+        },
         {
           "fields": "area-id",
           "reference": {
-              "resource": "location_areas_metadata",
+              "resource": "unaids_geographic_data",
               "fields": "area-id"
           }
         }

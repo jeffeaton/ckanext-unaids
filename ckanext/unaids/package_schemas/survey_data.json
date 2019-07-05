@@ -1,7 +1,7 @@
 {
   "scheming_version": 1,
-  "dataset_type": "hive-dataset",
-  "name": "HIVE",
+  "dataset_type": "survey-data-package",
+  "name": "Survey Data Package",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "add_data_on_create": false,
@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "HIVE, ANC, ART, SVY",
-      "default": "HIVE, ANC, ART, SVY"
+      "form_placeholder": "Survey, SVY",
+      "default": "Survey, SVY"
     },
     {
       "field_name": "license_id",
@@ -40,7 +40,8 @@
       "field_name": "year",
       "label": "Year",
       "preset": "year"
-    }, {
+    },
+    {
       "field_name": "geo-location",
       "label": "Geographical Location",
       "form_placeholder": "Country or province",
@@ -80,115 +81,95 @@
       "display_email_name_field": "maintainer"
     }
   ],
-  "resources": [{
-      "name": "ANC Data",
-      "about": "A validated HIVE ANC spreadsheet.",
-      "resource_type": "hive-anc",
+  "resources": [
+    {
+      "name": "Survey Metadata",
+      "about": "A validated Survey Metadata dataset",
+      "resource_type": "survey-metadata",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "ANC Data"
+        "field_value": "Survey Metadata"
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "hive_anc"
+        "field_value": "survey_metadata"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "hive-anc"
+        "field_value": "survey-metadata"
       }]
     },
     {
-      "name": "ART Data",
-      "about": "A validated HIVE ART spreadsheet",
-      "resource_type": "hive-art",
+      "name": "Survey RITA Metadata",
+      "about": "A validated survey RITA Metadata dataset",
+      "resource_type": "survey-metadata",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "ART Data"
+        "field_value": "Survey RITA Metadata"
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "hive_art"
+        "field_value": "survey_rita_metadata"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "hive-art"
+        "field_value": "rita-metadata"
       }]
     },
     {
-      "name": "SVY Data",
-      "about": "A validated HIVE SVY spreadsheet",
-      "resource_type": "hive-svy",
+      "name": "Survey Clusters",
+      "about": "A validated Survey Clusters dataset",
+      "resource_type": "survey-clusters",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "SVY Data"
+        "field_value": "Survey Clusters"
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "hive_svy"
+        "field_value": "survey_clusters"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "hive-svy"
+        "field_value": "survey-clusters"
       }]
     },
     {
-      "name": "ADMIN Level 1 Shapefile",
-      "about": "A validated HIVE ART spreadsheet",
-      "resource_type": "hive-admin1",
+      "name": "Survey Individual Data",
+      "about": "A validated Individual Data dataset",
+      "resource_type": "survey-clusters",
       "resource_fields": [{
-        "field_name": "url",
-        "label": "URL",
-        "preset": "resource_url_upload_shapefile"
-      }, {
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "ADMIN Level 1 Shapefile"
+        "field_value": "Survey Individual Data"
       }, {
-        "field_name": "manual_validation",
+        "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "unvalidated"
+        "field_value": "individual_data"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "hive-admin1"
-      }, {
-        "field_name": "format",
-        "label": "Format",
-        "preset": "hidden_value",
-        "required": true,
-        "field_value": "shp"
+        "field_value": "individual_data"
       }]
-
     },
     {
-      "name": "ADMIN Level 2 Shapefile",
-      "about": "A validated HIVE ART spreadsheet",
-      "resource_type": "hive-admin2",
+      "name": "Survey Birth History",
+      "about": "A validated Birth History dataset",
+      "resource_type": "survey-clusters",
       "resource_fields": [{
-        "field_name": "url",
-        "label": "URL",
-        "preset": "resource_url_upload_shapefile"
-      }, {
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "ADMIN Level 2 Shapefile"
+        "field_value": "Survey Birth History"
       }, {
-        "field_name": "manual_validation",
+        "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "unvalidated"
+        "field_value": "survey_birth_history"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "hive-admin2"
-      }, {
-        "field_name": "format",
-        "label": "Format",
-        "preset": "hidden_value",
-        "required": true,
-        "field_value": "shp"
+        "field_value": "birth-history"
       }]
     }
   ],
@@ -238,7 +219,5 @@
         "data-module-source": "/api/2/util/organization/autocomplete?q=?"
       }
     }
-
-
   ]
 }

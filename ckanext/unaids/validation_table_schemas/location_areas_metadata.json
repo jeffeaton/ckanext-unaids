@@ -1,18 +1,21 @@
 {
     "fields": [
         {
-            "name": "Area ID",
+            "name": "area-id",
+            "title": "Area ID",
             "type": "string",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "Name",
+            "name": "name",
+            "title": "Name",
             "type": "string"
         },
         {
-            "name": "Admin Level",
+            "name": "admin-level",
+            "title": "Admin Level",
             "type": "integer",
             "constraints": {
                 "required": true,
@@ -21,41 +24,39 @@
             }
         },
         {
-            "name": "Parent Area ID",
+            "name": "parent-id",
+            "title": "Parent Area ID",
             "type": "date",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "PEPFAR ID",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
+            "name": "pepfar-id",
+            "title": "PEPFAR ID",
+            "type": "string"
         },
         {
-            "name": "DHIS ID",
-            "type": "string",
-            "constraints": {
-                "required": false
-            }
+            "name": "dhis-id",
+            "title": "DHIS ID",
+            "type": "string"
         },
         {
-            "name": "Geometry ID",
+            "name": "geometry-id",
+            "title": "Geometry ID",
             "type": "string",
             "constraints": {
                 "required": true
             }
         }
     ],
-    "primaryKey": "Area ID",
+    "primaryKey": "area-id",
     "foreignKeys": [
         {
-          "fields": "Parent Area ID",
+          "fields": "parent-id",
           "reference": {
               "resource": "",
-              "fields": "Area ID"
+              "fields": "area-id"
           }
         }
     ]

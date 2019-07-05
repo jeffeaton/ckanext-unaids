@@ -1,7 +1,7 @@
 {
   "scheming_version": 1,
-  "dataset_type": "naomi-dataset",
-  "name": "Naomi",
+  "dataset_type": "programatic-data-package",
+  "name": "Programatic Data Package",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "add_data_on_create": false,
@@ -133,96 +133,6 @@
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "naomi-hiv-testing"
-      }]
-    },
-    {
-      "name": "Survey Metadata",
-      "about": "A validated Naomi Survey Metadata dataset",
-      "resource_type": "naomi-survey-metadata",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Metadata"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "naomi_survey_metadata"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "naomi-survey-metadata"
-      }]
-    },
-    {
-      "name": "Survey RITA Metadata",
-      "about": "A validated survey RITA Metadata dataset",
-      "resource_type": "naomi-survey-metadata",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey RITA Metadata"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "naomi_rita_metadata"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "naomi-rita-metadata"
-      }]
-    },
-    {
-      "name": "Survey Clusters",
-      "about": "A validated Naomi Survey Clusters dataset",
-      "resource_type": "naomi-survey-clusters",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Clusters"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "naomi_survey_clusters"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "naomi-survey-clusters"
-      }]
-    },
-    {
-      "name": "Survey Individual Data",
-      "about": "A validated Naomi Individual Data dataset",
-      "resource_type": "naomi-survey-clusters",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Individual Data"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "naomi_individual_data"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "naomi-individual_data"
-      }]
-    },
-    {
-      "name": "Survey Birth History",
-      "about": "A validated Naomi Birth History dataset",
-      "resource_type": "naomi-survey-clusters",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Birth History"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "naomi_birth_history"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "naomi-birth-history"
       }]
     }
   ],

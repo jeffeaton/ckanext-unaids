@@ -1,0 +1,53 @@
+{
+    "fields": [
+      {
+          "name": "survey-id",
+          "title": "Survey ID",
+          "type": "string",
+          "constraints": {
+              "required": true
+          }
+      },
+      {
+          "name": "survey-year",
+          "title": "Survey Year",
+          "type": "integer",
+          "decimalChar": ".",
+          "constraints": {
+              "required": true,
+              "minimum": 1970,
+              "maximum": 2021
+          }
+      },
+      {
+          "name": "hiv-testing-algorithm",
+          "title": "HIV testing algorithm",
+          "type": "string",
+          "constraints": {
+              "required": true
+          }
+      },
+      {
+          "name": "report-reference",
+          "title": "Report reference",
+          "type": "string",
+          "constraints": {
+              "required": true
+          }
+      },
+      {
+          "name": "microdata-reference",
+          "title": "Microdata reference",
+          "type": "string",
+          "constraints": {
+              "required": true
+          }
+      },
+      {
+          "name": "",
+          "title": "Notes",
+          "type": "string"
+      }
+    ],
+    "primaryKey": ["survey-id"]
+}

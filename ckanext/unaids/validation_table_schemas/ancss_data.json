@@ -1,0 +1,79 @@
+{
+    "fields": [
+        {
+            "name": "survey-id",
+            "title": "Survey ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "survey-year",
+            "title": "Survey Year",
+            "type": "integer",
+            "decimalChar": ".",
+            "constraints": {
+                "required": true,
+                "minimum": 1970,
+                "maximum": 2021
+            }
+        },
+        {
+            "name": "hiv-testing-algorithm",
+            "title": "HIV testing algorithm",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "age-start",
+            "title": "Age Start",
+            "type": "number",
+            "decimalChar": ".",
+            "constraints": {
+                "required": true,
+                "minimum": 0,
+                "maximum": 130
+            }
+        },
+        {
+            "name": "age-span",
+            "title": "Age Span",
+            "type": "number",
+            "decimalChar": ".",
+            "constraints": {
+                "required": true,
+                "minimum": 1,
+                "maximum": 130
+            }
+        },
+        {
+            "name": "known-positive",
+            "title": "Number known positive",
+            "type": "integer",
+            "constraints": {
+                "required": true,
+                "minimum": 0
+            }
+        }
+    ],
+    "primaryKey": ["survey-id", "facility-id"],
+    "foreignKeys": [
+        {
+          "fields": "survey-id",
+          "reference": {
+              "resource": "unaids_survey_metadata",
+              "fields": "survey-id"
+          }
+        },
+        {
+          "fields": "facility-id",
+          "reference": {
+              "resource": "unaids_geographic_data",
+              "fields": "facility-id"
+          }
+        }
+    ]
+}
