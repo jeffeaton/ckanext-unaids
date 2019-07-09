@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Naomi, ANC, ART, SVY",
-      "default": "Naomi, ANC, ART, SVY"
+      "form_placeholder": "Programatic, Naomi, ANC, ART, HIV Testing",
+      "default": "Programatic, Naomi, ANC, ART, HIV Testing"
     },
     {
       "field_name": "license_id",
@@ -83,8 +83,8 @@
   ],
   "resources": [{
       "name": "ANC Data",
-      "about": "A validated Naomi ANC dataset.",
-      "resource_type": "naomi-anc",
+      "about": "A validated ANC dataset.",
+      "resource_type": "programatic-anc",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -92,17 +92,17 @@
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "naomi_anc"
+        "field_value": "programatic_anc"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "naomi-anc"
+        "field_value": "programatic-anc"
       }]
     },
     {
       "name": "ART Data",
-      "about": "A validated Naomi ART dataset",
-      "resource_type": "naomi-art",
+      "about": "A validated ART dataset",
+      "resource_type": "programatic-art",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -110,17 +110,17 @@
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "naomi_art"
+        "field_value": "programatic_art"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "naomi-art"
+        "field_value": "programatic-art"
       }]
     },
     {
       "name": "HIV Testing Data",
-      "about": "A validated Naomi HIV Testing dataset",
-      "resource_type": "naomi-hiv-testing",
+      "about": "A validated HIV Testing dataset",
+      "resource_type": "programatic-hiv-testing",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -128,11 +128,11 @@
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "naomi_hiv_testing"
+        "field_value": "programatic_hiv_testing"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "naomi-hiv-testing"
+        "field_value": "programatic-hiv-testing"
       }]
     }
   ],

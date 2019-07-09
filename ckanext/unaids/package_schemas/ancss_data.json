@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Survey, SVY",
-      "default": "Survey, SVY"
+      "form_placeholder": "ANC-SS, Naomi",
+      "default": "ANC-SS, Naomi"
     },
     {
       "field_name": "license_id",

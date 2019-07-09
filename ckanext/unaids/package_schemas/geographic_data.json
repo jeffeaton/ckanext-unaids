@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Naomi, ANC, ART, SVY",
-      "default": "Naomi, ANC, ART, SVY"
+      "form_placeholder": "Geographic, Naomi",
+      "default": "Geographic, Naomi"
     },
     {
       "field_name": "license_id",
