@@ -35,6 +35,11 @@ body {
   color: black;
 }
 
+a.dropdown-item{
+  padding: 10px;
+  display: block;
+}
+
 .masthead .navbar-collapse {
     padding: 30px 0;
 }

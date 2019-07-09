@@ -4,10 +4,7 @@
 {% block page_primary_action %}
 {% if h.check_access('package_create') %}
 <div class="page_primary_action">
-  {{ h.snippet ('snippets/add_dataset.html', dataset_type=dataset_type) }}
-  {{ h.snippet ('snippets/add_dataset.html', dataset_type='naomi-dataset') }}
-  {{ h.snippet ('snippets/add_dataset.html', dataset_type='spectrum-dataset') }}
-  {{ h.snippet ('snippets/add_dataset.html', dataset_type='location-dataset') }}
+    {% snippet 'snippets/dataset_selector.html'%}
 </div>
 {% endif %}
 {% endblock %}
