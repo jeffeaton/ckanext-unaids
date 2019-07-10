@@ -1,63 +1,84 @@
 {
     "fields": [
         {
-            "name": "Survey ID",
+            "name": "survey-id",
+            "title": "Survey ID",
             "type": "string",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "Assay",
+            "name": "assay",
+            "title": "Assay",
+            "type": "string",
+            "enum": ["asante", "maxim"],
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "algorithm",
+            "title": "Algorithm",
             "type": "string",
             "constraints": {
                 "required": true
             }
         },
         {
-            "name": "Algorithm",
-            "type": "string",
+            "name": "mdri",
+            "title": "MDRI (days)",
+            "type": "integer",
             "constraints": {
-                "required": true
+                "required": true,
+                "minimum": 0,
+                "maximum": 500
             }
         },
         {
-            "name": "MDRI",
-            "type": "string",
+            "name": "mdri-se",
+            "title": "MDRI SE (days)",
+            "type": "number",
             "constraints": {
-                "required": true
+                "required": true,
+                "minimum": 0,
+                "maximum": 500
             }
         },
         {
-            "name": "MDRI SE",
-            "type": "string",
+            "name": "ffr",
+            "title": "FRR",
+            "type": "number",
             "constraints": {
-                "required": true
+                "required": true,
+                "minimum": 0,
+                "maximum": 0.2
             }
         },
         {
-            "name": "FRR",
+            "name": "frr-se",
+            "title": "FRR SE",
             "type": "string",
             "constraints": {
-                "required": true
+                "required": true,
+                "required": true,
+                "minimum": 0,
+                "maximum": 0.2
             }
         },
         {
-            "name": "FRR SE",
-            "type": "string",
+            "name": "vl-threshold",
+            "title": "VL Threshold",
+            "type": "integer",
             "constraints": {
-                "required": true
+                "required": true,
+                "minimum": 0,
+                "maximum": 99999
             }
         },
         {
-            "name": "VL Threshold",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "ARV's Tested",
+            "name": "arvs-tested",
+            "title": "ARVs Tested",
             "type": "string",
             "constraints": {
                 "required": true
@@ -69,7 +90,7 @@
         {
           "fields": "survey-id",
           "reference": {
-              "resource": "unaids_survey_metadata",
+              "resource": "survey_metadata",
               "fields": "survey-id"
           }
         }

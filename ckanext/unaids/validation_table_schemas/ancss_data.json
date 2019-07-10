@@ -9,6 +9,14 @@
             }
         },
         {
+            "name": "facility-id",
+            "title": "Facility ID",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
             "name": "survey-year",
             "title": "Survey Year",
             "type": "integer",
@@ -64,14 +72,14 @@
         {
           "fields": "survey-id",
           "reference": {
-              "resource": "unaids_survey_metadata",
+              "resource": "ancss_metadata",
               "fields": "survey-id"
           }
         },
         {
           "fields": "facility-id",
           "reference": {
-              "resource": "unaids_geographic_data",
+              "resource": "geographic_data",
               "fields": "facility-id"
           }
         }

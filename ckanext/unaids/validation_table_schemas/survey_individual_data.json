@@ -55,7 +55,8 @@
         {
             "name": "hiv-status",
             "title": "HIV Status",
-            "enum": ["positive", "negative"],
+            "type": "string",
+            "enum": ["positive", "negative", "indeterminant"],
             "constraints": {
                 "required": true
             }
@@ -71,7 +72,8 @@
         {
             "name": "arv-biomarker",
             "title": "ARV biomarker detected",
-            "type": "boolean",
+            "type": "string",
+            "enum": ["detected", "undetected", "indeterminant", "not applicable"],
             "constraints": {
                 "required": true
             }
@@ -133,14 +135,14 @@
         {
           "fields": "cluster-id",
           "reference": {
-              "resource": "unaids_survey_cluster_data",
+              "resource": "survey_cluster_data",
               "fields": "cluster-id"
           }
         },
         {
           "fields": "survey-id",
           "reference": {
-              "resource": "unaids_survey_metadata",
+              "resource": "survey_metadata",
               "fields": "survey-id"
           }
         }

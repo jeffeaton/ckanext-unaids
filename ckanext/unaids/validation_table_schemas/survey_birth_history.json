@@ -58,7 +58,7 @@
         {
           "fields": "individual-id",
           "reference": {
-              "resource": "unaids_survey_individual_data",
+              "resource": "survey_individual_data",
               "fields": "individual-id"
           }
         }

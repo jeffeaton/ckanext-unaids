@@ -28,6 +28,7 @@
             "name": "residence-type",
             "title": "Residence Type",
             "type": "string",
+            "enum": ["urban", "rural"],
             "constraints": {
                 "required": true
             }
@@ -68,14 +69,14 @@
         {
           "fields": "survey-id",
           "reference": {
-              "resource": "unaids_survey_metadata",
+              "resource": "survey_metadata",
               "fields": "survey-id"
           }
         },
         {
           "fields": "area-id",
           "reference": {
-              "resource": "unaids_geographic_data",
+              "resource": "geographic_data",
               "fields": "area-id"
           }
         }

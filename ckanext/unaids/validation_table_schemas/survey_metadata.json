@@ -82,7 +82,7 @@
             }
         },
         {
-            "name": "",
+            "name": "notes",
             "title": "Notes",
             "type": "string"
         }
