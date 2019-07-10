@@ -8,6 +8,14 @@
       }
     },
     {
+      "name": "survey-id",
+      "title": "Survey ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
       "name": "birth-id",
       "title": "Birth ID",
       "type": "string",
@@ -22,7 +30,8 @@
       "constraints": {
         "required": true,
         "minimum": "1900-01-01",
-        "maximum": "2030-01-01"
+        "maximum": "2030-01-01",
+        "date-format": "YYYY-MM-DD"
       }
     },
     {
@@ -52,7 +61,7 @@
       }
     }
   ],
-  "primaryKey": ["individual-id", "birth-id"],
+  "primaryKey": ["individual-id", "survey-id", "birth-id"],
   "foreignKeys": [{
     "fields": "individual-id",
     "reference": {

@@ -1,63 +1,60 @@
 {
-    "fields": [
-        {
-            "name": "area-id",
-            "title": "Area ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "name",
-            "title": "Name",
-            "type": "string"
-        },
-        {
-            "name": "admin-level",
-            "title": "Admin Level",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 4
-            }
-        },
-        {
-            "name": "parent-id",
-            "title": "Parent Area ID",
-            "type": "date",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "pepfar-id",
-            "title": "PEPFAR ID",
-            "type": "string"
-        },
-        {
-            "name": "dhis-id",
-            "title": "DHIS ID",
-            "type": "string"
-        },
-        {
-            "name": "geometry-id",
-            "title": "Geometry ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        }
-    ],
-    "primaryKey": "area-id",
-    "foreignKeys": [
-        {
-          "fields": "parent-id",
-          "reference": {
-              "resource": "",
-              "fields": "area-id"
-          }
-        }
-    ]
+  "fields": [{
+      "name": "area-id",
+      "title": "Area ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "name",
+      "title": "Name",
+      "type": "string"
+    },
+    {
+      "name": "admin-level",
+      "title": "Admin Level",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 4
+      }
+    },
+    {
+      "name": "parent-id",
+      "title": "Parent Area ID",
+      "type": "date",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "pepfar-id",
+      "title": "PEPFAR ID",
+      "type": "string"
+    },
+    {
+      "name": "dhis-id",
+      "title": "DHIS ID",
+      "type": "string"
+    },
+    {
+      "name": "geometry-id",
+      "title": "Geometry ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "primaryKey": "area-id",
+  "foreignKeys": [{
+    "fields": "parent-id",
+    "reference": {
+      "resource": "",
+      "fields": "area-id"
+    }
+  }]
 }

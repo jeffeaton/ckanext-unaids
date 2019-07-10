@@ -43,10 +43,23 @@
       }
     },
     {
-      "name": "female-age",
-      "title": "Female Age",
+      "name": "birth-period-duration",
+      "title": "Birth Period Duration (years)",
+      "type": "integer"
+    },
+    {
+      "name": "birth-period-start-date",
+      "title": "Birth Period Start Date",
+      "constraints": {
+        "minimum": "1900-01-01",
+        "maximum": "2030-01-01",
+        "date-format": "YYYY-MM-DD"
+      }
+    },
+    {
+      "name": "female-min-age",
+      "title": "Female Minimum Age",
       "type": "integer",
-      "decimalChar": ".",
       "constraints": {
         "required": true,
         "minimum": 0,
@@ -54,10 +67,29 @@
       }
     },
     {
-      "name": "male-age",
-      "title": "Male Age",
+      "name": "female-max-age",
+      "title": "Female Maximum Age",
       "type": "integer",
-      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "male-min-age",
+      "title": "Male Minimum Age",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "male-max-age",
+      "title": "Male Maximum Age",
+      "type": "integer",
       "constraints": {
         "required": true,
         "minimum": 0,

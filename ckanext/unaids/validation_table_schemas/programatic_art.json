@@ -8,6 +8,28 @@
       }
     },
     {
+      "name": "period-start-date",
+      "title": "Period Start Date",
+      "type": "date",
+      "constraints": {
+        "required": true,
+        "minimum": "1900-01-01",
+        "maximum": "2030-01-01",
+        "date-format": "YYYY-MM-DD"
+      }
+    },
+    {
+      "name": "period-end-date",
+      "title": "Period End Date",
+      "type": "date",
+      "constraints": {
+        "required": true,
+        "minimum": "1900-01-01",
+        "maximum": "2030-01-01",
+        "date-format": "YYYY-MM-DD"
+      }
+    },
+    {
       "name": "sex",
       "title": "Sex",
       "type": "string",
@@ -71,7 +93,7 @@
       }
     }
   ],
-  "primaryKey": ["facility-id", "sex", "age-start", "age-span"],
+  "primaryKey": ["facility-id", "sex", "age-start", "period-end-date"],
   "foreignKeys": [{
     "fields": "facility-id",
     "reference": {

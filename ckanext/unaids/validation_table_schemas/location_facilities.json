@@ -1,64 +1,58 @@
 {
-    "fields": [
-        {
-            "name": "facility-id",
-            "title": "Facility ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "name",
-            "title": "Facility Name",
-            "type": "string"
-        },
-        {
-            "name": "area-id",
-            "title": "Area ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "lat",
-            "title": "Latitude",
-            "type": "number",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": -180,
-                "maximum": 180
-            }
-        },{
-            "name": "long",
-            "title": "Longitude",
-            "type": "number",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": -90,
-                "maximum": 90
-            }
-        },
-        {
-            "name": "type",
-            "title": "Facility Type",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        }
-    ],
-    "primaryKey": "facility-id",
-    "foreignKeys": [
-        {
-          "fields": "area-id",
-          "reference": {
-              "resource": "location_areas_metadata",
-              "fields": "area-id"
-          }
-        }
-    ]
+  "fields": [{
+      "name": "facility-id",
+      "title": "Facility ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "name",
+      "title": "Facility Name",
+      "type": "string"
+    },
+    {
+      "name": "area-id",
+      "title": "Area ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "lat",
+      "title": "Latitude",
+      "type": "number",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
+      }
+    }, {
+      "name": "long",
+      "title": "Longitude",
+      "type": "number",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "type",
+      "title": "Facility Type",
+      "type": "string"
+    }
+  ],
+  "primaryKey": "facility-id",
+  "foreignKeys": [{
+    "fields": "area-id",
+    "reference": {
+      "resource": "location_areas_metadata",
+      "fields": "area-id"
+    }
+  }]
 }

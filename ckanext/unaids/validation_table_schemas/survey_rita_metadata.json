@@ -21,7 +21,8 @@
       "title": "Algorithm",
       "type": "string",
       "constraints": {
-        "required": true
+        "required": true,
+        "enum": ["lag", "lag+vl", "lag+vl+arv "]
       }
     },
     {
