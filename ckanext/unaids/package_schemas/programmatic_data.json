@@ -1,7 +1,7 @@
 {
   "scheming_version": 1,
-  "dataset_type": "programatic-data-package",
-  "name": "Programatic Data",
+  "dataset_type": "programmatic-data-package",
+  "name": "Programmatic Data",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "add_data_on_create": false,
@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Programatic, Naomi, ANC, ART, HIV Testing",
-      "default": "Programatic, Naomi, ANC, ART, HIV Testing"
+      "form_placeholder": "Programmatic, Naomi, ANC, ART, HIV Testing",
+      "default": "Programmatic, Naomi, ANC, ART, HIV Testing"
     },
     {
       "field_name": "license_id",
@@ -84,7 +84,7 @@
   "resources": [{
       "name": "ANC Data",
       "about": "A validated ANC dataset.",
-      "resource_type": "programatic-anc",
+      "resource_type": "programmatic-anc",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -92,17 +92,17 @@
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "programatic_anc"
+        "field_value": "programmatic_anc"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "programatic-anc"
+        "field_value": "programmatic-anc"
       }]
     },
     {
       "name": "ART Data",
       "about": "A validated ART dataset",
-      "resource_type": "programatic-art",
+      "resource_type": "programmatic-art",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -110,17 +110,17 @@
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "programatic_art"
+        "field_value": "programmatic_art"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "programatic-art"
+        "field_value": "programmatic-art"
       }]
     },
     {
       "name": "HIV Testing Data",
       "about": "A validated HIV Testing dataset",
-      "resource_type": "programatic-hiv-testing",
+      "resource_type": "programmatic-hiv-testing",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -128,11 +128,11 @@
       }, {
         "field_name": "validator_schema",
         "preset": "hidden_value",
-        "field_value": "programatic_hiv_testing"
+        "field_value": "programmatic_hiv_testing"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "programatic-hiv-testing"
+        "field_value": "programmatic-hiv-testing"
       }]
     }
   ],
