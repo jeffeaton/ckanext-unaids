@@ -116,24 +116,6 @@
         "preset": "hidden_value",
         "field_value": "programmatic-art"
       }]
-    },
-    {
-      "name": "HIV Testing Data",
-      "about": "A validated HIV Testing dataset",
-      "resource_type": "programmatic-hiv-testing",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "ART Data"
-      }, {
-        "field_name": "validator_schema",
-        "preset": "hidden_value",
-        "field_value": "programmatic_hiv_testing"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "programmatic-hiv-testing"
-      }]
     }
   ],
   "resource_fields": [{
