@@ -1,39 +1,37 @@
 {
-    "fields": [
-	{
-	    "name": "indicator",
-	    "type": "string",
-	    "constraints": {
-		"required": true
-	    }
-	},{
-	    "name": "MSM",
-	    "type": "integer",
-	    "constraints": {
-		"required": false,
-		"minimum": 0
-	    }
-	},{
-	    "name": "FSW",
-	    "type": "integer",
-	    "constraints": {
-		"required": false,
-		"minimum": 0
-	    }
-	},{
-	    "name": "IDU",
-	    "type": "integer",
-	    "constraints": {
-		"required": false,
-		"minimum": 0
-	    }
-	},{
-	    "name": "clients",
-	    "type": "integer",
-	    "constraints": {
-		"required": false,
-		"minimum": 0
-	    }
-	}
-    ]
+  "fields": [{
+    "name": "indicator",
+    "type": "string",
+    "constraints": {
+      "required": true
+    }
+  }, {
+    "name": "MSM",
+    "type": "integer",
+    "constraints": {
+      "required": false,
+      "minimum": 0
+    }
+  }, {
+    "name": "FSW",
+    "type": "integer",
+    "constraints": {
+      "required": false,
+      "minimum": 0
+    }
+  }, {
+    "name": "IDU",
+    "type": "integer",
+    "constraints": {
+      "required": false,
+      "minimum": 0
+    }
+  }, {
+    "name": "clients",
+    "type": "integer",
+    "constraints": {
+      "required": false,
+      "minimum": 0
+    }
+  }]
 }

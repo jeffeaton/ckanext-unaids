@@ -1,98 +1,95 @@
 {
-    "fields": [
-        {
-            "name": "survey-id",
-            "title": "Survey ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "assay",
-            "title": "Assay",
-            "type": "string",
-            "enum": ["asante", "maxim"],
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "algorithm",
-            "title": "Algorithm",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "mdri",
-            "title": "MDRI (days)",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 500
-            }
-        },
-        {
-            "name": "mdri-se",
-            "title": "MDRI SE (days)",
-            "type": "number",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 500
-            }
-        },
-        {
-            "name": "ffr",
-            "title": "FRR",
-            "type": "number",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 0.2
-            }
-        },
-        {
-            "name": "frr-se",
-            "title": "FRR SE",
-            "type": "string",
-            "constraints": {
-                "required": true,
-                "required": true,
-                "minimum": 0,
-                "maximum": 0.2
-            }
-        },
-        {
-            "name": "vl-threshold",
-            "title": "VL Threshold",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 99999
-            }
-        },
-        {
-            "name": "arvs-tested",
-            "title": "ARVs Tested",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        }
-    ],
-    "primaryKey": ["survey-id"],
-    "foreignKeys": [
-        {
-          "fields": "survey-id",
-          "reference": {
-              "resource": "survey_metadata",
-              "fields": "survey-id"
-          }
-        }
-    ]
+  "fields": [{
+      "name": "survey-id",
+      "title": "Survey ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "assay",
+      "title": "Assay",
+      "type": "string",
+      "constraints": {
+				"enum": ["asante", "maxim"],
+        "required": true
+      }
+    },
+    {
+      "name": "algorithm",
+      "title": "Algorithm",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "mdri",
+      "title": "MDRI (days)",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 500
+      }
+    },
+    {
+      "name": "mdri-se",
+      "title": "MDRI SE (days)",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 500
+      }
+    },
+    {
+      "name": "ffr",
+      "title": "FRR",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 0.2
+      }
+    },
+    {
+      "name": "frr-se",
+      "title": "FRR SE",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "required": true,
+        "minimum": 0,
+        "maximum": 0.2
+      }
+    },
+    {
+      "name": "vl-threshold",
+      "title": "VL Threshold",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 99999
+      }
+    },
+    {
+      "name": "arvs-tested",
+      "title": "ARVs Tested",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "primaryKey": ["survey-id"],
+  "foreignKeys": [{
+    "fields": "survey-id",
+    "reference": {
+      "resource": "survey_metadata",
+      "fields": "survey-id"
+    }
+  }]
 }

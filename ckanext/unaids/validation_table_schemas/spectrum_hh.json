@@ -1,54 +1,53 @@
 {
 
-    "fields": [
-	{
-	    "name": "Location",
-	    "type": "string",
-	    "constraints": {
-		"required": true
-	    }
-	},
-	{
-	    "name": "Year",
-	    "type": "integer",
-	    "constraints": {
-		"required": true,
-		"minimum": 1970,
-		"maximum": 2030
-	    }
-	},
-	{
-	    "name": "Prevalence (%)",
-	    "type": "number",
-	    "constraints": {
-		"required": true,
-		"minimum": 0,
-		"maximum": 100
-	    }
-	},{
-	    "name": "Prevalence standard error (%)",
-	    "type": "number",
-	    "constraints": {
-		"required": false,
-		"minimum": 0,
-		"maximum": 100
-	    }
-	},{
-	    "name": "Incidence (%)",
-	    "type": "number",
-	    "constraints": {
-		"required": true,
-		"minimum": 0,
-		"maximum": 100
-	    }
-	},{
-	    "name": "Incidence standard error (%)",
-	    "type": "number",
-	    "constraints": {
-		"required": false,
-		"minimum": 0,
-		"maximum": 100
-	    }
-	}
-    ]
+  "fields": [{
+      "name": "Location",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "Year",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 1970,
+        "maximum": 2030
+      }
+    },
+    {
+      "name": "Prevalence (%)",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }, {
+      "name": "Prevalence standard error (%)",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }, {
+      "name": "Incidence (%)",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }, {
+      "name": "Incidence standard error (%)",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }
+  ]
 }

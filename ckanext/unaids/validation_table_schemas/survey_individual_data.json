@@ -1,150 +1,148 @@
 {
-    "fields": [
-        {
-            "name": "survey-id",
-            "title": "Survey ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "cluster-id",
-            "title": "Cluster ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "individual-id",
-            "title": "Individual ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "sex",
-            "title": "Sex",
-            "type": "string",
-            "enum": ["male", "female"],
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "age",
-            "title": "Age",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 130
-            }
-        },
-        {
-            "name": "dob",
-            "title": "Date of Birth",
-            "type": "date",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "hiv-status",
-            "title": "HIV Status",
-            "type": "string",
-            "enum": ["positive", "negative", "indeterminant"],
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "art",
-            "title": "On ART",
-            "type": "boolean",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "arv-biomarker",
-            "title": "ARV biomarker detected",
-            "type": "string",
-            "enum": ["detected", "undetected", "indeterminant", "not applicable"],
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "vls",
-            "title": "Viral load supression",
-            "type": "boolean",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "ever-tested",
-            "title": "Ever tested",
-            "type": "boolean",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "aware",
-            "title": "Aware of HIV status",
-            "type": "boolean",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "ever-had-sex",
-            "title": "Ever had sex",
-            "type": "boolean",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "age-first-sex",
-            "title": "Age first had sex",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 130
-            }
-        },
-        {
-            "name": "circumsised",
-            "title": "Circumsised",
-            "type": "boolean",
-            "constraints": {
-                "required": true
-            }
-        }
-    ],
-    "primaryKey": ["survey-id", "individual-id"],
-    "foreignKeys": [
-        {
-          "fields": "cluster-id",
-          "reference": {
-              "resource": "survey_cluster_data",
-              "fields": "cluster-id"
-          }
-        },
-        {
-          "fields": "survey-id",
-          "reference": {
-              "resource": "survey_metadata",
-              "fields": "survey-id"
-          }
-        }
-    ]
+  "fields": [{
+      "name": "survey-id",
+      "title": "Survey ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "cluster-id",
+      "title": "Cluster ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "individual-id",
+      "title": "Individual ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sex",
+      "title": "Sex",
+      "type": "string",
+      "constraints": {
+				"enum": ["male", "female"],
+        "required": true
+      }
+    },
+    {
+      "name": "age",
+      "title": "Age",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "dob",
+      "title": "Date of Birth",
+      "type": "date",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "hiv-status",
+      "title": "HIV Status",
+      "type": "string",
+      "constraints": {
+				"enum": ["positive", "negative", "indeterminant"],
+        "required": true
+      }
+    },
+    {
+      "name": "art",
+      "title": "On ART",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "arv-biomarker",
+      "title": "ARV biomarker detected",
+      "type": "string",
+      "constraints": {
+				"enum": ["detected", "undetected", "indeterminant", "not applicable"],
+        "required": true
+      }
+    },
+    {
+      "name": "vls",
+      "title": "Viral load supression",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ever-tested",
+      "title": "Ever tested",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "aware",
+      "title": "Aware of HIV status",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ever-had-sex",
+      "title": "Ever had sex",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "age-first-sex",
+      "title": "Age first had sex",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "circumsised",
+      "title": "Circumsised",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "primaryKey": ["survey-id", "individual-id"],
+  "foreignKeys": [{
+      "fields": "cluster-id",
+      "reference": {
+        "resource": "survey_cluster_data",
+        "fields": "cluster-id"
+      }
+    },
+    {
+      "fields": "survey-id",
+      "reference": {
+        "resource": "survey_metadata",
+        "fields": "survey-id"
+      }
+    }
+  ]
 }

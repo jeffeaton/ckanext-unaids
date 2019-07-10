@@ -1,72 +1,81 @@
 {
-    "transpose": true,
-    "fields": [
-	{"name": "Indicator",
-	 "type": "integer"
-	},
-	{"name": "# births",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# first ANC visits",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# receiving at least one HIV test",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# testing positive at their first HIV test",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# known to be HIV+ at first ANC visit (including on ART)",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# started ART before current pregnancy",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# started PMTCT during current pregnancy >4 weeks before delivery",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "# started PMTCT during current pregnancy <4 weeks before delivery",
-	 "type": "integer",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "% HIV+ (census-level ANC-RT)",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	}
-    ]
+  "transpose": true,
+  "fields": [{
+      "name": "Indicator",
+      "type": "integer"
+    },
+    {
+      "name": "# births",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# first ANC visits",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# receiving at least one HIV test",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# testing positive at their first HIV test",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# known to be HIV+ at first ANC visit (including on ART)",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# started ART before current pregnancy",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# started PMTCT during current pregnancy >4 weeks before delivery",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "# started PMTCT during current pregnancy <4 weeks before delivery",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "% HIV+ (census-level ANC-RT)",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }
+  ]
 }

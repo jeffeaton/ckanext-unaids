@@ -1,220 +1,247 @@
 {
-    "transpose": true,
-    "fields": [
-	{"name": "Indicator",
-	 "type": "integer"
-	},
-	{"name": "Prenatal prophylaxis",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "No prophylaxis - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "No prophylaxis - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Single dose nevirapine - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Single dose nevirapine - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Dual ARV - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Dual ARV - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Option A - maternal - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Option A - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Option B - triple prophylaxis from 14 weeks - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Option B - triple prophylaxis from 14 weeks - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Triple ART started before current pregnancy - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Triple ART started before current pregnancy - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Triple ART started during current pregnancy > 4 weeks before delivery - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Triple ART started during current pregnancy > 4 weeks before delivery - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Triple ART started during current pregnancy < 4 weeks before delivery - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Triple ART started during current pregnancy < 4 weeks before delivery - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Retention at delivery among women who were already on ART before conception (%)",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Retention at delivery among women who were started on ART during this pregnancy (%)",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "No postnatal prophylaxis - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "No postnatal prophylaxis - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Postnatal Option A - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Postnatal Option A - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Postnatal Option B - Number",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Postnatal Option B - Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-		"maximum": 100
-	 }
-	},
-	{"name": "Monthly drop-out rate of postnatal prophylaxis (%) Option A",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Monthly drop-out rate of postnatal prophylaxis (%) Option B",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{
-	    "name": "Monthly drop-out rate of postnatal prophylaxis (%) ART",
-	    "type": "number",
-	    "constraints": {
-		"required": false,
-		"minimum": 0,
-		"maximum": 100
-	    }
-	}
-    ]
+  "transpose": true,
+  "fields": [{
+      "name": "Indicator",
+      "type": "integer"
+    },
+    {
+      "name": "Prenatal prophylaxis",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "No prophylaxis - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "No prophylaxis - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Single dose nevirapine - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Single dose nevirapine - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Dual ARV - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Dual ARV - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Option A - maternal - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Option A - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Option B - triple prophylaxis from 14 weeks - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Option B - triple prophylaxis from 14 weeks - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Triple ART started before current pregnancy - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Triple ART started before current pregnancy - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Triple ART started during current pregnancy > 4 weeks before delivery - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Triple ART started during current pregnancy > 4 weeks before delivery - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Triple ART started during current pregnancy < 4 weeks before delivery - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Triple ART started during current pregnancy < 4 weeks before delivery - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Retention at delivery among women who were already on ART before conception (%)",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Retention at delivery among women who were started on ART during this pregnancy (%)",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "No postnatal prophylaxis - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "No postnatal prophylaxis - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Postnatal Option A - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Postnatal Option A - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Postnatal Option B - Number",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Postnatal Option B - Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Monthly drop-out rate of postnatal prophylaxis (%) Option A",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Monthly drop-out rate of postnatal prophylaxis (%) Option B",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Monthly drop-out rate of postnatal prophylaxis (%) ART",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }
+  ]
 }

@@ -1,338 +1,383 @@
 {
-    "transpose": true,
-    "fields": [
-	{"name": "Indicator",
-	 "type": "integer"
-	},
-	{"name": "Adults receiving ART – Male",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Adults receiving ART – Female",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Adults receiving ART – Male Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Adults receiving ART – Female Percent",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Median CD4 count at ART initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Percent lost to follow-up each year**",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "CD4 count threshhold for eligibility",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Children receiving cotrimoxazole",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of children ages 0-4 receiving ART",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of children ages 5-9 receiving ART",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of children ages 10-14 receiving ART",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Percent of children lost to follow up each year",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Age below which all HIV+ children should be on treatment (months)",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "ART Eligibility Age < 11 months",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "ART Eligibilit Age 12-35 months",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "ART Eligibility Age 35-59 months",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "ART Eligibility Age >= 5 years",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "CD4 percent threshhold for eligibility",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "CD4 percent threshhold for eligibility Age < 11 months",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "CD4 percent threshhold for eligibility Age 12-35 months",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "CD4 percent threshhold for eligibility Age 35-59 months",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "CD4 percent threshhold for eligibility Age >= 5 years",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  >500 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  350-500 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  250-349 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  200-249 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  100-199 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  40-99 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of adults receiving ART with CD4 count  <50 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  >500 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  350-500 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  250-349 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  200-249 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  100-199 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  40-99 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of adults receiving ART with CD4 count  <50 initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent ART coverage for Pregnant women",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent ART coverage for TB/HIV co-infection",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent ART coverage for Sero-discordant couples",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Number of new ART patients -  Male",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Number of new ART patients - Female",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Percent of new ART patients – Male",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Percent of new ART patients –  Female",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	},
-	{"name": "Median CD4 count at ART initiation",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0
-	 }
-	},
-	{"name": "Percent lost to follow-up each year",
-	 "type": "number",
-	 "constraints": {
-	     "required": false,
-	     "minimum": 0,
-	     "maximum": 100
-	 }
-	}
-    ]
+  "transpose": true,
+  "fields": [{
+      "name": "Indicator",
+      "type": "integer"
+    },
+    {
+      "name": "Adults receiving ART – Male",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Adults receiving ART – Female",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Adults receiving ART – Male Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Adults receiving ART – Female Percent",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Median CD4 count at ART initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Percent lost to follow-up each year**",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "CD4 count threshhold for eligibility",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Children receiving cotrimoxazole",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of children ages 0-4 receiving ART",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of children ages 5-9 receiving ART",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of children ages 10-14 receiving ART",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Percent of children lost to follow up each year",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Age below which all HIV+ children should be on treatment (months)",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ART Eligibility Age < 11 months",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ART Eligibilit Age 12-35 months",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ART Eligibility Age 35-59 months",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ART Eligibility Age >= 5 years",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "CD4 percent threshhold for eligibility",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "CD4 percent threshhold for eligibility Age < 11 months",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "CD4 percent threshhold for eligibility Age 12-35 months",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "CD4 percent threshhold for eligibility Age 35-59 months",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "CD4 percent threshhold for eligibility Age >= 5 years",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  >500 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  350-500 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  250-349 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  200-249 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  100-199 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  40-99 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of adults receiving ART with CD4 count  <50 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  >500 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  350-500 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  250-349 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  200-249 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  100-199 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  40-99 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of adults receiving ART with CD4 count  <50 initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent ART coverage for Pregnant women",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent ART coverage for TB/HIV co-infection",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent ART coverage for Sero-discordant couples",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Number of new ART patients -  Male",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Number of new ART patients - Female",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Percent of new ART patients – Male",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Percent of new ART patients –  Female",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "Median CD4 count at ART initiation",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Percent lost to follow-up each year",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }
+  ]
 }

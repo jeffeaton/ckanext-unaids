@@ -1,91 +1,90 @@
 {
-    "fields": [
-        {
-            "name": "survey-id",
-            "title": "Survey ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "country",
-            "title": "Country",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "survey-year",
-            "title": "Survey Year",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 1970,
-                "maximum": 2021
-            }
-        },
-        {
-            "name": "start-date",
-            "title": "Start Date",
-            "type": "date",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "end-date",
-            "title": "End Date",
-            "type": "date",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "female-age",
-            "title": "Female Age",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 130
-            }
-        },
-        {
-            "name": "male-age",
-            "title": "Male Age",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 130
-            }
-        },
-        {
-            "name": "report-reference",
-            "title": "Report reference",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "microdata-reference",
-            "title": "Microdata reference",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "notes",
-            "title": "Notes",
-            "type": "string"
-        }
-    ],
-    "primaryKey": ["survey-id"]
+  "fields": [{
+      "name": "survey-id",
+      "title": "Survey ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "country",
+      "title": "Country",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "survey-year",
+      "title": "Survey Year",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 1970,
+        "maximum": 2021
+      }
+    },
+    {
+      "name": "start-date",
+      "title": "Start Date",
+      "type": "date",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "end-date",
+      "title": "End Date",
+      "type": "date",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "female-age",
+      "title": "Female Age",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "male-age",
+      "title": "Male Age",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "report-reference",
+      "title": "Report reference",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "microdata-reference",
+      "title": "Microdata reference",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "notes",
+      "title": "Notes",
+      "type": "string"
+    }
+  ],
+  "primaryKey": ["survey-id"]
 }

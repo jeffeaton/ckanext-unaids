@@ -1,95 +1,92 @@
 {
-    "fields": [
-        {
-            "name": "facility-id",
-            "title": "Facility ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "age-start",
-            "title": "Age Start",
-            "type": "number",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0,
-                "maximum": 130
-            }
-        },
-        {
-            "name": "age-span",
-            "title": "Age Span",
-            "type": "number",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 1,
-                "maximum": 130
-            }
-        },
-        {
-            "name": "clients",
-            "title": "Number clients",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        },
-        {
-            "name": "known-positive",
-            "title": "Number known positive",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        },
-        {
-            "name": "hiv-tested",
-            "title": "Number HIV tested",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        },
-        {
-            "name": "hiv-positive",
-            "title": "Number HIV positive",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        },
-        {
-            "name": "already-art",
-            "title": "Number already on ART",
-            "type": "integer",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        }
-    ],
-    "primaryKey": ["facility-id", "age-start", "age-span"],
-    "foreignKeys": [
-        {
-          "fields": "facility-id",
-          "reference": {
-              "resource": "unaids_geographic_facilities",
-              "fields": "facility-id"
-          }
-        }
-    ],
-    "custom-constraint": {
-        "constraint": "clients >= known-positive",
-        "constraint": "clients >= hiv-tested",
-        "constraint": "clients >= hiv-positive",
-        "constraint": "clients >= already-art "
+  "fields": [{
+      "name": "facility-id",
+      "title": "Facility ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "age-start",
+      "title": "Age Start",
+      "type": "number",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "age-span",
+      "title": "Age Span",
+      "type": "number",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 1,
+        "maximum": 130
+      }
+    },
+    {
+      "name": "clients",
+      "title": "Number clients",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "known-positive",
+      "title": "Number known positive",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "hiv-tested",
+      "title": "Number HIV tested",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "hiv-positive",
+      "title": "Number HIV positive",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "already-art",
+      "title": "Number already on ART",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
     }
+  ],
+  "primaryKey": ["facility-id", "age-start", "age-span"],
+  "foreignKeys": [{
+    "fields": "facility-id",
+    "reference": {
+      "resource": "unaids_geographic_facilities",
+      "fields": "facility-id"
+    }
+  }],
+  "custom-constraint": {
+    "constraint": "clients >= known-positive",
+    "constraint": "clients >= hiv-tested",
+    "constraint": "clients >= hiv-positive",
+    "constraint": "clients >= already-art "
+  }
 }

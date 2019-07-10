@@ -1,45 +1,42 @@
 {
-    "fields": [
-        {
-            "name": "facility-id",
-            "title": "Facility ID",
-            "type": "string",
-            "constraints": {
-                "required": true
-            }
-        },
-        {
-            "name": "tested",
-            "title": "Number Tested",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        },
-        {
-            "name": "hiv-positive",
-            "title": "Number HIV Positive",
-            "type": "integer",
-            "decimalChar": ".",
-            "constraints": {
-                "required": true,
-                "minimum": 0
-            }
-        }
-    ],
-    "primaryKey": "facility-id",
-    "foreignKeys": [
-        {
-          "fields": "facility-id",
-          "reference": {
-              "resource": "unaids_geographic_facilities",
-              "fields": "facility-id"
-          }
-        }
-    ],
-    "custom-constraint": {
-        "constraint": "tested >= hiv-positive"
+  "fields": [{
+      "name": "facility-id",
+      "title": "Facility ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "tested",
+      "title": "Number Tested",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "hiv-positive",
+      "title": "Number HIV Positive",
+      "type": "integer",
+      "decimalChar": ".",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
     }
+  ],
+  "primaryKey": "facility-id",
+  "foreignKeys": [{
+    "fields": "facility-id",
+    "reference": {
+      "resource": "unaids_geographic_facilities",
+      "fields": "facility-id"
+    }
+  }],
+  "custom-constraint": {
+    "constraint": "tested >= hiv-positive"
+  }
 }
