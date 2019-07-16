@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "facility-id",
+      "name": "facility_id",
       "title": "Facility ID",
       "type": "string",
       "constraints": {
@@ -18,7 +18,7 @@
       }
     },
     {
-      "name": "hiv-positive",
+      "name": "hiv_positive",
       "title": "Number HIV Positive",
       "type": "integer",
       "decimalChar": ".",
@@ -28,15 +28,15 @@
       }
     }
   ],
-  "primaryKey": "facility-id",
+  "primaryKey": "facility_id",
   "foreignKeys": [{
-    "fields": "facility-id",
+    "fields": "facility_id",
     "reference": {
       "resource": "unaids_geographic_facilities",
-      "fields": "facility-id"
+      "fields": "facility_id"
     }
   }],
   "custom-constraint": {
-    "constraint": "tested >= hiv-positive"
+    "constraint": "tested >= hiv_positive"
   }
 }

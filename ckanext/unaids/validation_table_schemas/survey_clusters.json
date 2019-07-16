@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "survey-id",
+      "name": "survey_id",
       "title": "Survey ID",
       "type": "string",
       "constraints": {
@@ -8,7 +8,7 @@
       }
     },
     {
-      "name": "cluster-id",
+      "name": "cluster_id",
       "title": "Cluster ID",
       "type": "string",
       "constraints": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "name": "residence-type",
+      "name": "residence_type",
       "title": "Residence Type",
       "type": "string",
       "constraints": {
@@ -55,7 +55,7 @@
       }
     },
     {
-      "name": "area-id",
+      "name": "area_id",
       "title": "Area ID",
       "type": "string",
       "constraints": {
@@ -63,19 +63,19 @@
       }
     }
   ],
-  "primaryKey": ["survey-id", "cluster-id"],
+  "primaryKey": ["survey_id", "cluster_id"],
   "foreignKeys": [{
-      "fields": "survey-id",
+      "fields": "survey_id",
       "reference": {
         "resource": "survey_metadata",
-        "fields": "survey-id"
+        "fields": "survey_id"
       }
     },
     {
-      "fields": "area-id",
+      "fields": "area_id",
       "reference": {
         "resource": "geographic_data",
-        "fields": "area-id"
+        "fields": "area_id"
       }
     }
   ]

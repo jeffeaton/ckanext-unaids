@@ -1,7 +1,7 @@
 {
     "fields": [
         {
-            "name": "survey-id",
+            "name": "survey_id",
             "title": "Survey ID",
             "type": "string",
             "constraints": {
@@ -9,7 +9,7 @@
             }
         },
         {
-            "name": "facility-id",
+            "name": "facility_id",
             "title": "Facility ID",
             "type": "string",
             "constraints": {
@@ -17,7 +17,7 @@
             }
         },
         {
-            "name": "survey-year",
+            "name": "survey_year",
             "title": "Survey Year",
             "type": "integer",
             "decimalChar": ".",
@@ -28,7 +28,7 @@
             }
         },
         {
-            "name": "hiv-testing-algorithm",
+            "name": "hiv_testing_algorithm",
             "title": "HIV testing algorithm",
             "type": "string",
             "constraints": {
@@ -36,7 +36,7 @@
             }
         },
         {
-            "name": "age-start",
+            "name": "age_start",
             "title": "Age Start",
             "type": "number",
             "decimalChar": ".",
@@ -47,7 +47,7 @@
             }
         },
         {
-            "name": "age-span",
+            "name": "age_span",
             "title": "Age Span",
             "type": "number",
             "decimalChar": ".",
@@ -58,7 +58,7 @@
             }
         },
         {
-            "name": "known-positive",
+            "name": "known_positive",
             "title": "Number known positive",
             "type": "integer",
             "constraints": {
@@ -67,20 +67,20 @@
             }
         }
     ],
-    "primaryKey": ["survey-id", "facility-id"],
+    "primaryKey": ["survey_id", "facility_id"],
     "foreignKeys": [
         {
-          "fields": "survey-id",
+          "fields": "survey_id",
           "reference": {
               "resource": "ancss_metadata",
-              "fields": "survey-id"
+              "fields": "survey_id"
           }
         },
         {
-          "fields": "facility-id",
+          "fields": "facility_id",
           "reference": {
               "resource": "geographic_data",
-              "fields": "facility-id"
+              "fields": "facility_id"
           }
         }
     ]

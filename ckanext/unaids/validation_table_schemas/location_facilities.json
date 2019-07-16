@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "facility-id",
+      "name": "facility_id",
       "title": "Facility ID",
       "type": "string",
       "constraints": {
@@ -13,7 +13,7 @@
       "type": "string"
     },
     {
-      "name": "area-id",
+      "name": "area_id",
       "title": "Area ID",
       "type": "string",
       "constraints": {
@@ -47,12 +47,12 @@
       "type": "string"
     }
   ],
-  "primaryKey": "facility-id",
+  "primaryKey": "facility_id",
   "foreignKeys": [{
-    "fields": "area-id",
+    "fields": "area_id",
     "reference": {
       "resource": "location_areas_metadata",
-      "fields": "area-id"
+      "fields": "area_id"
     }
   }]
 }

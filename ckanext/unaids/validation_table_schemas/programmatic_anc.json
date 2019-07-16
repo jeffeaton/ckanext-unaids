@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "facility-id",
+      "name": "facility_id",
       "title": "Facility ID",
       "type": "string",
       "constraints": {
@@ -8,7 +8,7 @@
       }
     },
     {
-      "name": "period-start-date",
+      "name": "period_start_date",
       "title": "Period Start Date",
       "type": "date",
       "constraints": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "name": "period-end-date",
+      "name": "period_end_date",
       "title": "Period End Date",
       "type": "date",
       "constraints": {
@@ -30,7 +30,7 @@
       }
     },
     {
-      "name": "age-start",
+      "name": "age_start",
       "title": "Age Start",
       "type": "number",
       "decimalChar": ".",
@@ -41,7 +41,7 @@
       }
     },
     {
-      "name": "age-span",
+      "name": "age_span",
       "title": "Age Span",
       "type": "number",
       "decimalChar": ".",
@@ -61,7 +61,7 @@
       }
     },
     {
-      "name": "known-positive",
+      "name": "known_positive",
       "title": "Number known positive",
       "type": "integer",
       "constraints": {
@@ -70,7 +70,7 @@
       }
     },
     {
-      "name": "hiv-tested",
+      "name": "hiv_tested",
       "title": "Number HIV tested",
       "type": "integer",
       "constraints": {
@@ -79,7 +79,7 @@
       }
     },
     {
-      "name": "hiv-positive",
+      "name": "hiv_positive",
       "title": "Number HIV positive",
       "type": "integer",
       "constraints": {
@@ -88,7 +88,7 @@
       }
     },
     {
-      "name": "already-art",
+      "name": "already_art",
       "title": "Number already on ART",
       "type": "integer",
       "constraints": {
@@ -97,18 +97,18 @@
       }
     }
   ],
-  "primaryKey": ["facility-id", "period-end-date", "age-start"],
+  "primaryKey": ["facility_id", "period_end_date", "age_start"],
   "foreignKeys": [{
-    "fields": "facility-id",
+    "fields": "facility_id",
     "reference": {
       "resource": "unaids_geographic_facilities",
-      "fields": "facility-id"
+      "fields": "facility_id"
     }
   }],
   "custom-constraint": {
-    "constraint": "clients >= known-positive",
-    "constraint": "clients >= hiv-tested",
-    "constraint": "clients >= hiv-positive",
-    "constraint": "clients >= already-art "
+      "constraint": "clients >= known_positive",
+      "constraint": "clients >= hiv_tested",
+      "constraint": "clients >= hiv_positive",
+      "constraint": "clients >= already_art"
   }
 }

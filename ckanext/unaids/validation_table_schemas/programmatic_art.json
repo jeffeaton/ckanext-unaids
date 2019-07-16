@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "facility-id",
+      "name": "facility_id",
       "title": "Facility ID",
       "type": "string",
       "constraints": {
@@ -16,7 +16,7 @@
         "enum": ["male", "female"]
       }
     }, {
-      "name": "age-start",
+      "name": "age_start",
       "title": "Age Start",
       "type": "number",
       "decimalChar": ".",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "name": "age-span",
+      "name": "age_span",
       "title": "Age Span",
       "type": "number",
       "decimalChar": ".",
@@ -37,7 +37,7 @@
         "maximum": 130
       }
     }, {
-      "name": "on-art",
+      "name": "on_art",
       "title": "Number on ART",
       "type": "integer",
       "constraints": {
@@ -45,7 +45,7 @@
         "minimum": 0
       }
     }, {
-      "name": "new-clients",
+      "name": "new_clients",
       "title": "Number New Clients",
       "type": "integer",
       "constraints": {
@@ -71,17 +71,17 @@
       }
     }
   ],
-  "primaryKey": ["facility-id", "sex", "age-start", "age-span"],
+  "primaryKey": ["facility_id", "sex", "age_start", "age_span"],
   "foreignKeys": [{
-    "fields": "facility-id",
+    "fields": "facility_id",
     "reference": {
       "resource": "unaids_geographic_facilities",
-      "fields": "facility-id"
+      "fields": "facility_id"
     }
   }],
   "custom-constraint": {
-    "constraint": "on-art >= new-clients",
-    "constraint": "on-art >= died",
-    "constraint": "on-art >= disengaged"
+    "constraint": "on_art >= new_clients",
+    "constraint": "on_art >= died",
+    "constraint": "on_art >= disengaged"
   }
 }

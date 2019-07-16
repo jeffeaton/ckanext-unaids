@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "individual-id",
+      "name": "individual_id",
       "title": "Individual ID",
       "type": "string",
       "constraints": {
@@ -8,7 +8,7 @@
       }
     },
     {
-      "name": "survey-id",
+      "name": "survey_id",
       "title": "Survey ID",
       "type": "string",
       "constraints": {
@@ -16,7 +16,7 @@
       }
     },
     {
-      "name": "birth-id",
+      "name": "birth_id",
       "title": "Birth ID",
       "type": "string",
       "constraints": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "name": "child-dob",
+      "name": "child_dob",
       "title": "Child DOB",
       "type": "date",
       "constraints": {
@@ -35,7 +35,7 @@
       }
     },
     {
-      "name": "child-alive",
+      "name": "child_alive",
       "title": "Child Alive",
       "type": "boolean",
       "constraints": {
@@ -43,7 +43,7 @@
       }
     },
     {
-      "name": "death-age",
+      "name": "death_age",
       "title": "Age at death",
       "type": "integer",
       "constraints": {
@@ -61,12 +61,12 @@
       }
     }
   ],
-  "primaryKey": ["individual-id", "survey-id", "birth-id"],
+  "primaryKey": ["individual_id", "survey_id", "birth_id"],
   "foreignKeys": [{
-    "fields": "individual-id",
+    "fields": "individual_id",
     "reference": {
       "resource": "survey_individual_data",
-      "fields": "individual-id"
+      "fields": "individual_id"
     }
   }]
 }

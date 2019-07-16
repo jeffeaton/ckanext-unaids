@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "survey-id",
+      "name": "survey_id",
       "title": "Survey ID",
       "type": "string",
       "constraints": {
@@ -16,7 +16,7 @@
       }
     },
     {
-      "name": "survey-year",
+      "name": "survey_year",
       "title": "Survey Year",
       "type": "integer",
       "decimalChar": ".",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "name": "start-date",
+      "name": "start_date",
       "title": "Start Date",
       "type": "date",
       "constraints": {
@@ -35,7 +35,7 @@
       }
     },
     {
-      "name": "end-date",
+      "name": "end_date",
       "title": "End Date",
       "type": "date",
       "constraints": {
@@ -43,12 +43,12 @@
       }
     },
     {
-      "name": "birth-period-duration",
+      "name": "birth_period_duration",
       "title": "Birth Period Duration (years)",
       "type": "integer"
     },
     {
-      "name": "birth-period-start-date",
+      "name": "birth_period_start_date",
       "title": "Birth Period Start Date",
       "constraints": {
         "minimum": "1900-01-01",
@@ -57,7 +57,7 @@
       }
     },
     {
-      "name": "female-min-age",
+      "name": "female_min_age",
       "title": "Female Minimum Age",
       "type": "integer",
       "constraints": {
@@ -67,7 +67,7 @@
       }
     },
     {
-      "name": "female-max-age",
+      "name": "female_max_age",
       "title": "Female Maximum Age",
       "type": "integer",
       "constraints": {
@@ -77,7 +77,7 @@
       }
     },
     {
-      "name": "male-min-age",
+      "name": "male_min_age",
       "title": "Male Minimum Age",
       "type": "integer",
       "constraints": {
@@ -87,7 +87,7 @@
       }
     },
     {
-      "name": "male-max-age",
+      "name": "male_max_age",
       "title": "Male Maximum Age",
       "type": "integer",
       "constraints": {
@@ -97,7 +97,7 @@
       }
     },
     {
-      "name": "report-reference",
+      "name": "report_reference",
       "title": "Report reference",
       "type": "string",
       "constraints": {
@@ -105,7 +105,7 @@
       }
     },
     {
-      "name": "microdata-reference",
+      "name": "microdata_reference",
       "title": "Microdata reference",
       "type": "string",
       "constraints": {
@@ -118,5 +118,5 @@
       "type": "string"
     }
   ],
-  "primaryKey": ["survey-id"]
+  "primaryKey": ["survey_id"]
 }

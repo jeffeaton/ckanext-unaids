@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "area-id",
+      "name": "area_id",
       "title": "Area ID",
       "type": "string",
       "constraints": {
@@ -13,7 +13,7 @@
       "type": "string"
     },
     {
-      "name": "admin-level",
+      "name": "admin_level",
       "title": "Admin Level",
       "type": "integer",
       "constraints": {
@@ -23,7 +23,7 @@
       }
     },
     {
-      "name": "parent-id",
+      "name": "parent_id",
       "title": "Parent Area ID",
       "type": "date",
       "constraints": {
@@ -31,17 +31,17 @@
       }
     },
     {
-      "name": "pepfar-id",
+      "name": "pepfar_id",
       "title": "PEPFAR ID",
       "type": "string"
     },
     {
-      "name": "dhis-id",
+      "name": "dhis_id",
       "title": "DHIS ID",
       "type": "string"
     },
     {
-      "name": "geometry-id",
+      "name": "geometry_id",
       "title": "Geometry ID",
       "type": "string",
       "constraints": {
@@ -49,12 +49,12 @@
       }
     }
   ],
-  "primaryKey": "area-id",
+  "primaryKey": "area_id",
   "foreignKeys": [{
-    "fields": "parent-id",
+    "fields": "parent_id",
     "reference": {
       "resource": "",
-      "fields": "area-id"
+      "fields": "area_id"
     }
   }]
 }

@@ -1,6 +1,6 @@
 {
   "fields": [{
-      "name": "survey-id",
+      "name": "survey_id",
       "title": "Survey ID",
       "type": "string",
       "constraints": {
@@ -8,7 +8,7 @@
       }
     },
     {
-      "name": "cluster-id",
+      "name": "cluster_id",
       "title": "Cluster ID",
       "type": "string",
       "constraints": {
@@ -16,7 +16,7 @@
       }
     },
     {
-      "name": "individual-id",
+      "name": "individual_id",
       "title": "Individual ID",
       "type": "string",
       "constraints": {
@@ -52,7 +52,7 @@
       }
     },
     {
-      "name": "hiv-status",
+      "name": "hiv_status",
       "title": "HIV Status",
       "type": "string",
       "constraints": {
@@ -69,7 +69,7 @@
       }
     },
     {
-      "name": "arv-biomarker",
+      "name": "arv_biomarker",
       "title": "ARV biomarker detected",
       "type": "string",
       "constraints": {
@@ -86,7 +86,7 @@
       }
     },
     {
-      "name": "ever-tested",
+      "name": "ever_tested",
       "title": "Ever tested",
       "type": "boolean",
       "constraints": {
@@ -102,7 +102,7 @@
       }
     },
     {
-      "name": "ever-had-sex",
+      "name": "ever_had_sex",
       "title": "Ever had sex",
       "type": "boolean",
       "constraints": {
@@ -110,7 +110,7 @@
       }
     },
     {
-      "name": "age-first-sex",
+      "name": "age_first_sex",
       "title": "Age first had sex",
       "type": "integer",
       "decimalChar": ".",
@@ -129,19 +129,19 @@
       }
     }
   ],
-  "primaryKey": ["survey-id", "individual-id"],
+  "primaryKey": ["survey_id", "individual_id"],
   "foreignKeys": [{
-      "fields": "cluster-id",
+      "fields": "cluster_id",
       "reference": {
         "resource": "survey_cluster_data",
-        "fields": "cluster-id"
+        "fields": "cluster_id"
       }
     },
     {
-      "fields": "survey-id",
+      "fields": "survey_id",
       "reference": {
         "resource": "survey_metadata",
-        "fields": "survey-id"
+        "fields": "survey_id"
       }
     }
   ]

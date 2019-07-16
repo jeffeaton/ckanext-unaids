@@ -1,7 +1,7 @@
 {
     "fields": [
       {
-          "name": "survey-id",
+          "name": "survey_id",
           "title": "Survey ID",
           "type": "string",
           "constraints": {
@@ -9,7 +9,7 @@
           }
       },
       {
-          "name": "survey-year",
+          "name": "survey_year",
           "title": "Survey Year",
           "type": "integer",
           "decimalChar": ".",
@@ -20,7 +20,7 @@
           }
       },
       {
-          "name": "hiv-testing-algorithm",
+          "name": "hiv_testing_algorithm",
           "title": "HIV testing algorithm",
           "type": "string",
           "constraints": {
@@ -28,7 +28,7 @@
           }
       },
       {
-          "name": "report-reference",
+          "name": "report_reference",
           "title": "Report reference",
           "type": "string",
           "constraints": {
@@ -36,7 +36,7 @@
           }
       },
       {
-          "name": "microdata-reference",
+          "name": "microdata_reference",
           "title": "Microdata reference",
           "type": "string",
           "constraints": {
@@ -49,5 +49,5 @@
           "type": "string"
       }
     ],
-    "primaryKey": ["survey-id"]
+    "primaryKey": ["survey_id"]
 }
