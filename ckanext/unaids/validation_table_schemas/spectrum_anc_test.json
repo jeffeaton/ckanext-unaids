@@ -18,7 +18,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ANCTestingValues MV').iloc[0]"
     },
     {
       "name": "# receiving at least one HIV test",
@@ -26,7 +27,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ANCTestingValues MV').iloc[1]"
     },
     {
       "name": "# testing positive at their first HIV test",
@@ -34,7 +36,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ANCTestingValues MV').iloc[2]"
     },
     {
       "name": "# known to be HIV+ at first ANC visit (including on ART)",
@@ -42,7 +45,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ANCTestingValues MV').iloc[3]"
     },
     {
       "name": "# started ART before current pregnancy",
@@ -75,7 +79,8 @@
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key": "sf.dp('ANCTestingValues MV').iloc[4]"
     }
   ]
 }

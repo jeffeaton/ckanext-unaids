@@ -10,7 +10,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('FitIncidenceEditorValues MV6').iloc[88]"
     },
     {
       "name": "Estimated number of new diagnoses not reported due to reporting delays (15 years and older)",
@@ -18,7 +19,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('FitIncidenceEditorValues MV6').iloc[89]"
     },
     {
       "name": "Median CD4 count at diagnosis (15 years older)",
@@ -26,7 +28,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('FitIncidenceEditorValues MV6').iloc[90]"
     },
     {
       "name": "Estimated AIDS-related deaths from the vital registration system (15 years and older)",
@@ -34,18 +37,20 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('FitIncidenceEditorValues MV6').iloc[91]"
     },
     {
-      "name": "People living with HIV (15 years and older)",
+      "name": "Estimated AIDS-related deaths from the vital registration system not reported due to reporting delays (15 years and older)",
       "type": "integer",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('FitIncidenceEditorValues MV6').iloc[92]"
     },
     {
-      "name": "Estimated number of new diagnoses not reported due to reporting delays (15 years and older)",
+      "name": "People living with HIV (15 years and older)",
       "type": "integer",
       "constraints": {
         "required": false,

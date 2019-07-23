@@ -11,7 +11,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ViralSuppressionInput MV').iloc[1]"
     },
     {
       "name": "Males (15+) living with HIV who know their status*",
@@ -19,7 +20,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ViralSuppressionInput MV').iloc[4]"
     },
     {
       "name": "Females (15+) living with HIV who know their status*",
@@ -27,7 +29,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ViralSuppressionInput MV').iloc[7]"
     },
     {
       "name": "Children (0-14) on antiretroviral treatment tested for viral suppression",
@@ -35,7 +38,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ViralSuppressionInput MV').iloc[2]"
     },
     {
       "name": "Males (15+) on antiretroviral treatment tested for viral suppression",
@@ -43,7 +47,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ViralSuppressionInput MV').iloc[5]"
     },
     {
       "name": "Females (15+) on antiretroviral treatment tested for viral suppression",
@@ -51,7 +56,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('ViralSuppressionInput MV').iloc[8]"
     },
     {
       "name": "Children (0-14) living with HIV with suppressed*** viral load on antiretroviral therapy (national)",

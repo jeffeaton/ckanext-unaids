@@ -85,6 +85,7 @@
 			"name": "PMTCT Data",
 			"about": "A validated Spectrum PMTCT spreadsheet.",
 			"resource_type": "spectrum-pmtct",
+      "python_class": "adx_lib.spectrum_tables.PMTCTTable",
 			"resource_fields": [{
 				"field_name": "name",
 				"preset": "hidden_value",
@@ -103,6 +104,7 @@
 			"name": "Breastfeeding",
 			"about": "A validated Spectrum Breastfeeding spreadsheet.",
 			"resource_type": "spectrum-breastfeeding",
+      "python_class": "adx_lib.spectrum_tables.BreastfeedingTable",
 			"resource_fields": [{
 				"field_name": "name",
 				"preset": "hidden_value",
@@ -138,6 +140,7 @@
 			"name": "Known Status",
 			"about": "Data from people who know the HIV status.",
 			"resource_type": "spectrum-ks",
+      "python_class": "adx_lib.spectrum_tables.KnownStatusTable",
 			"resource_fields": [{
 				"field_name": "name",
 				"preset": "hidden_value",
@@ -155,6 +158,7 @@
 		{
 			"name": "Household Surveys",
 			"about": "HIV prevelence data from household surveys.",
+      "python_class": "adx_lib.spectrum_tables.HHTable",
 			"resource_type": "spectrum-hh",
 			"resource_fields": [{
 				"field_name": "name",
@@ -172,6 +176,7 @@
 		}, {
 			"name": "ANC Testing",
 			"about": "Data about ANC testing",
+      "python_class": "adx_lib.spectrum_tables.ANCTestingTable",
 			"resource_type": "spectrum-anc-test",
 			"resource_fields": [{
 				"field_name": "name",
@@ -189,6 +194,7 @@
 		}, {
 			"name": "ANC Prevalence",
 			"about": "ANC Prevalence Data",
+      "python_class": "adx_lib.spectrum_tables.ANCPrevalenceTable",
 			"resource_type": "spectrum-anc-prev",
 			"resource_fields": [{
 				"field_name": "name",
@@ -206,6 +212,7 @@
 		}, {
 			"name": "Concentrated Prevalence",
 			"about": "Prevalance for the Concentrated HIV epidemic",
+      "python_class": "adx_lib.spectrum_tables.ConcPrevalenceTable",
 			"resource_type": "spectrum-conc-prev",
 			"resource_fields": [{
 				"field_name": "name",
@@ -223,6 +230,7 @@
 		}, {
 			"name": "Size Estimates",
 			"about": "Size estimated for the Concentrated HIV epidemic",
+      "python_class": "adx_lib.spectrum_tables.SizeTable",
 			"resource_type": "spectrum-size",
 			"resource_fields": [{
 				"field_name": "name",
@@ -240,6 +248,7 @@
 		}, {
 			"name": "Turnover",
 			"about": "Turnover times for high risk groups",
+      "python_class": "adx_lib.spectrum_tables.TurnoverTable",
 			"resource_type": "spectrum-turnover",
 			"resource_fields": [{
 				"field_name": "name",
@@ -274,6 +283,7 @@
 		}, {
 			"name": "District Breakdown",
 			"about": "HIV Cases and mortality data",
+      "python_class": "adx_lib.spectrum_tables.DistrictTable",
 			"resource_type": "spectrum-district",
 			"resource_fields": [{
 				"field_name": "name",

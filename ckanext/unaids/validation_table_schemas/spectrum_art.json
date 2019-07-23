@@ -5,38 +5,42 @@
       "type": "integer"
     },
     {
-      "name": "Adults receiving ART – Male",
+      "name": "Adults receiving ART - Male",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('HAARTBySex MV').iloc[2]"
     },
     {
-      "name": "Adults receiving ART – Female",
+      "name": "Adults receiving ART - Female",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('HAARTBySex MV').iloc[3]"
     },
     {
-      "name": "Adults receiving ART – Male Percent",
+      "name": "Adults receiving ART - Male Percent",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key":"(sf.dp('HAARTBySex MV').iloc[2] / sf.dp('HAARTBySex MV').iloc[1]).round(4)*100"
     },
     {
-      "name": "Adults receiving ART – Female Percent",
+      "name": "Adults receiving ART - Female Percent",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key":"(sf.dp('HAARTBySex MV').iloc[3]/sf.dp('HAARTBySex MV').iloc[1]).round(4)*100"
     },
     {
       "name": "Median CD4 count at ART initiation",
@@ -44,7 +48,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('MedianCD4 MV').iloc[0]"
     },
     {
       "name": "Percent lost to follow-up each year**",
@@ -52,15 +57,17 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('PercLostFollowup MV').iloc[0]"
     },
     {
-      "name": "CD4 count threshhold for eligibility",
+      "name": "CD4 count threshold for eligibility",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('CD4ThreshHoldAdults MV').iloc[0]"
     },
     {
       "name": "Children receiving cotrimoxazole",
@@ -68,7 +75,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('ChildARTCalc MV2').iloc[3]"
     },
     {
       "name": "Number of children ages 0-4 receiving ART",
@@ -76,7 +84,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('ChildTreatInputs MV3').iloc[2]"
     },
     {
       "name": "Number of children ages 5-9 receiving ART",
@@ -84,7 +93,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('ChildTreatInputs MV3').iloc[3]"
     },
     {
       "name": "Number of children ages 10-14 receiving ART",
@@ -92,7 +102,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key":"sf.dp('ChildTreatInputs MV3').iloc[4]"
     },
     {
       "name": "Percent of children lost to follow up each year",
@@ -100,7 +111,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('PercLostFollowupChild MV').iloc[0]"
     },
     {
       "name": "Age below which all HIV+ children should be on treatment (months)",
@@ -108,7 +120,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('AgeHIVChildOnTreatment MV').iloc[0]"
     },
     {
       "name": "ART Eligibility Age < 11 months",
@@ -116,15 +129,17 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[0]"
     },
     {
-      "name": "ART Eligibilit Age 12-35 months",
+      "name": "ART Eligibility Age 12-35 months",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[0]"
     },
     {
       "name": "ART Eligibility Age 35-59 months",
@@ -132,7 +147,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[1]"
     },
     {
       "name": "ART Eligibility Age >= 5 years",
@@ -140,47 +156,53 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[2]"
     },
     {
-      "name": "CD4 percent threshhold for eligibility",
+      "name": "CD4 percent threshold for eligibility",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[3]"
     },
     {
-      "name": "CD4 percent threshhold for eligibility Age < 11 months",
+      "name": "CD4 percent threshold for eligibility Age < 11 months",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[4]"
     },
     {
-      "name": "CD4 percent threshhold for eligibility Age 12-35 months",
+      "name": "CD4 percent threshold for eligibility Age 12-35 months",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[5]"
     },
     {
-      "name": "CD4 percent threshhold for eligibility Age 35-59 months",
+      "name": "CD4 percent threshold for eligibility Age 35-59 months",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[6]"
     },
     {
-      "name": "CD4 percent threshhold for eligibility Age >= 5 years",
+      "name": "CD4 percent threshold for eligibility Age >= 5 years",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('CD4ThreshHold MV').iloc[7]"
     },
     {
       "name": "Number of adults receiving ART with CD4 count  >500 initiation",
@@ -308,7 +330,8 @@
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key": "(sf.dp('ChildOnPMTCT MV').iloc[0] / sf.dp('ChildNeedPMTCT MV').iloc[0]).round(4)*100"
     },
     {
       "name": "Percent ART coverage for TB/HIV co-infection",
@@ -334,7 +357,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('NumNewARTPats MV').iloc[0]"
     },
     {
       "name": "Number of new ART patients - Female",
@@ -342,42 +366,28 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.dp('NumNewARTPats MV').iloc[1]"
     },
     {
-      "name": "Percent of new ART patients – Male",
+      "name": "Percent of new ART patients - Male",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key":"(sf.dp('NumNewARTPats MV').iloc[0]/sf.dp('HAARTBySex MV').iloc[1]).round(4)*100"
     },
     {
-      "name": "Percent of new ART patients –  Female",
+      "name": "Percent of new ART patients -  Female",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
-    },
-    {
-      "name": "Median CD4 count at ART initiation",
-      "type": "number",
-      "constraints": {
-        "required": false,
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Percent lost to follow-up each year",
-      "type": "number",
-      "constraints": {
-        "required": false,
-        "minimum": 0,
-        "maximum": 100
-      }
+      },
+      "spectrum_file_key":"(sf.dp('NumNewARTPats MV').iloc[1]/sf.dp('HAARTBySex MV').iloc[1])*100"
     }
   ]
 }

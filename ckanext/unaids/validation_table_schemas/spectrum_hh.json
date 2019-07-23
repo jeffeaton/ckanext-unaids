@@ -5,7 +5,8 @@
       "type": "string",
       "constraints": {
         "required": true
-      }
+      },
+      "spectrum_file_key": "sf.epp('hhs')['Region']"
     },
     {
       "name": "Year",
@@ -14,7 +15,8 @@
         "required": true,
         "minimum": 1970,
         "maximum": 2030
-      }
+      },
+      "spectrum_file_key": "sf.epp('hhs')['year']"
     },
     {
       "name": "Prevalence (%)",
@@ -23,7 +25,8 @@
         "required": true,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key": "sf.epp('hhs')['prev'].round(4)*100"
     }, {
       "name": "Prevalence standard error (%)",
       "type": "number",
@@ -31,7 +34,8 @@
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key": "sf.epp('hhs')['se'].round(4)*100"
     }, {
       "name": "Incidence (%)",
       "type": "number",
@@ -39,7 +43,8 @@
         "required": true,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key": "sf.epp('hhs')['incid'].round(4)*100"
     }, {
       "name": "Incidence standard error (%)",
       "type": "number",
@@ -47,7 +52,8 @@
         "required": false,
         "minimum": 0,
         "maximum": 100
-      }
+      },
+      "spectrum_file_key": "sf.epp('hhs')['incid_se'].round(4)*100"
     }
   ]
 }
