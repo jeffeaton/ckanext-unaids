@@ -1,12 +1,12 @@
 {
 
   "fields": [{
-      "name": "Region",
+      "name": "Region/Population",
       "type": "string",
       "constraints": {
         "required": true
       },
-      "spectrum_file_key": "sf.epp('combined_anc')['Region']"
+      "spectrum_file_key": "sf.epp('combined_anc')['Group']"
     },
     {
       "name": "Site",
@@ -31,7 +31,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1991",
       "type": "number",
@@ -39,7 +39,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1992",
       "type": "number",
@@ -47,7 +47,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1993",
       "type": "number",
@@ -55,7 +55,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1994",
       "type": "number",
@@ -63,7 +63,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1995",
       "type": "number",
@@ -71,7 +71,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1996",
       "type": "number",
@@ -79,7 +79,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1997",
       "type": "number",
@@ -87,7 +87,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1998",
       "type": "number",
@@ -95,7 +95,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "1999",
       "type": "number",
@@ -103,7 +103,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2000",
       "type": "number",
@@ -111,7 +111,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2001",
       "type": "number",
@@ -119,7 +119,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2002",
       "type": "number",
@@ -127,7 +127,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2003",
       "type": "number",
@@ -135,7 +135,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2004",
       "type": "number",
@@ -143,7 +143,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2005",
       "type": "number",
@@ -151,7 +151,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2006",
       "type": "number",
@@ -159,7 +159,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2007",
       "type": "number",
@@ -167,7 +167,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2008",
       "type": "number",
@@ -175,7 +175,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2009",
       "type": "number",
@@ -183,7 +183,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2010",
       "type": "number",
@@ -191,7 +191,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2011",
       "type": "number",
@@ -199,7 +199,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2012",
       "type": "number",
@@ -207,7 +207,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2013",
       "type": "number",
@@ -215,7 +215,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2014",
       "type": "number",
@@ -223,7 +223,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2015",
       "type": "number",
@@ -231,7 +231,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2016",
       "type": "number",
@@ -239,7 +239,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2017",
       "type": "number",
@@ -247,7 +247,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2018",
       "type": "number",
@@ -255,7 +255,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2019",
       "type": "number",
@@ -263,7 +263,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2020",
       "type": "number",
@@ -271,7 +271,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2021",
       "type": "number",
@@ -279,7 +279,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2022",
       "type": "number",
@@ -287,7 +287,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2023",
       "type": "number",
@@ -295,7 +295,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2024",
       "type": "number",
@@ -303,7 +303,7 @@
         "required": false,
         "minimum": 0
       },
-      "spectrum_file_key": "sf.epp('combined_anc')[field['name']]"
+      "spectrum_file_key": "sf.epp('combined_anc').get(field['name'], [])"
     }, {
       "name": "2025",
       "type": "number",

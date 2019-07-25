@@ -5,7 +5,8 @@
       "type": "string",
       "constraints": {
         "required": true
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops')['Group']"
     },
     {
       "name": "1985",
@@ -13,7 +14,8 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1986",
       "type": "number",
@@ -27,224 +29,256 @@
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1988",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1989",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1990",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1991",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1992",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1993",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1994",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1995",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1996",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1997",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1998",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "1999",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2000",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2001",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2002",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2003",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2004",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2005",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2006",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2007",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2008",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2009",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2010",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2011",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2012",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2013",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2014",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2015",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2016",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2017",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }, {
       "name": "2018",
       "type": "number",
       "constraints": {
         "required": false,
         "minimum": 0
-      }
+      },
+      "spectrum_file_key": "sf.epp('subpops').get(field['name'], [])"
     }
   ]
 }
