@@ -4,34 +4,40 @@
     "type": "string",
     "constraints": {
       "required": true
-    }
+    },
+    "example_values": ["Estimated duration of high risk behaviour"],
+    "spectrum_file_key": "first_field['example_values']"
   }, {
     "name": "MSM",
     "type": "integer",
     "constraints": {
       "required": false,
       "minimum": 0
-    }
+    },
+    "spectrum_file_key": "sf.epp('turnover').get(field['name'], [])"
   }, {
     "name": "FSW",
     "type": "integer",
     "constraints": {
       "required": false,
       "minimum": 0
-    }
+    },
+    "spectrum_file_key": "sf.epp('turnover').get(field['name'], [])"
   }, {
     "name": "IDU",
     "type": "integer",
     "constraints": {
       "required": false,
       "minimum": 0
-    }
+    },
+    "spectrum_file_key": "sf.epp('turnover').get(field['name'], [])"
   }, {
     "name": "clients",
     "type": "integer",
     "constraints": {
       "required": false,
       "minimum": 0
-    }
+    },
+    "spectrum_file_key": "sf.epp('turnover').get(field['name'], [])"
   }]
 }
