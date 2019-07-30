@@ -183,14 +183,6 @@
       }
     },
     {
-      "name": "No postnatal prophylaxis - Number",
-      "type": "number",
-      "constraints": {
-        "required": false,
-        "minimum": 0
-      }
-    },
-    {
       "name": "No postnatal prophylaxis - Percent",
       "type": "number",
       "constraints": {

@@ -6,7 +6,7 @@
       "constraints": {
         "required": true
       },
-      "spectrum_file_key": "sf.epp('hhs')['Region']"
+      "spectrum_file_key": "sf.epp('hhs')['Group']"
     },
     {
       "name": "Year",

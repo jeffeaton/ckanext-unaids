@@ -3,7 +3,11 @@ import logging
 import licenses
 import ckan.model.license as core_licenses
 import ckan.model.package as package
+import ckan.lib.uploader as uploader
+import cgi
+from ckan.plugins import toolkit
 from collections import OrderedDict
+from ckan.common import request
 
 log = logging.getLogger(__name__)
 
@@ -26,6 +30,7 @@ class UNAIDSPlugin(p.SingletonPlugin):
 
     p.implements(p.IConfigurer)
     p.implements(p.IFacets, inherit=True)
+    p.implements(p.IPackageController, inherit=True)
 
     # IConfigurer
     def update_config(self, config):
@@ -49,3 +54,21 @@ class UNAIDSPlugin(p.SingletonPlugin):
     def organization_facets(self, facet_dict, org_type, package_type):
 
         return facet_dict
+
+    def after_create(self, context, package_dict):
+        logging.warning(package_dict)
+        raise Exception
+        if package_dict.get('type', "") == 'spectrum-dataset':
+            with open('/usr/lib/ckan/Mauritius_2018_shadow.PJNZ', 'rb') as f:
+                upload = cgi.FieldStorage()
+                upload.filename = getattr(f, 'name', 'data')
+                upload.name = "spectrum_file"
+                upload.file = f
+                resource_dict = {
+                    'package_id': package_dict['id'],
+                    'url': package_dict['spectrum_file'],
+                    'name': "Source Spectrum File",
+                    'validator_schema': '',
+                    'upload': upload
+                }
+                toolkit.get_action('resource_create')(context, resource_dict)

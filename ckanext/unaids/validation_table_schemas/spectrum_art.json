@@ -368,26 +368,6 @@
         "minimum": 0
       },
       "spectrum_file_key": "sf.dp('NumNewARTPats MV').iloc[1]"
-    },
-    {
-      "name": "Percent of new ART patients - Male",
-      "type": "number",
-      "constraints": {
-        "required": false,
-        "minimum": 0,
-        "maximum": 100
-      },
-      "spectrum_file_key":"(sf.dp('NumNewARTPats MV').iloc[0]/sf.dp('HAARTBySex MV').iloc[1]).round(4)*100"
-    },
-    {
-      "name": "Percent of new ART patients -  Female",
-      "type": "number",
-      "constraints": {
-        "required": false,
-        "minimum": 0,
-        "maximum": 100
-      },
-      "spectrum_file_key":"(sf.dp('NumNewARTPats MV').iloc[1]/sf.dp('HAARTBySex MV').iloc[1])*100"
     }
   ]
 }
