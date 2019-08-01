@@ -57,7 +57,6 @@ class UNAIDSPlugin(p.SingletonPlugin):
 
     def after_create(self, context, package_dict):
         logging.warning(package_dict)
-        raise Exception
         if package_dict.get('type', "") == 'spectrum-dataset':
             with open('/usr/lib/ckan/Mauritius_2018_shadow.PJNZ', 'rb') as f:
                 upload = cgi.FieldStorage()
