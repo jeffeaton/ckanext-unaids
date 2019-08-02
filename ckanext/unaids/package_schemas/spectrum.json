@@ -91,7 +91,7 @@
 				"preset": "hidden_value",
 				"field_value": "PMTCT Data"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_pmtct"
 			}, {
@@ -110,7 +110,7 @@
 				"preset": "hidden_value",
 				"field_value": "Breastfeeding Data"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_breastfeeding"
 			}, {
@@ -127,7 +127,7 @@
 				"preset": "hidden_value",
 				"field_value": "ART Data"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_art"
 			}, {
@@ -146,7 +146,7 @@
 				"preset": "hidden_value",
 				"field_value": "Known Status"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_ks"
 			}, {
@@ -165,7 +165,7 @@
 				"preset": "hidden_value",
 				"field_value": "Household Surveys"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_hh"
 			}, {
@@ -183,7 +183,7 @@
 				"preset": "hidden_value",
 				"field_value": "ANC Testing"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_anc_test"
 			}, {
@@ -201,7 +201,7 @@
 				"preset": "hidden_value",
 				"field_value": "ANC Prevalances"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_anc_prev"
 			}, {
@@ -219,7 +219,7 @@
 				"preset": "hidden_value",
 				"field_value": "Concentrated Prevalence"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_conc_prev"
 			}, {
@@ -237,7 +237,7 @@
 				"preset": "hidden_value",
 				"field_value": "Size Estimates"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_size"
 			}, {
@@ -255,7 +255,7 @@
 				"preset": "hidden_value",
 				"field_value": "Turnover"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_turnover"
 			}, {
@@ -272,7 +272,7 @@
 				"preset": "hidden_value",
 				"field_value": "Cases and Mortality"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_case_mortality"
 			}, {
@@ -290,7 +290,7 @@
 				"preset": "hidden_value",
 				"field_value": "District Breakdown"
 			}, {
-				"field_name": "validator_schema",
+				"field_name": "schema",
 				"preset": "hidden_value",
 				"field_value": "spectrum_district"
 			}, {
@@ -317,7 +317,7 @@
 			"form_placeholder": "Some useful notes about the data"
 		},
 		{
-			"field_name": "validator_schema",
+			"field_name": "schema",
 			"label": "Choose schema",
 			"preset": "data_schema"
 		},

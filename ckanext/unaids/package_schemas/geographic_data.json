@@ -90,7 +90,7 @@
         "preset": "hidden_value",
         "field_value": "Facilities List"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "geographic_facilities"
       }, {
@@ -108,7 +108,7 @@
         "preset": "hidden_value",
         "field_value": "ART Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "geographic_areas_metadata"
       }, {

@@ -3,6 +3,7 @@ import logging
 import licenses
 import ckan.model.license as core_licenses
 import ckan.model.package as package
+from unaids_blueprint import unaids_blueprint
 from collections import OrderedDict
 
 log = logging.getLogger(__name__)
@@ -26,6 +27,7 @@ class UNAIDSPlugin(p.SingletonPlugin):
 
     p.implements(p.IConfigurer)
     p.implements(p.IFacets, inherit=True)
+    p.implements(p.IBlueprint)
 
     # IConfigurer
     def update_config(self, config):
@@ -36,6 +38,9 @@ class UNAIDSPlugin(p.SingletonPlugin):
         log.info("UNAIDS Plugin is enabled")
         p.toolkit.add_template_directory(config, 'theme/templates')
         p.toolkit.add_public_directory(config, 'theme/public')
+
+    def get_blueprint(self):
+        return unaids_blueprint
 
     def dataset_facets(self, facet_dict, package_type):
         new_fd = OrderedDict()

@@ -91,7 +91,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Metadata"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "survey_metadata"
       }, {
@@ -109,7 +109,7 @@
         "preset": "hidden_value",
         "field_value": "Survey RITA Metadata"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "survey_rita_metadata"
       }, {
@@ -127,7 +127,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Clusters"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "survey_clusters"
       }, {
@@ -145,7 +145,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Individual Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "individual_data"
       }, {
@@ -163,7 +163,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Birth History"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "survey_birth_history"
       }, {

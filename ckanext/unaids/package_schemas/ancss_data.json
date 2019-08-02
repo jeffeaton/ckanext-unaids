@@ -91,7 +91,7 @@
         "preset": "hidden_value",
         "field_value": "ANC-SS Survey Metadata"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "ancss_metadata"
       }, {
@@ -109,7 +109,7 @@
         "preset": "hidden_value",
         "field_value": "ANC-SS Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "ancss_data"
       }, {

@@ -90,7 +90,7 @@
         "preset": "hidden_value",
         "field_value": "ANC Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_anc"
       }, {
@@ -108,7 +108,7 @@
         "preset": "hidden_value",
         "field_value": "ART Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_art"
       }, {
@@ -126,7 +126,7 @@
         "preset": "hidden_value",
         "field_value": "ART Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_hiv_testing"
       }, {
@@ -144,7 +144,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Metadata"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_survey_metadata"
       }, {
@@ -162,7 +162,7 @@
         "preset": "hidden_value",
         "field_value": "Survey RITA Metadata"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_rita_metadata"
       }, {
@@ -180,7 +180,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Clusters"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_survey_clusters"
       }, {
@@ -198,7 +198,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Individual Data"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_individual_data"
       }, {
@@ -216,7 +216,7 @@
         "preset": "hidden_value",
         "field_value": "Survey Birth History"
       }, {
-        "field_name": "validator_schema",
+        "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "naomi_birth_history"
       }, {
