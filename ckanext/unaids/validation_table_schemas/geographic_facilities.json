@@ -27,8 +27,8 @@
       "decimalChar": ".",
       "constraints": {
         "required": true,
-        "minimum": -180,
-        "maximum": 180
+        "minimum": -90,
+        "maximum": 90
       }
     }, {
       "name": "long",
@@ -37,8 +37,8 @@
       "decimalChar": ".",
       "constraints": {
         "required": true,
-        "minimum": -90,
-        "maximum": 90
+        "minimum": -180,
+        "maximum": 180
       }
     },
     {
