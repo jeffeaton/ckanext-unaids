@@ -5,8 +5,7 @@
       "type": "string",
       "constraints": {
         "required": true
-      },
-      "foreignKey": "3d64b8c5-b005-4627-a02f-8a3310a19ce6:facility_id"
+      }
     },
     {
       "name": "period_start_date",

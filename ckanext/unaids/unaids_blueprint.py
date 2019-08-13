@@ -2,7 +2,7 @@
 import logging
 from flask import Blueprint, Response, abort
 from ckan.plugins.toolkit import config
-from ckanext.validation.jobs import load_schema_from_path
+from ckanext.validation.helpers import validation_load_schemed_table
 
 log = logging.getLogger(__name__)
 
@@ -20,7 +20,7 @@ def download_table_template(validation_schema):
     try:
         schema_directory = config['ckanext.validation.schema_directory']
         file_path = schema_directory + '/' + validation_schema + '.json'
-        schemed_table = load_schema_from_path(file_path)
+        schemed_table = validation_load_schemed_table(file_path)
         template = schemed_table.create_template()
         csv_content = template.to_csv(header=False, index=False, encoding='utf-8')
 
