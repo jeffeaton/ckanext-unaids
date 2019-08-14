@@ -27,6 +27,13 @@
       		"data-module-source": "/api/2/util/organization/autocomplete?q=?"
         }
     	}
+    },{
+        "preset_name": "data_schema",
+        "values": {
+            "form_include_blank_choice": true,
+            "validators": "unicode",
+            "form_snippet": "validators.html"
+        }
     }
   ]
 }
