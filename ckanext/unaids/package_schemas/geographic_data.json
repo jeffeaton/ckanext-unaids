@@ -100,13 +100,13 @@
       }]
     },
     {
-      "name": "Areas Metadata",
-      "about": "A validated Areas metadata set",
+      "name": "Areas Hierachy",
+      "about": "A validated Areas Hierachy for Admin level 1 and 2.",
       "resource_type": "geographic-areas-metadata",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "ART Data"
+        "field_value": "Areas Hierachy"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
@@ -115,6 +115,19 @@
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "geographic-areas-metadata"
+      }, {
+        "field_name": "pepfar_psnu",
+        "label": "PEPFAR PSNU Admin Level Number",
+        "form_placeholder": "1",
+        "group": "general"
+      }, {
+        "field_name": "level1_name",
+        "label": "Admin Level 1 Name",
+        "form_placeholder": "e.g. region"
+      }, {
+        "field_name": "level2_name",
+        "label": "Admin Level 2 Name",
+        "form_placeholder": "e.g. district"
       }]
     },
     {
@@ -129,6 +142,10 @@
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "geographic-areas-geometry"
+      }, {
+        "field_name": "boundary_source",
+        "label": "Source of the boundary geometry:",
+        "form_placeholder": "e.g. PEPFAR"
       }]
     }
   ],

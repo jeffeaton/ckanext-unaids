@@ -25,28 +25,20 @@
     {
       "name": "parent_id",
       "title": "Parent Area ID",
-      "type": "date",
+      "type": "string",
       "constraints": {
         "required": true
       }
+    },
+    {
+      "name": "dhis2_id",
+      "title": "DHIS ID",
+      "type": "string"
     },
     {
       "name": "pepfar_id",
       "title": "PEPFAR ID",
       "type": "string"
-    },
-    {
-      "name": "dhis_id",
-      "title": "DHIS ID",
-      "type": "string"
-    },
-    {
-      "name": "geometry_id",
-      "title": "Geometry ID",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
     }
   ],
   "primaryKey": "area_id",

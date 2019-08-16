@@ -18,7 +18,8 @@
       "type": "string",
       "constraints": {
         "required": true
-      }
+      },
+      "foreignKey": "package:geographic-areas-metadata:area_id"
     },
     {
       "name": "lat",
@@ -48,11 +49,12 @@
     }
   ],
   "primaryKey": "facility_id",
-  "foreignKeys": [{
-    "fields": "area_id",
-    "reference": {
-      "resource": "location_areas_metadata",
-      "fields": "area_id"
+  "foreignKeys":[{
+      "fields": "area_id",
+      "reference":{
+        "resource": "geographic_areas_metadata",
+        "fields": "area_id"
+      }
     }
-  }]
+  ]
 }
