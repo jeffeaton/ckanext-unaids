@@ -8,18 +8,17 @@
       }
     },
     {
-      "name": "name",
+      "name": "facility_name",
       "title": "Facility Name",
       "type": "string"
     },
     {
-      "name": "area_id",
+      "name": "parent_area_id",
       "title": "Area ID",
       "type": "string",
       "constraints": {
         "required": true
-      },
-      "foreignKey": "package:geographic-areas-metadata:area_id"
+      }
     },
     {
       "name": "lat",
@@ -48,13 +47,5 @@
       "type": "string"
     }
   ],
-  "primaryKey": "facility_id",
-  "foreignKeys":[{
-      "fields": "area_id",
-      "reference":{
-        "resource": "geographic_areas_metadata",
-        "fields": "area_id"
-      }
-    }
-  ]
+  "primaryKey": "facility_id"
 }

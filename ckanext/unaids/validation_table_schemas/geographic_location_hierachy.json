@@ -8,12 +8,12 @@
       }
     },
     {
-      "name": "name",
+      "name": "area_name",
       "title": "Name",
       "type": "string"
     },
     {
-      "name": "admin_level",
+      "name": "area_level",
       "title": "Admin Level",
       "type": "integer",
       "constraints": {
@@ -23,12 +23,17 @@
       }
     },
     {
-      "name": "parent_id",
+      "name": "parent_area_id",
       "title": "Parent Area ID",
       "type": "string",
       "constraints": {
         "required": true
       }
+    },
+    {
+      "name": "iso3",
+      "title": "ISO3 Country Code",
+      "type": "string"
     },
     {
       "name": "dhis2_id",
@@ -43,7 +48,7 @@
   ],
   "primaryKey": "area_id",
   "foreignKeys": [{
-    "fields": "parent_id",
+    "fields": "parent_area_id",
     "reference": {
       "resource": "",
       "fields": "area_id"

@@ -82,55 +82,53 @@
     }
   ],
   "resources": [{
-      "name": "Facilities List",
-      "about": "A validated Facilities list.",
-      "resource_type": "geographic-facilities-list",
+      "name": "Location Hierachy",
+      "about": "A validated Location Hierachy.",
+      "resource_type": "geographic-location-hierachy",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Facilities List"
+        "field_value": "Location Hierachy"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "geographic_facilities"
+        "field_value": "geographic_location_hierachy"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-facilities-list"
-      }]
-    },
-    {
-      "name": "Areas Hierachy",
-      "about": "A validated Areas Hierachy for Admin level 1 and 2.",
-      "resource_type": "geographic-areas-metadata",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Areas Hierachy"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "geographic_areas_metadata"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "geographic-areas-metadata"
+        "field_value": "geographic-location-hierachy"
       }, {
         "field_name": "pepfar_psnu",
         "label": "PEPFAR PSNU Admin Level Number",
-        "form_placeholder": "1",
+        "default_jinja2": "1",
         "group": "general"
       }, {
         "field_name": "level1_name",
         "label": "Admin Level 1 Name",
-        "form_placeholder": "e.g. region"
+        "default_jinja2": "region"
       }, {
         "field_name": "level2_name",
         "label": "Admin Level 2 Name",
-        "form_placeholder": "e.g. district"
+        "default_jinja2": "district"
       }]
-    },
-    {
+    },{
+        "name": "Facilities List",
+        "about": "A validated Facilities list.",
+        "resource_type": "geographic-facilities-list",
+        "resource_fields": [{
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "Facilities List"
+        }, {
+          "field_name": "schema",
+          "preset": "hidden_value",
+          "field_value": "geographic_facilities"
+        }, {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "geographic-facilities-list"
+        }]
+    },{
       "name": "Areas Geometry",
       "about": "A validated Areas geometry SHP file",
       "resource_type": "geographic-areas-geometry",
@@ -145,7 +143,7 @@
       }, {
         "field_name": "boundary_source",
         "label": "Source of the boundary geometry:",
-        "form_placeholder": "e.g. PEPFAR"
+        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM"
       }]
     }
   ],
