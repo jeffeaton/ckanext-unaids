@@ -47,5 +47,12 @@
       "type": "string"
     }
   ],
-  "primaryKey": "facility_id"
+  "primaryKey": "facility_id",
+  "foreignKeys": [{
+    "fields": "parent_area_id",
+    "reference": {
+      "resource": "geographic_location_hierachy",
+      "fields": "area_id"
+    }
+  }]
 }
