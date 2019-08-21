@@ -1,0 +1,19 @@
+{
+  "fields": [{
+      "name": "area_id",
+      "title": "Area ID",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "primaryKey": "area_id",
+  "foreignKeys": [{
+    "fields": "area_id",
+    "reference": {
+      "resource": "geographic_location_hierachy",
+      "fields": "area_id"
+    }
+  }]
+}

@@ -141,6 +141,10 @@
         "preset": "hidden_value",
         "field_value": "geographic-areas-geometry"
       }, {
+        "field_name": "schema",
+        "preset": "hidden_value",
+        "field_value": "geographic_geometry"
+      }, {
         "field_name": "boundary_source",
         "label": "Source of the boundary geometry:",
         "form_placeholder": "e.g. PEPFAR/DHIS2/GADM"
