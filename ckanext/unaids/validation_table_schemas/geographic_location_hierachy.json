@@ -31,11 +31,6 @@
       }
     },
     {
-      "name": "iso3",
-      "title": "ISO3 Country Code",
-      "type": "string"
-    },
-    {
       "name": "dhis2_id",
       "title": "DHIS ID",
       "type": "string"

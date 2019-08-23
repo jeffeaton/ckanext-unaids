@@ -21,7 +21,7 @@
       "field_name": "notes",
       "label": "Description",
       "form_snippet": "markdown.html",
-      "form_placeholder": "eg. Some useful notes about the data"
+      "form_placeholder": "eg. Some useful notes about the data. Please write a little about where this data came from and give any relevant references"
     },
     {
       "field_name": "tag_string",
@@ -85,6 +85,7 @@
       "name": "Location Hierachy",
       "about": "A validated Location Hierachy.",
       "resource_type": "geographic-location-hierachy",
+      "display_group_order": ["General", "Geographic Metadata", "Access Restriction"],
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -98,18 +99,39 @@
         "preset": "hidden_value",
         "field_value": "geographic-location-hierachy"
       }, {
+        "field_name": "iso3",
+        "label": "Country ISO3 Code",
+        "required": true,
+        "display_group": "Geographic Metadata"
+      },{
         "field_name": "pepfar_psnu",
         "label": "PEPFAR PSNU Admin Level Number",
         "default_jinja2": "1",
-        "group": "general"
+        "group": "general",
+        "required": true,
+        "validators": "convert_int",
+        "display_group": "Geographic Metadata"
       }, {
         "field_name": "level1_name",
         "label": "Admin Level 1 Name",
-        "default_jinja2": "region"
+        "default_jinja2": "region",
+        "required": true,
+        "display_group": "Geographic Metadata"
       }, {
         "field_name": "level2_name",
         "label": "Admin Level 2 Name",
-        "default_jinja2": "district"
+        "default_jinja2": "district",
+        "required": true,
+        "display_group": "Geographic Metadata"
+      }, {
+        "field_name": "level3_name",
+        "label": "Admin Level 3 Name (if used)",
+        "form_placeholder": "e.g. ward",
+        "display_group": "Geographic Metadata"
+      }, {
+        "field_name": "level4_name",
+        "label": "Admin Level 4 Name (if used)",
+        "display_group": "Geographic Metadata"
       }]
     },{
         "name": "Facilities List",
@@ -129,14 +151,120 @@
           "field_value": "geographic-facilities-list"
         }]
     },{
-      "name": "Areas Geometry",
-      "about": "A validated Areas geometry SHP file",
+      "name": "Admin 1 SHP Geometry",
+      "about": "A validated Admin Level 1 geometry SHP zipped file.",
       "resource_type": "geographic-areas-geometry",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
         "field_value": "Areas Geometry"
       }, {
+        "field_name": "description",
+        "preset": "hidden_value",
+        "field_value": "A validated Admin Level 1 geometry SHP zipped file."
+      },{
+        "field_name": "format",
+        "label": "Format",
+        "preset": "resource_format_autocomplete",
+        "required": true,
+        "default_jinja2": "shp"
+      },{
+        "field_name": "resource_type",
+        "preset": "hidden_value",
+        "field_value": "geographic-areas-geometry"
+      }, {
+        "field_name": "schema",
+        "preset": "hidden_value",
+        "field_value": "geographic_geometry"
+      }, {
+        "field_name": "boundary_source",
+        "label": "Source of the boundary geometry",
+        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM",
+        "required": true
+      }]
+    }, {
+      "name": "Admin 2 SHP Geometry",
+      "about": "A validated Admin Level 2 geometry SHP zipped file.",
+      "resource_type": "geographic-areas-geometry",
+      "resource_fields": [{
+        "field_name": "name",
+        "preset": "hidden_value",
+        "field_value": "Areas Geometry"
+      }, {
+        "field_name": "description",
+        "preset": "hidden_value",
+        "field_value": "A validated Admin Level 2 geometry SHP zipped file."
+      },{
+        "field_name": "format",
+        "label": "Format",
+        "preset": "resource_format_autocomplete",
+        "required": true,
+        "default_jinja2": "shp"
+      },{
+        "field_name": "resource_type",
+        "preset": "hidden_value",
+        "field_value": "geographic-areas-geometry"
+      }, {
+        "field_name": "schema",
+        "preset": "hidden_value",
+        "field_value": "geographic_geometry"
+      }, {
+        "field_name": "boundary_source",
+        "label": "Source of the boundary geometry",
+        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM",
+        "required": true
+      }]
+    }, {
+      "name": "Admin 3 SHP Geometry",
+      "about": "OPTIONAL - A validated Admin Level 3 geometry SHP zipped file.",
+      "resource_type": "geographic-areas-geometry",
+      "resource_fields": [{
+        "field_name": "name",
+        "preset": "hidden_value",
+        "field_value": "Areas Geometry"
+      }, {
+        "field_name": "description",
+        "preset": "hidden_value",
+        "field_value": "OPTIONAL - A validated Admin Level 3 geometry SHP zipped file."
+      },{
+        "field_name": "format",
+        "label": "Format",
+        "preset": "resource_format_autocomplete",
+        "required": true,
+        "default_jinja2": "shp"
+      },{
+        "field_name": "resource_type",
+        "preset": "hidden_value",
+        "field_value": "geographic-areas-geometry"
+      }, {
+        "field_name": "schema",
+        "preset": "hidden_value",
+        "field_value": "geographic_geometry"
+      }, {
+        "field_name": "boundary_source",
+        "label": "Source of the boundary geometry",
+        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM",
+        "required": true
+      }]
+    }, {
+      "name": "Admin 4 SHP Geometry",
+      "about": "OPTIONAL - A validated Admin Level 4 geometry SHP zipped file.",
+      "resource_type": "geographic-areas-geometry",
+      "resource_fields": [{
+        "field_name": "name",
+        "preset": "hidden_value",
+        "field_value": "Areas Geometry"
+      }, {
+        "field_name": "description",
+        "preset": "hidden_value",
+        "field_value": "OPTIONAL - A validated Admin Level 4 geometry SHP zipped file."
+      },{
+        "field_name": "format",
+        "label": "Format",
+        "preset": "resource_format_autocomplete",
+        "required": true,
+        "default_jinja2": "shp"
+      },{
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "geographic-areas-geometry"
@@ -147,7 +275,8 @@
       }, {
         "field_name": "boundary_source",
         "label": "Source of the boundary geometry:",
-        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM"
+        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM",
+        "required": true
       }]
     }
   ],
@@ -159,24 +288,25 @@
     {
       "field_name": "name",
       "label": "Name",
-      "form_placeholder": "eg. January 2011 Gold Prices"
+      "form_placeholder": "eg. January 2011 Gold Prices",
+      "required": true
     },
     {
-      "field_name": "description",
-      "label": "Description",
+      "field_name": "notes",
+      "label": "Notes",
       "form_snippet": "markdown.html",
       "form_placeholder": "Some useful notes about the data"
     },
     {
       "field_name": "format",
       "label": "Format",
-      "preset": "resource_format_autocomplete",
-      "required": true
+      "preset": "resource_format_autocomplete"
     }, {
       "field_name": "restricted",
       "label": "Access Restriction",
       "preset": "restricted_fields",
       "validators": "restricted_json",
+      "display_group": "Access Restriction",
       "choices": [{
           "value": "restricted",
           "label": "Restrictied to specified users and organizations"
