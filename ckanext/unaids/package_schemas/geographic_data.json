@@ -108,7 +108,6 @@
         "label": "PEPFAR PSNU Admin Level Number",
         "default_jinja2": "1",
         "group": "general",
-        "required": true,
         "validators": "convert_int",
         "display_group": "Geographic Metadata"
       }, {
