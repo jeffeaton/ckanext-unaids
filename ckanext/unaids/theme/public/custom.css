@@ -15,6 +15,12 @@ body {
   margin: 10px 0px;
 }
 
+.page-heading.form-group{
+  border-bottom: solid 1px #eee;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
 .alert{
   margin: 20px 0px;
 }
