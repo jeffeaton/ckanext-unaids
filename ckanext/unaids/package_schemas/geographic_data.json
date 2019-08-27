@@ -152,11 +152,11 @@
     },{
       "name": "Admin 1 SHP Geometry",
       "about": "A validated Admin Level 1 geometry SHP zipped file.",
-      "resource_type": "geographic-areas-geometry",
+      "resource_type": "geographic-areas-1-geometry",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Areas Geometry"
+        "field_value": "Admin 1 SHP Geometry"
       }, {
         "field_name": "description",
         "preset": "hidden_value",
@@ -170,7 +170,7 @@
       },{
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-areas-geometry"
+        "field_value": "geographic-areas-1-geometry"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
@@ -184,11 +184,11 @@
     }, {
       "name": "Admin 2 SHP Geometry",
       "about": "A validated Admin Level 2 geometry SHP zipped file.",
-      "resource_type": "geographic-areas-geometry",
+      "resource_type": "geographic-areas-2-geometry",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Areas Geometry"
+        "field_value": "Admin 2 SHP Geometry"
       }, {
         "field_name": "description",
         "preset": "hidden_value",
@@ -202,7 +202,7 @@
       },{
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-areas-geometry"
+        "field_value": "geographic-areas-2-geometry"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
@@ -216,11 +216,11 @@
     }, {
       "name": "Admin 3 SHP Geometry",
       "about": "OPTIONAL - A validated Admin Level 3 geometry SHP zipped file.",
-      "resource_type": "geographic-areas-geometry",
+      "resource_type": "geographic-areas-3-geometry",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Areas Geometry"
+        "field_value": "Admin 3 SHP Geometry"
       }, {
         "field_name": "description",
         "preset": "hidden_value",
@@ -234,7 +234,7 @@
       },{
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-areas-geometry"
+        "field_value": "geographic-areas-3-geometry"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
@@ -248,11 +248,11 @@
     }, {
       "name": "Admin 4 SHP Geometry",
       "about": "OPTIONAL - A validated Admin Level 4 geometry SHP zipped file.",
-      "resource_type": "geographic-areas-geometry",
+      "resource_type": "geographic-areas-4-geometry",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Areas Geometry"
+        "field_value": "Admin 4 SHP Geometry"
       }, {
         "field_name": "description",
         "preset": "hidden_value",
@@ -266,7 +266,7 @@
       },{
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-areas-geometry"
+        "field_value": "geographic-areas-4-geometry"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
