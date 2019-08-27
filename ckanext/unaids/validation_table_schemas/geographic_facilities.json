@@ -26,7 +26,6 @@
       "type": "number",
       "decimalChar": ".",
       "constraints": {
-        "required": true,
         "minimum": -90,
         "maximum": 90
       }
@@ -36,7 +35,6 @@
       "type": "number",
       "decimalChar": ".",
       "constraints": {
-        "required": true,
         "minimum": -180,
         "maximum": 180
       }

@@ -280,6 +280,11 @@
     }
   ],
   "resource_fields": [{
+    "field_name": "schema",
+    "preset": "hidden_value",
+    "field_value": "geographic_location_hierachy"
+    },
+    {
       "field_name": "url",
       "label": "URL",
       "preset": "resource_url_upload"
