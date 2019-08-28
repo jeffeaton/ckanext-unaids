@@ -118,9 +118,8 @@
         "display_group": "Geographic Metadata"
       }, {
         "field_name": "level2_name",
-        "label": "Admin Level 2 Name",
+        "label": "Admin Level 2 Name (if used)",
         "default_jinja2": "district",
-        "required": true,
         "display_group": "Geographic Metadata"
       }, {
         "field_name": "level3_name",
@@ -182,8 +181,8 @@
         "required": true
       }]
     }, {
-      "name": "Admin 2 SHP Geometry",
-      "about": "A validated Admin Level 2 geometry SHP zipped file.",
+      "name": "Admin 2 SHP Geometry if used",
+      "about": "OPTIONAL - A validated Admin Level 2 geometry SHP zipped file.",
       "resource_type": "geographic-areas-2-geometry",
       "resource_fields": [{
         "field_name": "name",
@@ -214,7 +213,7 @@
         "required": true
       }]
     }, {
-      "name": "Admin 3 SHP Geometry",
+      "name": "Admin 3 SHP Geometry if used",
       "about": "OPTIONAL - A validated Admin Level 3 geometry SHP zipped file.",
       "resource_type": "geographic-areas-3-geometry",
       "resource_fields": [{
@@ -224,7 +223,7 @@
       }, {
         "field_name": "description",
         "preset": "hidden_value",
-        "field_value": "OPTIONAL - A validated Admin Level 3 geometry SHP zipped file."
+        "field_value": "A validated Admin Level 3 geometry SHP zipped file."
       },{
         "field_name": "format",
         "label": "Format",
@@ -246,7 +245,7 @@
         "required": true
       }]
     }, {
-      "name": "Admin 4 SHP Geometry",
+      "name": "Admin 4 SHP Geometry if used",
       "about": "OPTIONAL - A validated Admin Level 4 geometry SHP zipped file.",
       "resource_type": "geographic-areas-4-geometry",
       "resource_fields": [{
@@ -256,7 +255,7 @@
       }, {
         "field_name": "description",
         "preset": "hidden_value",
-        "field_value": "OPTIONAL - A validated Admin Level 4 geometry SHP zipped file."
+        "field_value": "A validated Admin Level 4 geometry SHP zipped file."
       },{
         "field_name": "format",
         "label": "Format",

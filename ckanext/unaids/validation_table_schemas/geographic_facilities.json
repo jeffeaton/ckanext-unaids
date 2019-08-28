@@ -2,7 +2,6 @@
   "fields": [{
       "name": "facility_id",
       "title": "Facility ID",
-      "type": "string",
       "constraints": {
         "required": true
       }
@@ -15,7 +14,6 @@
     {
       "name": "parent_area_id",
       "title": "Area ID",
-      "type": "string",
       "constraints": {
         "required": true
       }
