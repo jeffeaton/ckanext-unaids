@@ -91,6 +91,10 @@
         "preset": "hidden_value",
         "field_value": "Location Hierachy"
       }, {
+        "field_name": "description",
+        "preset": "hidden_value",
+        "field_value":  "A validated Location Hierachy."
+      },{
         "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "geographic_location_hierachy"
@@ -139,6 +143,10 @@
           "field_name": "name",
           "preset": "hidden_value",
           "field_value": "Facilities List"
+        }, {
+          "field_name": "description",
+          "preset": "hidden_value",
+          "field_value":  "A validated facilities list."
         }, {
           "field_name": "schema",
           "preset": "hidden_value",
