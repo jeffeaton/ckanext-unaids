@@ -29,14 +29,9 @@
       }
     },
     {
-      "name": "dhis2_id",
-      "title": "DHIS ID",
-      "type": "string"
-    },
-    {
-      "name": "pepfar_id",
-      "title": "PEPFAR ID",
-      "type": "string"
+      "name": "sort_order",
+      "title": "Location Sort Order",
+      "type": "number"
     }
   ],
   "primaryKey": "area_id",

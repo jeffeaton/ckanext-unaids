@@ -135,7 +135,7 @@
         "label": "Admin Level 4 Name (if used)",
         "display_group": "Geographic Metadata"
       }]
-    },{
+    }, {
         "name": "Facilities List",
         "about": "A validated Facilities list.",
         "resource_type": "geographic-facilities-list",
@@ -156,7 +156,28 @@
           "preset": "hidden_value",
           "field_value": "geographic-facilities-list"
         }]
-    },{
+    }, {
+        "name": "Private Location Data",
+        "about": "OPTIONAL - Sensitive location data to be kept private.",
+        "resource_type": "geographic-private-data",
+        "resource_fields": [{
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "Private Location Data"
+        }, {
+          "field_name": "description",
+          "preset": "hidden_value",
+          "field_value":  "Sensitive location data to be kept private."
+        },{
+          "field_name": "schema",
+          "preset": "hidden_value",
+          "field_value": "geographic_private_data"
+        }, {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "geographic-private-data"
+        }]
+      }, {
       "name": "Admin 1 SHP Geometry",
       "about": "A validated Admin Level 1 geometry SHP zipped file.",
       "resource_type": "geographic-areas-1-geometry",
