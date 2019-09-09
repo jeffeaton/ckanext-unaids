@@ -5,9 +5,24 @@
       "constraints": {
         "required": true
       }
+    }, {
+      "name": "level",
+      "title": "Admin Level",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    }, {
+      "name": "name",
+      "title": "Name",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
     }
   ],
   "primaryKey": "area_id",
+  "require_field_order": false,
   "foreignKeys": [{
     "fields": "area_id",
     "reference": {

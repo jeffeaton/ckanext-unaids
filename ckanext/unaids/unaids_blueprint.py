@@ -18,6 +18,7 @@ def download_table_template(validation_schema):
     Downloads a CSV template file for the specified validation schema.
     """
     try:
+        log.info('Fetching creating schema: ' + validation_schema)
         schema_directory = config['ckanext.validation.schema_directory']
         file_path = schema_directory + '/' + validation_schema + '.json'
         schemed_table = validation_load_schemed_table(file_path)
@@ -32,10 +33,10 @@ def download_table_template(validation_schema):
         )
 
     except AttributeError as e:
-        logging.error(e)
+        log.exception(e)
         abort(404, "404 Not Found Error: No schema exists for " + validation_schema)
     except Exception as e:
-        logging.error(e)
+        log.exception(e)
         abort(
             500,
             "500 Internal server error: Something went wrong whilst "
