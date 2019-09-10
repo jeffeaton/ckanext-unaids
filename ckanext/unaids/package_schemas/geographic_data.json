@@ -110,7 +110,21 @@
       }, {
         "field_name": "pepfar_psnu",
         "label": "PEPFAR PSNU Admin Level Number",
-        "default_jinja2": "1",
+        "default_jinja2": "0",
+        "group": "general",
+        "validators": "convert_int",
+        "display_group": "Geographic Metadata"
+      }, {
+        "field_name": "epp_level",
+        "label": "Admin Level EPP is run for (if any)",
+        "default_jinja2": "0",
+        "group": "general",
+        "validators": "convert_int",
+        "display_group": "Geographic Metadata"
+      }, {
+        "field_name": "spectrum_level",
+        "label": "Admin Level Spectrum is run for (if any)",
+        "default_jinja2": "0",
         "group": "general",
         "validators": "convert_int",
         "display_group": "Geographic Metadata"
