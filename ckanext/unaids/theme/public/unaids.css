@@ -8422,10 +8422,7 @@ fieldset[disabled] .control-custom.disabled .checkbox.btn.focus {
 .label[data-format*=html] {
   background-color: #55a1ce;
 }
-.label[data-format=json],
-.label[data-format*=json],
-.label[data-format=geojson],
-.label[data-format*=geojson],{
+.label[data-format=json]{
   background-color: #ef7100;
 }
 .label[data-format=xml],
@@ -9206,10 +9203,7 @@ h4 small {
   height: 35px;
   background-position: -256px -62px;
 }
-.format-label[data-format=json],
-.format-label[data-format*=json],
-.format-label[data-format=geojson],
-.format-label[data-format*=geojson]  {
+.format-label[data-format=json]{
   width: 32px;
   height: 35px;
   background-position: -288px -62px;
