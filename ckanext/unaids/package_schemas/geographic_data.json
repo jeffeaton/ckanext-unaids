@@ -171,6 +171,27 @@
           "field_value": "geographic-facilities-list"
         }]
     }, {
+        "name": "Areas Metadata",
+        "about": "A validated areas metadata table.",
+        "resource_type": "geographic-metadata",
+        "resource_fields": [{
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "Areas Metadata"
+        }, {
+          "field_name": "description",
+          "preset": "hidden_value",
+          "field_value":  "A validated areas metadata table."
+        }, {
+          "field_name": "schema",
+          "preset": "hidden_value",
+          "field_value": "geographic_metadata"
+        }, {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "geographic-metadata"
+        }]
+    }, {
       "name": "Regional Geometry",
       "about": "A validated SHP or GeoJSON geometry file.",
       "resource_type": "geographic-regional-geometry",
