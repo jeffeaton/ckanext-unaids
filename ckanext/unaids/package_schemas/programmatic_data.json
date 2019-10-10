@@ -85,6 +85,7 @@
       "name": "ANC Data",
       "about": "A validated ANC dataset.",
       "resource_type": "programmatic-anc",
+      "display_group_order": ["General", "Access Restriction"],
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -106,6 +107,7 @@
       "name": "ART Data",
       "about": "A validated ART dataset",
       "resource_type": "programmatic-art",
+      "display_group_order": ["General", "Access Restriction"],
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -142,14 +144,16 @@
       "label": "Format",
       "preset": "resource_format_autocomplete",
       "required": true
-    }, {
+    },
+    {
       "field_name": "restricted",
       "label": "Access Restriction",
       "preset": "restricted_fields",
       "validators": "restricted_json",
+      "display_group": "Access Restriction",
       "choices": [{
           "value": "restricted",
-          "label": "Restrictied to specified users and organizations"
+          "label": "Restricted to specified users and organizations"
         },
         {
           "value": "public",

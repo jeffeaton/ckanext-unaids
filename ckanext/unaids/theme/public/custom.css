@@ -104,3 +104,26 @@ a.dropdown-item{
 .homepage [role=main]{
     min-height: 350px;
 }
+
+.template-button{
+  padding: 15px 15px 12px 50px;
+  position: relative;
+}
+
+.template-button i{
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+
+.programmatic-templates-outline{
+  border: solid 2px #e31837;
+  border-radius: 20px;
+  padding: 0px 0px 20px;
+  margin: 20px auto;
+}
+
+.programmatic-templates{
+  font-size:18px;
+}
