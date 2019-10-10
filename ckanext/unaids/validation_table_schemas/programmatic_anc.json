@@ -8,52 +8,24 @@
       }
     },
     {
-      "name": "period_start_date",
-      "title": "Period Start Date",
-      "type": "date",
+      "name": "age_group_id",
+      "title": "Age Group ID",
+      "type": "integer",
       "constraints": {
-        "required": true,
-        "minimum": "1900-01-01",
-        "maximum": "2030-01-01",
-        "date-format": "YYYY-MM-DD"
+        "required": true
       }
     },
     {
-      "name": "period_end_date",
-      "title": "Period End Date",
-      "type": "date",
+      "name": "quarter_id",
+      "title": "Quarter ID",
+      "type": "integer",
       "constraints": {
-        "required": true,
-        "minimum": "1900-01-01",
-        "maximum": "2030-01-01",
-        "date-format": "YYYY-MM-DD"
+        "required": true
       }
     },
     {
-      "name": "age_start",
-      "title": "Age Start",
-      "type": "number",
-      "decimalChar": ".",
-      "constraints": {
-        "required": true,
-        "minimum": 0,
-        "maximum": 130
-      }
-    },
-    {
-      "name": "age_span",
-      "title": "Age Span",
-      "type": "number",
-      "decimalChar": ".",
-      "constraints": {
-        "required": true,
-        "minimum": 1,
-        "maximum": 130
-      }
-    },
-    {
-      "name": "clients",
-      "title": "Number clients",
+      "name": "anc_clients",
+      "title": "Number ANC clients",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -61,7 +33,16 @@
       }
     },
     {
-      "name": "known_positive",
+      "name": "ancrt_hiv_status",
+      "title": "ANCRT HIV Status",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ancrt_known_pos",
       "title": "Number known positive",
       "type": "integer",
       "constraints": {
@@ -70,7 +51,16 @@
       }
     },
     {
-      "name": "hiv_tested",
+      "name": "ancrt_already_art",
+      "title": "Number already on ART",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ancrt_tested",
       "title": "Number HIV tested",
       "type": "integer",
       "constraints": {
@@ -79,17 +69,8 @@
       }
     },
     {
-      "name": "hiv_positive",
-      "title": "Number HIV positive",
-      "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    },
-    {
-      "name": "already_art",
-      "title": "Number already on ART",
+      "name": "ancrt_test_pos",
+      "title": "Number HIV Tested Positive",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -97,7 +78,7 @@
       }
     }
   ],
-  "primaryKey": ["facility_id", "period_end_date", "age_start"],
+  "primaryKey": ["facility_id", "quarter_id", "age_group_id"],
   "foreignKeys": [{
     "fields": "facility_id",
     "reference": {

@@ -16,28 +16,15 @@
         "enum": ["male", "female"]
       }
     }, {
-      "name": "age_start",
-      "title": "Age Start",
-      "type": "number",
-      "decimalChar": ".",
+      "name": "age_group_id",
+      "title": "Age Group ID",
+      "type": "integer",
       "constraints": {
-        "required": true,
-        "minimum": 0,
-        "maximum": 130
+        "required": true
       }
     },
     {
-      "name": "age_span",
-      "title": "Age Span",
-      "type": "number",
-      "decimalChar": ".",
-      "constraints": {
-        "required": true,
-        "minimum": 1,
-        "maximum": 130
-      }
-    }, {
-      "name": "on_art",
+      "name": "current_art",
       "title": "Number on ART",
       "type": "integer",
       "constraints": {
@@ -71,7 +58,7 @@
       }
     }
   ],
-  "primaryKey": ["facility_id", "sex", "age_start", "age_span"],
+  "primaryKey": ["facility_id", "sex", "age_group_id"],
   "foreignKeys": [{
     "fields": "facility_id",
     "reference": {
