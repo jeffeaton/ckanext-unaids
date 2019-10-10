@@ -1,31 +1,38 @@
 {
   "fields": [{
-      "name": "facility_id",
-      "title": "Facility ID",
+      "name": "area_id",
+      "title": "Area ID",
+      "description": "Must be an area_id from the agreed area hierachy.",
       "type": "string",
       "constraints": {
         "required": true
       }
     },
     {
-      "name": "age_group_id",
-      "title": "Age Group ID",
-      "type": "integer",
+      "name": "age_group",
+      "title": "Age Group",
+      "description": "Please submit for two age groups: \"0-14\" and \"15+\".",
+      "type": "string",
       "constraints": {
+        "enum": ["0-14", "15+"],
         "required": true
       }
     },
     {
-      "name": "quarter_id",
-      "title": "Quarter ID",
+      "name": "year",
+      "title": "Year",
+      "description": "The year.",
       "type": "integer",
       "constraints": {
-        "required": true
+          "required": true,
+          "minimum": 1970,
+          "maximum": 2021
       }
     },
     {
       "name": "anc_clients",
       "title": "Number ANC clients",
+      "description": "Number of ANC clients.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -35,6 +42,7 @@
     {
       "name": "ancrt_hiv_status",
       "title": "ANCRT HIV Status",
+      "description": "Number of ANC-RT clients who know their status.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -44,6 +52,7 @@
     {
       "name": "ancrt_known_pos",
       "title": "Number known positive",
+      "description": "Number of ANC-RT clients who are known positive.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -53,6 +62,7 @@
     {
       "name": "ancrt_already_art",
       "title": "Number already on ART",
+      "description": "Number of ANC-RT clients already on ART.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -62,6 +72,7 @@
     {
       "name": "ancrt_tested",
       "title": "Number HIV tested",
+      "description": "Number of ANC-RT clients tested.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -70,7 +81,8 @@
     },
     {
       "name": "ancrt_test_pos",
-      "title": "Number HIV Tested Positive",
+      "title": "Number HIV tested positive",
+      "description": "Number of ANC-RT clients who tested positive.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -78,18 +90,20 @@
       }
     }
   ],
-  "primaryKey": ["facility_id", "quarter_id", "age_group_id"],
+  "primaryKey": ["area_id", "year", "age_group", "year"],
   "foreignKeys": [{
-    "fields": "facility_id",
+    "fields": "area_id",
     "reference": {
-      "resource": "unaids_geographic_facilities",
-      "fields": "facility_id"
+      "resource": "geographic_location_hierachy",
+      "fields": "area_id"
     }
   }],
   "custom-constraint": {
-      "constraint": "clients >= known_positive",
-      "constraint": "clients >= hiv_tested",
-      "constraint": "clients >= hiv_positive",
-      "constraint": "clients >= already_art"
+      "constraint": "anc_clients >= ancrt_hiv_status",
+      "constraint": "anc_clients >= ancrt_known_pos",
+      "constraint": "anc_clients >= ancrt_tested",
+      "constraint": "anc_clients >= ancrt_test_pos",
+      "constraint": "ancrt_tested >= ancrt_test_pos",
+      "constraint": "anc_clients >= ancrt_already_art"
   }
 }

@@ -1,7 +1,8 @@
 {
   "fields": [{
-      "name": "facility_id",
-      "title": "Facility ID",
+      "name": "area_id",
+      "title": "Area ID",
+      "description": "Must be an area_id from the agreed area hierachy.",
       "type": "string",
       "constraints": {
         "required": true
@@ -10,65 +11,51 @@
     {
       "name": "sex",
       "title": "Sex",
+      "description": "Where possible please stratify by biological sex.",
       "type": "string",
       "constraints": {
         "required": true,
-        "enum": ["male", "female"]
+        "enum": ["male", "female", "both"]
       }
-    }, {
-      "name": "age_group_id",
-      "title": "Age Group ID",
+    },
+    {
+      "name": "age_group",
+      "title": "Age Group",
+      "description": "Please submit for two age groups: \"0-14\" and \"15+\".",
+      "type": "string",
+      "constraints": {
+        "enum": ["0-14", "15+"],
+        "required": true
+      }
+    },
+    {
+      "name": "year",
+      "title": "Year",
+      "description": "The year",
       "type": "integer",
       "constraints": {
-        "required": true
+          "required": true,
+          "minimum": 1970,
+          "maximum": 2021
       }
     },
     {
       "name": "current_art",
       "title": "Number on ART",
+      "description": "Current number of people on ART.",
       "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    }, {
-      "name": "new_clients",
-      "title": "Number New Clients",
-      "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    }, {
-      "name": "died",
-      "title": "Number Died",
-      "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    }, {
-      "name": "disengaged",
-      "title": "Number Disengaged",
-      "type": "integer",
-      "decimalChar": ".",
       "constraints": {
         "required": true,
         "minimum": 0
       }
     }
   ],
-  "primaryKey": ["facility_id", "sex", "age_group_id"],
+  "primaryKey": ["area_id", "sex", "age_group", "year"],
   "foreignKeys": [{
-    "fields": "facility_id",
+    "fields": "area_id",
     "reference": {
-      "resource": "unaids_geographic_facilities",
-      "fields": "facility_id"
+      "resource": "geographic_location_hierachy",
+      "fields": "area_id"
     }
-  }],
-  "custom-constraint": {
-    "constraint": "on_art >= new_clients",
-    "constraint": "on_art >= died",
-    "constraint": "on_art >= disengaged"
-  }
+  }]
 }
