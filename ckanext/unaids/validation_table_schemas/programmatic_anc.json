@@ -2,26 +2,32 @@
   "fields": [{
       "name": "area_id",
       "title": "Area ID",
-      "description": "Must be an area_id from the agreed area hierachy.",
+      "description": "An area_id from the specified area hierarchy.",
       "type": "string",
       "constraints": {
         "required": true
       }
     },
     {
+      "name": "area_name",
+      "title": "Area Name",
+      "description": "Area name corresponding to area_id (optional).",
+      "type": "string"
+    },
+    {
       "name": "age_group",
       "title": "Age Group",
-      "description": "Please submit for two age groups: \"0-14\" and \"15+\".",
+      "description": "The age group, for ANC data this must be 15-49.",
       "type": "string",
       "constraints": {
-        "enum": ["0-14", "15+"],
+        "enum": ["15-49"],
         "required": true
       }
     },
     {
       "name": "year",
       "title": "Year",
-      "description": "The year.",
+      "description": "The calendar year.",
       "type": "integer",
       "constraints": {
           "required": true,
@@ -32,7 +38,7 @@
     {
       "name": "anc_clients",
       "title": "Number ANC clients",
-      "description": "Number of ANC clients.",
+      "description": "Number of unique clients attending ANC for the first visit during a pregnancy in the calendar year.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -42,7 +48,7 @@
     {
       "name": "ancrt_hiv_status",
       "title": "ANCRT HIV Status",
-      "description": "Number of ANC-RT clients who know their status.",
+      "description": "Number of unique ANC clients for whom an HIV status is ascertained during their pregnancy.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -52,7 +58,7 @@
     {
       "name": "ancrt_known_pos",
       "title": "Number known positive",
-      "description": "Number of ANC-RT clients who are known positive.",
+      "description": "Number of ANC clients who self-report known HIV positive prior to first ANC visit and are not tested for HIV.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -62,7 +68,7 @@
     {
       "name": "ancrt_already_art",
       "title": "Number already on ART",
-      "description": "Number of ANC-RT clients already on ART.",
+      "description": "Number of ANC clients already on ART prior to first ANC visit during a pregnancy.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -72,7 +78,7 @@
     {
       "name": "ancrt_tested",
       "title": "Number HIV tested",
-      "description": "Number of ANC-RT clients tested.",
+      "description": "Number of unique ANC clients who are tested for HIV during their pregnancy.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -81,8 +87,8 @@
     },
     {
       "name": "ancrt_test_pos",
-      "title": "Number HIV tested positive",
-      "description": "Number of ANC-RT clients who tested positive.",
+      "title": "Number Tested Positive",
+      "description": "Number of ANC clients who test HIV positive at the first HIV test during a given pregnancy.",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -90,11 +96,11 @@
       }
     }
   ],
-  "primaryKey": ["area_id", "year", "age_group", "year"],
+  "primaryKey": ["area_id", "year", "age_group"],
   "foreignKeys": [{
     "fields": "area_id",
     "reference": {
-      "resource": "geographic_location_hierachy",
+      "resource": "geographic_location_hierarchy",
       "fields": "area_id"
     }
   }],

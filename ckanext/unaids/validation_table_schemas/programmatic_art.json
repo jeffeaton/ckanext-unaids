@@ -2,16 +2,22 @@
   "fields": [{
       "name": "area_id",
       "title": "Area ID",
-      "description": "Must be an area_id from the agreed area hierachy.",
+      "description": "Must be an area_id from the agreed area hierarchy.",
       "type": "string",
       "constraints": {
         "required": true
       }
     },
     {
+      "name": "area_name",
+      "title": "Area Name",
+      "description": "Area name corresponding to area_id (optional).",
+      "type": "string"
+    },
+    {
       "name": "sex",
       "title": "Sex",
-      "description": "Where possible please stratify by biological sex.",
+      "description": "Biological sex.  Must be \"male\", \"female\",  or \"both\" where sex stratification is not available.",
       "type": "string",
       "constraints": {
         "required": true,
@@ -21,7 +27,7 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "Please submit for two age groups: \"0-14\" and \"15+\".",
+      "description": "The age group. Must be 0-14 years or 15+ years. ",
       "type": "string",
       "constraints": {
         "enum": ["0-14", "15+"],
@@ -31,7 +37,7 @@
     {
       "name": "year",
       "title": "Year",
-      "description": "The year",
+      "description": "The year.",
       "type": "integer",
       "constraints": {
           "required": true,
@@ -42,7 +48,7 @@
     {
       "name": "current_art",
       "title": "Number on ART",
-      "description": "Current number of people on ART.",
+      "description": "Number currently receiving ART at the end of reporting period (year).",
       "type": "integer",
       "constraints": {
         "required": true,
@@ -54,7 +60,7 @@
   "foreignKeys": [{
     "fields": "area_id",
     "reference": {
-      "resource": "geographic_location_hierachy",
+      "resource": "geographic_location_hierarchy",
       "fields": "area_id"
     }
   }]
