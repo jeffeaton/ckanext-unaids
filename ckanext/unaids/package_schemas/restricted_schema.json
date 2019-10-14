@@ -1,8 +1,9 @@
 {
     "scheming_version": 1,
-    "dataset_type": "dataset2",
+    "dataset_type": "dataset",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
+    "display_group_order": ["General", "Access Restriction"],
     "dataset_fields": [
 	{
 	    "field_name": "title",
@@ -90,18 +91,13 @@
 	{
 	    "field_name": "name",
 	    "label": "Name",
-	    "form_placeholder": "eg. January 2011 Gold Prices"
+	    "form_placeholder": "eg. 2019 ART Numbers"
 	},
 	{
 	    "field_name": "description",
 	    "label": "Description",
 	    "form_snippet": "markdown.html",
-	    "form_placeholder": "Some useful notes about the data",
-	    "required": true
-	},{
-	    "field_name": "validator_schema",
-	    "label": "Choose schema",
-	    "preset": "data_schema"
+	    "form_placeholder": "Some useful notes about the data"
 	},
 	{
 	    "field_name": "format",
@@ -113,6 +109,7 @@
 	    "label": "Access Restriction",
 	    "preset": "restricted_fields",
 	    "validators": "restricted_json",
+      "display_group": "Access Restriction",
 	    "choices":
 	    [
                 {
@@ -134,7 +131,7 @@
 		"data-module-tags": "",
 		"data-module-source": "/api/2/util/organization/autocomplete?q=?"
             }
-	    
+
 	}
     ]
 }

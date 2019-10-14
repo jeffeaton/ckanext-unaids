@@ -1,0 +1,84 @@
+{
+  "fields": [{
+      "name": "iso3",
+      "title": "Country ISO3 Code",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "area_level",
+      "title": "Area Admin Level",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 5
+      }
+    },
+    {
+      "name": "area_level_label",
+      "title": "Area Level Label",
+      "type": "string"
+    },
+    {
+      "name": "n_areas",
+      "title": "Number Of Areas",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 9999
+      }
+    },
+    {
+      "name": "display",
+      "title": "Display Level?",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "spectrum_level",
+      "title": "Spectrum Level?",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "epp_level",
+      "title": "EPP Level?",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "epp_urban_rural",
+      "title": "EPP Urban?",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "naomi_level",
+      "title": "Naomi Level?",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "pepfar_psnu",
+      "title": "PEPFAR PSNU Level?",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "primaryKey": "admin_level"
+}

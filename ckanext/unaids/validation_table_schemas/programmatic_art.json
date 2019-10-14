@@ -1,87 +1,67 @@
 {
   "fields": [{
-      "name": "facility_id",
-      "title": "Facility ID",
+      "name": "area_id",
+      "title": "Area ID",
+      "description": "Must be an area_id from the agreed area hierarchy.",
       "type": "string",
       "constraints": {
         "required": true
       }
     },
     {
+      "name": "area_name",
+      "title": "Area Name",
+      "description": "Area name corresponding to area_id (optional).",
+      "type": "string"
+    },
+    {
       "name": "sex",
       "title": "Sex",
+      "description": "Biological sex.  Must be \"male\", \"female\",  or \"both\" where sex stratification is not available.",
       "type": "string",
       "constraints": {
         "required": true,
-        "enum": ["male", "female"]
-      }
-    }, {
-      "name": "age_start",
-      "title": "Age Start",
-      "type": "number",
-      "decimalChar": ".",
-      "constraints": {
-        "required": true,
-        "minimum": 0,
-        "maximum": 130
+        "enum": ["male", "female", "both"]
       }
     },
     {
-      "name": "age_span",
-      "title": "Age Span",
-      "type": "number",
-      "decimalChar": ".",
+      "name": "age_group",
+      "title": "Age Group",
+      "description": "The age group. Must be 0-14 years or 15+ years. ",
+      "type": "string",
       "constraints": {
-        "required": true,
-        "minimum": 1,
-        "maximum": 130
+        "enum": ["0-14", "15+"],
+        "required": true
       }
-    }, {
-      "name": "on_art",
+    },
+    {
+      "name": "year",
+      "title": "Year",
+      "description": "The year.",
+      "type": "integer",
+      "constraints": {
+          "required": true,
+          "minimum": 1970,
+          "maximum": 2021
+      }
+    },
+    {
+      "name": "current_art",
       "title": "Number on ART",
+      "description": "Number currently receiving ART at the end of reporting period (year).",
       "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    }, {
-      "name": "new_clients",
-      "title": "Number New Clients",
-      "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    }, {
-      "name": "died",
-      "title": "Number Died",
-      "type": "integer",
-      "constraints": {
-        "required": true,
-        "minimum": 0
-      }
-    }, {
-      "name": "disengaged",
-      "title": "Number Disengaged",
-      "type": "integer",
-      "decimalChar": ".",
       "constraints": {
         "required": true,
         "minimum": 0
       }
     }
   ],
-  "primaryKey": ["facility_id", "sex", "age_start", "age_span"],
+  "primaryKey": ["area_id", "sex", "age_group", "year"],
   "foreignKeys": [{
-    "fields": "facility_id",
+    "fields": "area_id",
     "reference": {
-      "resource": "unaids_geographic_facilities",
-      "fields": "facility_id"
+      "resource": "geographic_location_hierarchy",
+      "fields": "area_id"
     }
-  }],
-  "custom-constraint": {
-    "constraint": "on_art >= new_clients",
-    "constraint": "on_art >= died",
-    "constraint": "on_art >= disengaged"
-  }
+  }]
 }
