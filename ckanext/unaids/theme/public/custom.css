@@ -106,15 +106,16 @@ a.dropdown-item{
 }
 
 .template-button{
-  padding: 15px 15px 12px 50px;
+  padding: 12px 30px 12px 80px;
+  border-radius: 10px;
   position: relative;
 }
 
 .template-button i{
   font-size: 30px;
   position: absolute;
-  left: 15px;
-  top: 12px;
+  left: 30px;
+  top: 30px;
 }
 
 .programmatic-templates-outline{
