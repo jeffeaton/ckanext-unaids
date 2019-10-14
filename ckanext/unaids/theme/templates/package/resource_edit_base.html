@@ -11,11 +11,13 @@
     {% set resource_type = request.args.get("resource_type") %}
   {% endif %}
 
-  {% set validator_schema = h.get_resource_field(pkg.type, resource_type, 'schema').get('field_value') %}
-  {% if validator_schema %}
-  <a href="/validation/template/{{validator_schema}}" class='btn btn-default'>
-      <i class="fa fa-arrow-circle-o-down"></i>
-      {{ _('Template') }}
-  </a>
+  {% if resource_type %}
+    {% set validator_schema = h.get_resource_field(pkg.type, resource_type, 'schema').get('field_value') %}
+    {% if validator_schema %}
+    <a href="/validation/template/{{validator_schema}}" class='btn btn-default'>
+        <i class="fa fa-arrow-circle-o-down"></i>
+        {{ _('Template') }}
+    </a>
+    {% endif %}
   {% endif %}
 {% endblock %}
