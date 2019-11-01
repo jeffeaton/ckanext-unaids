@@ -102,52 +102,6 @@
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "geographic-location-hierachy"
-      }, {
-        "field_name": "iso3",
-        "label": "Country ISO3 Code",
-        "required": true,
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "pepfar_psnu",
-        "label": "PEPFAR PSNU Admin Level Number",
-        "default_jinja2": "0",
-        "group": "general",
-        "validators": "convert_int",
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "epp_level",
-        "label": "Admin Level EPP is run for (if any)",
-        "default_jinja2": "0",
-        "group": "general",
-        "validators": "convert_int",
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "spectrum_level",
-        "label": "Admin Level Spectrum is run for (if any)",
-        "default_jinja2": "0",
-        "group": "general",
-        "validators": "convert_int",
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "level1_name",
-        "label": "Admin Level 1 Name",
-        "default_jinja2": "region",
-        "required": true,
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "level2_name",
-        "label": "Admin Level 2 Name (if used)",
-        "default_jinja2": "district",
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "level3_name",
-        "label": "Admin Level 3 Name (if used)",
-        "form_placeholder": "e.g. ward",
-        "display_group": "Geographic Metadata"
-      }, {
-        "field_name": "level4_name",
-        "label": "Admin Level 4 Name (if used)",
-        "display_group": "Geographic Metadata"
       }]
     }, {
         "name": "Facilities List",

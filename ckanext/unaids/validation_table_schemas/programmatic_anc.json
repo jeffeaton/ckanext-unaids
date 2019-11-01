@@ -17,10 +17,9 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "The age group, for ANC data this must be 15-49.",
+      "description": "The age group",
       "type": "string",
       "constraints": {
-        "enum": ["15-49"],
         "required": true
       }
     },
@@ -41,7 +40,6 @@
       "description": "Number of unique clients attending ANC for the first visit during a pregnancy in the calendar year.",
       "type": "integer",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     },
@@ -51,7 +49,6 @@
       "description": "Number of unique ANC clients for whom an HIV status is ascertained during their pregnancy.",
       "type": "integer",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     },
@@ -61,7 +58,6 @@
       "description": "Number of ANC clients who self-report known HIV positive prior to first ANC visit and are not tested for HIV.",
       "type": "integer",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     },
@@ -71,7 +67,6 @@
       "description": "Number of ANC clients already on ART prior to first ANC visit during a pregnancy.",
       "type": "integer",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     },
@@ -81,7 +76,6 @@
       "description": "Number of unique ANC clients who are tested for HIV during their pregnancy.",
       "type": "integer",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     },
@@ -91,7 +85,6 @@
       "description": "Number of ANC clients who test HIV positive at the first HIV test during a given pregnancy.",
       "type": "integer",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     }

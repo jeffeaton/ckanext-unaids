@@ -27,10 +27,9 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "The age group. Must be 0-14 years or 15+ years. ",
+      "description": "The age group.",
       "type": "string",
       "constraints": {
-        "enum": ["0-14", "15+"],
         "required": true
       }
     },
