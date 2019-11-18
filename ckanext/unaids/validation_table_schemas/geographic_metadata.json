@@ -80,5 +80,5 @@
       }
     }
   ],
-  "primaryKey": "admin_level"
+  "primaryKey": "area_level"
 }
