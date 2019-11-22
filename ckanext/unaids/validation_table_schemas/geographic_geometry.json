@@ -10,7 +10,8 @@
       "title": "Admin Level",
       "type": "integer",
       "constraints": {
-        "required": true
+        "required": true,
+        "maximum": 8
       }
     }, {
       "name": "name",
