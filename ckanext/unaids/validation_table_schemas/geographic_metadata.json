@@ -13,7 +13,7 @@
       "constraints": {
         "required": true,
         "minimum": 0,
-        "maximum": 5
+        "maximum": 8
       }
     },
     {
