@@ -6,7 +6,7 @@
         "required": true
       }
     }, {
-      "name": "level",
+      "name": "area_level",
       "title": "Admin Level",
       "type": "integer",
       "constraints": {
