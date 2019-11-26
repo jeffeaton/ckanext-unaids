@@ -83,17 +83,17 @@
   ],
   "resources": [{
       "name": "Location Hierarchy",
-      "about": "A validated Location Hierarchy.",
+      "about": "A validated location hierarchy.",
       "resource_type": "geographic-location-hierarchy",
       "display_group_order": ["General", "Geographic Metadata", "Access Restriction"],
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Location Hierachy"
+        "field_value": "Location Hierarchy"
       }, {
         "field_name": "description",
         "preset": "hidden_value",
-        "field_value":  "A validated Location Hierarchy."
+        "field_value":  "A validated location hierarchy."
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
@@ -103,27 +103,6 @@
         "preset": "hidden_value",
         "field_value": "geographic-location-hierarchy"
       }]
-    }, {
-        "name": "Facilities List",
-        "about": "A validated Facilities list.",
-        "resource_type": "geographic-facilities-list",
-        "resource_fields": [{
-          "field_name": "name",
-          "preset": "hidden_value",
-          "field_value": "Facilities List"
-        }, {
-          "field_name": "description",
-          "preset": "hidden_value",
-          "field_value":  "A validated facilities list."
-        }, {
-          "field_name": "schema",
-          "preset": "hidden_value",
-          "field_value": "geographic_facilities"
-        }, {
-          "field_name": "resource_type",
-          "preset": "hidden_value",
-          "field_value": "geographic-facilities-list"
-        }]
     }, {
         "name": "Areas Metadata",
         "about": "A validated areas metadata table.",
@@ -178,8 +157,8 @@
         "required": true
       }]
     }, {
-        "name": "Private Location Data",
-        "about": "OPTIONAL - Sensitive location data to be kept private.",
+        "name": "Area ID Crosswalk Table",
+        "about": "OPTIONAL - Crosswalk table between Area IDs and other systems e.g. dhis2.",
         "resource_type": "geographic-private-data",
         "resource_fields": [{
           "field_name": "name",
