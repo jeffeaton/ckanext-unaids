@@ -82,9 +82,9 @@
     }
   ],
   "resources": [{
-      "name": "Location Hierachy",
-      "about": "A validated Location Hierachy.",
-      "resource_type": "geographic-location-hierachy",
+      "name": "Location Hierarchy",
+      "about": "A validated Location Hierarchy.",
+      "resource_type": "geographic-location-hierarchy",
       "display_group_order": ["General", "Geographic Metadata", "Access Restriction"],
       "resource_fields": [{
         "field_name": "name",
@@ -93,15 +93,15 @@
       }, {
         "field_name": "description",
         "preset": "hidden_value",
-        "field_value":  "A validated Location Hierachy."
+        "field_value":  "A validated Location Hierarchy."
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "geographic_location_hierachy"
+        "field_value": "geographic_location_hierarchy"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-location-hierachy"
+        "field_value": "geographic-location-hierarchy"
       }]
     }, {
         "name": "Facilities List",
