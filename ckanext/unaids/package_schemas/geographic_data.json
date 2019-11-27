@@ -150,11 +150,6 @@
         "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "geographic_geometry"
-      }, {
-        "field_name": "boundary_source",
-        "label": "Source of the boundary geometry",
-        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM",
-        "required": true
       }]
     }, {
         "name": "Area ID Crosswalk Table",
@@ -196,10 +191,10 @@
       "required": true
     },
     {
-      "field_name": "notes",
-      "label": "Notes",
+      "field_name": "source",
+      "label": "Source/Notes",
       "form_snippet": "markdown.html",
-      "form_placeholder": "Some useful notes about the data"
+      "form_placeholder": "Please share some information about the source of this data."
     },
     {
       "field_name": "format",

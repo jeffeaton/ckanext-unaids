@@ -17,12 +17,12 @@
 			"preset": "dataset_slug",
 			"form_placeholder": "eg. my-dataset"
 		},
-		{
-			"field_name": "notes",
-			"label": "Description",
-			"form_snippet": "markdown.html",
-			"form_placeholder": "eg. Some useful notes about the data"
-		},
+    {
+      "field_name": "source",
+      "label": "Source/Notes",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Please share some information about the source of this data."
+    },
 		{
 			"field_name": "tag_string",
 			"label": "Tags",

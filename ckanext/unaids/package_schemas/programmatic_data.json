@@ -137,10 +137,10 @@
       "form_placeholder": "eg. 2019 ART Numbers"
     },
     {
-      "field_name": "description",
-      "label": "Description",
+      "field_name": "source",
+      "label": "Source/Notes",
       "form_snippet": "markdown.html",
-      "form_placeholder": "Some useful notes about the data"
+      "form_placeholder": "Please share some information about the source of this data."
     },
     {
       "field_name": "format",
