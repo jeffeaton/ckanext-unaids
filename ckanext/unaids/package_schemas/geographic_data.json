@@ -82,48 +82,27 @@
     }
   ],
   "resources": [{
-      "name": "Location Hierachy",
-      "about": "A validated Location Hierachy.",
-      "resource_type": "geographic-location-hierachy",
+      "name": "Location Hierarchy",
+      "about": "A validated location hierarchy.",
+      "resource_type": "geographic-location-hierarchy",
       "display_group_order": ["General", "Geographic Metadata", "Access Restriction"],
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "Location Hierachy"
+        "field_value": "Location Hierarchy"
       }, {
         "field_name": "description",
         "preset": "hidden_value",
-        "field_value":  "A validated Location Hierachy."
+        "field_value":  "A validated location hierarchy."
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "geographic_location_hierachy"
+        "field_value": "geographic_location_hierarchy"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "geographic-location-hierachy"
+        "field_value": "geographic-location-hierarchy"
       }]
-    }, {
-        "name": "Facilities List",
-        "about": "A validated Facilities list.",
-        "resource_type": "geographic-facilities-list",
-        "resource_fields": [{
-          "field_name": "name",
-          "preset": "hidden_value",
-          "field_value": "Facilities List"
-        }, {
-          "field_name": "description",
-          "preset": "hidden_value",
-          "field_value":  "A validated facilities list."
-        }, {
-          "field_name": "schema",
-          "preset": "hidden_value",
-          "field_value": "geographic_facilities"
-        }, {
-          "field_name": "resource_type",
-          "preset": "hidden_value",
-          "field_value": "geographic-facilities-list"
-        }]
     }, {
         "name": "Areas Metadata",
         "about": "A validated areas metadata table.",
@@ -171,15 +150,10 @@
         "field_name": "schema",
         "preset": "hidden_value",
         "field_value": "geographic_geometry"
-      }, {
-        "field_name": "boundary_source",
-        "label": "Source of the boundary geometry",
-        "form_placeholder": "e.g. PEPFAR/DHIS2/GADM",
-        "required": true
       }]
     }, {
-        "name": "Private Location Data",
-        "about": "OPTIONAL - Sensitive location data to be kept private.",
+        "name": "Area ID Crosswalk Table",
+        "about": "OPTIONAL - Crosswalk table between Area IDs and other systems e.g. dhis2.",
         "resource_type": "geographic-private-data",
         "resource_fields": [{
           "field_name": "name",
@@ -217,10 +191,10 @@
       "required": true
     },
     {
-      "field_name": "notes",
-      "label": "Notes",
+      "field_name": "source",
+      "label": "Source/Notes",
       "form_snippet": "markdown.html",
-      "form_placeholder": "Some useful notes about the data"
+      "form_placeholder": "Please share some information about the source of this data."
     },
     {
       "field_name": "format",

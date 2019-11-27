@@ -29,8 +29,8 @@
       }
     },
     {
-      "name": "sort_order",
-      "title": "Location Sort Order",
+      "name": "area_sort_order",
+      "title": "Area Sort Order",
       "type": "number"
     }
   ],

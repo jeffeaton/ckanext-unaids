@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Survey, Naomi, SVY",
-      "default": "Survey, Naomi, SVY"
+      "form_placeholder": "Survey, Naomi",
+      "default": "Survey, Naomi"
     },
     {
       "field_name": "license_id",
@@ -81,98 +81,6 @@
       "display_email_name_field": "maintainer"
     }
   ],
-  "resources": [
-    {
-      "name": "Survey Metadata",
-      "about": "A validated Survey Metadata dataset",
-      "resource_type": "survey-metadata",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Metadata"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "survey_metadata"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "survey-metadata"
-      }]
-    },
-    {
-      "name": "Survey RITA Metadata",
-      "about": "A validated survey RITA Metadata dataset",
-      "resource_type": "survey-metadata",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey RITA Metadata"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "survey_rita_metadata"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "rita-metadata"
-      }]
-    },
-    {
-      "name": "Survey Clusters",
-      "about": "A validated Survey Clusters dataset",
-      "resource_type": "survey-clusters",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Clusters"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "survey_clusters"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "survey-clusters"
-      }]
-    },
-    {
-      "name": "Survey Individual Data",
-      "about": "A validated Individual Data dataset",
-      "resource_type": "survey-clusters",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Individual Data"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "individual_data"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "individual_data"
-      }]
-    },
-    {
-      "name": "Survey Birth History",
-      "about": "A validated Birth History dataset",
-      "resource_type": "survey-clusters",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "Survey Birth History"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "survey_birth_history"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "birth-history"
-      }]
-    }
-  ],
   "resource_fields": [{
       "field_name": "url",
       "label": "URL",
@@ -180,14 +88,19 @@
     },
     {
       "field_name": "name",
-      "label": "Name",
-      "form_placeholder": "eg. January 2011 Gold Prices"
+      "label": "Dataset Name",
+      "form_placeholder": "eg. Zambia DHS 2019"
+    },
+    {
+      "field_name": "survey",
+      "label": "Survey Name",
+      "form_placeholder": "eg. DHS"
     },
     {
       "field_name": "description",
       "label": "Description",
       "form_snippet": "markdown.html",
-      "form_placeholder": "Some useful notes about the data"
+      "form_placeholder": "Some useful notes about the data, including how the data has been sourced."
     },
     {
       "field_name": "format",

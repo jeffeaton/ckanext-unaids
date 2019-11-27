@@ -4,11 +4,11 @@
 	</button>
 	<div class="dropdown-menu" aria-labelledby="addDatasetMenuButton">
 		{% snippet 'snippets/add_dataset.html', dataset_type='programmatic-data-package' %}
-		{% snippet 'snippets/add_dataset.html', dataset_type='survey-data-package' %}
-		{% snippet 'snippets/add_dataset.html', dataset_type='ancss-data-package' %}
+    {% snippet 'snippets/add_dataset.html', dataset_type='survey-data-package' %}
+    {% snippet 'snippets/add_dataset.html', dataset_type='population-data-package' %}
+    {% snippet 'snippets/add_dataset.html', dataset_type='spectrum-file' %}
 		{% snippet 'snippets/add_dataset.html', dataset_type='geographic-data-package' %}
-		{% snippet 'snippets/add_dataset.html', dataset_type='spectrum-dataset' %}
-    {% snippet 'snippets/add_dataset.html', dataset_type='document-data-package' %}
+    {# snippet 'snippets/add_dataset.html', dataset_type='document-data-package' #}
 		{% snippet 'snippets/add_dataset.html', group=c.group_dict.id %}
 	</div>
 </div>
