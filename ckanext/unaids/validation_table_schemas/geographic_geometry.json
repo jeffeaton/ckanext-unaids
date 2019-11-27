@@ -14,7 +14,7 @@
         "maximum": 8
       }
     }, {
-      "name": "name",
+      "name": "area_name",
       "title": "Name",
       "type": "string",
       "constraints": {
@@ -27,7 +27,7 @@
   "foreignKeys": [{
     "fields": "area_id",
     "reference": {
-      "resource": "geographic_location_hierachy",
+      "resource": "geographic_location_hierarchy",
       "fields": "area_id"
     }
   }]
