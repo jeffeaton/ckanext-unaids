@@ -27,8 +27,8 @@
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
-      "form_placeholder": "Programmatic, Naomi, ANC, ART, HIV Testing",
-      "default": "Programmatic, Naomi, ANC, ART, HIV Testing"
+      "form_placeholder": "Programmatic, Naomi, ANC, ART",
+      "default": "Programmatic, Naomi, ANC, ART"
     },
     {
       "field_name": "license_id",
