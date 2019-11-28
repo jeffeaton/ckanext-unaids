@@ -158,11 +158,11 @@
         "resource_fields": [{
           "field_name": "name",
           "preset": "hidden_value",
-          "field_value": "Private Location Data"
+          "field_value": "Area ID Crosswalk Table"
         }, {
           "field_name": "description",
           "preset": "hidden_value",
-          "field_value":  "Sensitive location data to be kept private."
+          "field_value":  "Crosswalk table between Area IDs and other systems."
         },{
           "field_name": "schema",
           "preset": "hidden_value",
