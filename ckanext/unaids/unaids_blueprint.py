@@ -1,8 +1,10 @@
 # encoding: utf-8
 import logging
 import cStringIO
-from flask import Blueprint, Response, abort, request
-from ckan.plugins.toolkit import config
+import json
+from flask import Blueprint, Response, abort, request, jsonify
+import ckan.plugins.toolkit as t
+from ckanext.validation.jobs import _load_dataframe
 from ckanext.validation.helpers import validation_load_schemed_table
 
 log = logging.getLogger(__name__)
@@ -23,7 +25,7 @@ def download_table_template(validation_schema):
         logging.warning(format)
 
         log.info('Fetching creating schema: ' + validation_schema)
-        schema_directory = config['ckanext.validation.schema_directory']
+        schema_directory = t.config['ckanext.validation.schema_directory']
         file_path = schema_directory + '/' + validation_schema + '.json'
         schemed_table = validation_load_schemed_table(file_path)
         template = schemed_table.create_template()
@@ -66,6 +68,42 @@ def download_table_template(validation_schema):
         )
 
 
+def download_naomi_geodata(package_id):
+    # Get package metadata
+    package = t.get_action('package_show')({}, {'id': package_id})
+
+    for resource in package.get('resources', []):
+        # Get resource data from the packages metadata.
+        logging.warning("NAME: " + str(resource['name']) + "=======================")
+        resource_id = resource['id']
+        resource_format = resource.get('format', 'csv').lower()
+        resource_path = "/".join([
+            t.config.get('ckan.storage_path', '/var/lib/ckan'),
+            'resources',
+            resource_id[0:3],
+            resource_id[3:6],
+            resource_id[6:]
+        ])
+
+        # Safely load the resources as a pandas dataframe:
+        df = _load_dataframe(resource_path, resource_format)
+        logging.warning(df.head())
+
+        # If json load the data as json file:
+        if 'json' in resource_format:
+            with open(resource_path, 'r') as json_file:
+                json_data = json.load(json_file)
+                logging.warning(
+                    [x['properties']['area_id'] for x in json_data['features']]
+                )
+
+    return jsonify(package)
+
+
+unaids_blueprint.add_url_rule(
+    u'/geodata/<package_id>',
+    view_func=download_naomi_geodata
+)
 unaids_blueprint.add_url_rule(
     u'/template/<validation_schema>',
     view_func=download_table_template
