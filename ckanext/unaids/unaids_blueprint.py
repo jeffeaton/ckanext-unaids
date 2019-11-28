@@ -79,6 +79,7 @@ def download_naomi_geodata(package_id):
             resource_format = resource.get('format', 'csv').lower()
             resource_path = __get_resource_path(resource)
             location_hierarchy_df = _load_dataframe(resource_path, resource_format)
+            location_hierarchy_df['area_sort_order'] = location_hierarchy_df['area_sort_order'].fillna('')
         elif resource['name'] == u'Regional Geometry':
             found_area_geojson = True
             resource_path = __get_resource_path(resource)
