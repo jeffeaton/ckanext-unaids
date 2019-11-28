@@ -2,6 +2,7 @@
 import logging
 import cStringIO
 import json
+import os
 from flask import Blueprint, Response, abort, request, jsonify
 import ckan.plugins.toolkit as t
 from ckanext.validation.jobs import _load_dataframe
@@ -69,35 +70,43 @@ def download_table_template(validation_schema):
 
 
 def download_naomi_geodata(package_id):
-    # Get package metadata
     package = t.get_action('package_show')({}, {'id': package_id})
-
+    found_location_hierarchy = False
+    found_area_geojson = False
     for resource in package.get('resources', []):
-        # Get resource data from the packages metadata.
-        logging.warning("NAME: " + str(resource['name']) + "=======================")
-        resource_id = resource['id']
-        resource_format = resource.get('format', 'csv').lower()
-        resource_path = "/".join([
-            t.config.get('ckan.storage_path', '/var/lib/ckan'),
-            'resources',
-            resource_id[0:3],
-            resource_id[3:6],
-            resource_id[6:]
-        ])
-
-        # Safely load the resources as a pandas dataframe:
-        df = _load_dataframe(resource_path, resource_format)
-        logging.warning(df.head())
-
-        # If json load the data as json file:
-        if 'json' in resource_format:
+        if resource['name'] == u'Location Hierarchy':
+            found_location_hierarchy = True
+            resource_format = resource.get('format', 'csv').lower()
+            resource_path = __get_resource_path(resource)
+            location_hierarchy_df = _load_dataframe(resource_path, resource_format)
+        elif resource['name'] == u'Regional Geometry':
+            found_area_geojson = True
+            resource_path = __get_resource_path(resource)
             with open(resource_path, 'r') as json_file:
-                json_data = json.load(json_file)
-                logging.warning(
-                    [x['properties']['area_id'] for x in json_data['features']]
-                )
+                area_gejson = json.load(json_file)
+    if found_area_geojson and found_location_hierarchy:
+        for feature in area_gejson['features']:
+            prop = feature['properties']
+            area_id = prop['area_id']
+            area_data = location_hierarchy_df.loc[area_id]
+            for key in ['parent_area_id', 'area_sort_order']:
+                prop[key] = area_data[key]
+    else:
+        raise RuntimeError("Failed to fetch proper geographic package resources")
 
-    return jsonify(package)
+    return jsonify(area_gejson)
+
+
+def __get_resource_path(resource):
+    resource_id = resource['id']
+    resource_path = os.path.join(
+        t.config.get('ckan.storage_path', '/var/lib/ckan'),
+        'resources',
+        resource_id[0:3],
+        resource_id[3:6],
+        resource_id[6:]
+    )
+    return resource_path
 
 
 unaids_blueprint.add_url_rule(
