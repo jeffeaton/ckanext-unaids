@@ -154,7 +154,7 @@
     }, {
         "name": "Area ID Crosswalk Table",
         "about": "OPTIONAL - Crosswalk table between Area IDs and other systems e.g. dhis2.",
-        "resource_type": "geographic-private-data",
+        "resource_type": "geographic-crosswalk",
         "resource_fields": [{
           "field_name": "name",
           "preset": "hidden_value",
@@ -166,11 +166,11 @@
         },{
           "field_name": "schema",
           "preset": "hidden_value",
-          "field_value": "geographic_private_data"
+          "field_value": "geographic_crosswalk"
         }, {
           "field_name": "resource_type",
           "preset": "hidden_value",
-          "field_value": "geographic-private-data"
+          "field_value": "geographic-crosswalk"
         }]
       }
   ],

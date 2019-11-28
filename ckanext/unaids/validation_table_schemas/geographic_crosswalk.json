@@ -21,7 +21,7 @@
   "foreignKeys": [{
     "fields": "area_id",
     "reference": {
-      "resource": "geographic_location_hierachy",
+      "resource": "geographic_location_hierarchy",
       "fields": "area_id"
     }
   }]
