@@ -11,7 +11,8 @@
       "description": "The age group",
       "type": "string",
       "constraints": {
-        "required": true
+        "required": true,
+        "pattern": "([0-9][0-9]-[0-9][0-9])|([0-9][0-9]\\+)"
       }
     },
     {
