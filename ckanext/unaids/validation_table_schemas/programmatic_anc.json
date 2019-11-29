@@ -21,7 +21,7 @@
       "type": "string",
       "constraints": {
         "required": true,
-        "pattern": "(([0-9]*-[0-9]*)|[0-9]*\\+)"
+        "pattern": "([0-9][0-9]-[0-9][0-9])|([0-9][0-9]\\+)"
       }
     },
     {
@@ -99,11 +99,8 @@
     }
   }],
   "custom-constraint": {
-      "constraint": "anc_clients >= ancrt_hiv_status",
-      "constraint": "anc_clients >= ancrt_known_pos",
-      "constraint": "anc_clients >= ancrt_tested",
-      "constraint": "anc_clients >= ancrt_test_pos",
-      "constraint": "ancrt_tested >= ancrt_test_pos",
-      "constraint": "anc_clients >= ancrt_already_art"
+      "constraint": "ancrt_hiv_status >= ancrt_tested_pos",
+      "constraint": "ancrt_tested >= ancrt_tested_pos",
+      "constraint": "ancrt_known_pos >= ancrt_already_art"
   }
 }
