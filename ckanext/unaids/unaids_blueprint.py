@@ -73,6 +73,7 @@ def download_naomi_geodata(package_id):
     package = t.get_action('package_show')({}, {'id': package_id})
     found_location_hierarchy = False
     found_area_geojson = False
+    found_area_metadata = False
     for resource in package.get('resources', []):
         if resource['name'] == u'Location Hierarchy':
             found_location_hierarchy = True
@@ -85,13 +86,24 @@ def download_naomi_geodata(package_id):
             resource_path = __get_resource_path(resource)
             with open(resource_path, 'r') as json_file:
                 area_gejson = json.load(json_file)
+        elif resource['name'] == u'Areas Metadata':
+            found_area_metadata = True
+            resource_format = resource.get('format', 'csv').lower()
+            resource_path = __get_resource_path(resource)
+            area_metadata_df = _load_dataframe(resource_path, resource_format).set_index('area_level')
     if found_area_geojson and found_location_hierarchy:
         for feature in area_gejson['features']:
             prop = feature['properties']
             area_id = prop['area_id']
+            area_level = str(prop['area_level'])
             area_data = location_hierarchy_df.loc[area_id]
             for key in ['parent_area_id', 'area_sort_order']:
                 prop[key] = area_data[key]
+            if found_area_metadata:
+                area_metadata = area_metadata_df.loc[area_level]
+                for key in ['area_level_label', 'display', 'spectrum_level',
+                            'epp_level', 'naomi_level', 'pepfar_psnu_level']:
+                    prop[key] = area_metadata[key]
     else:
         raise RuntimeError("Failed to fetch proper geographic package resources")
 
