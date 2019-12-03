@@ -45,15 +45,6 @@
       }
     },
     {
-      "name": "ancrt_hiv_status",
-      "title": "ANCRT HIV Status",
-      "description": "Number of unique ANC clients for whom an HIV status is ascertained during their pregnancy.",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
       "name": "ancrt_known_pos",
       "title": "Number known positive",
       "description": "Number of ANC clients who self-report known HIV positive prior to first ANC visit and are not tested for HIV.",
@@ -90,6 +81,7 @@
       }
     }
   ],
+  "require_field_order": false,
   "primaryKey": ["area_id", "year", "age_group"],
   "foreignKeys": [{
     "fields": "area_id",
