@@ -95,7 +95,7 @@ def download_naomi_geodata(package_id):
         for feature in area_gejson['features']:
             prop = feature['properties']
             area_id = prop['area_id']
-            area_level = str(prop['area_level'])
+            area_level = str(int(prop['area_level']))
             area_data = location_hierarchy_df.loc[area_id]
             for key in ['parent_area_id', 'area_sort_order']:
                 prop[key] = area_data[key]
