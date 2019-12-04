@@ -97,12 +97,18 @@ def download_naomi_geodata(package_id):
             area_id = prop['area_id']
             area_level = str(int(prop['area_level']))
             area_data = location_hierarchy_df.loc[area_id]
-            for key in ['parent_area_id', 'area_sort_order']:
-                prop[key] = area_data[key]
+            # Naomi expects parent area id of root node to be null
+            if area_data['area_id'] == area_data['parent_area_id']:
+                prop['parent_area_id'] = None
+            else:
+                prop['parent_area_id'] = area_data['parent_area_id']
+            prop['area_sort_order'] = _safe_cast(area_data['area_sort_order'], int, 0)
             if found_area_metadata:
                 area_metadata = area_metadata_df.loc[area_level]
-                for key in ['area_level_label', 'display', 'spectrum_level',
+                for key in ['display', 'spectrum_level',
                             'epp_level', 'naomi_level', 'pepfar_psnu_level']:
+                    prop[key] = _convert_string_bool(area_metadata[key])
+                for key in ['area_level_label']:
                     prop[key] = area_metadata[key]
     else:
         raise RuntimeError("Failed to fetch proper geographic package resources")
@@ -117,6 +123,19 @@ def download_naomi_geodata(package_id):
                          "attachment; filename={!s}_naomi_format.geojson".format(package['name'])}
             )
 
+
+def _convert_string_bool(input):
+    if not input or input in ['False', 'FALSE', 'false', 'f', 'F']:
+        return False
+    else:
+        return True
+
+
+def _safe_cast(val, to_type, default=None):
+    try:
+        return to_type(val)
+    except (ValueError, TypeError):
+        return default
 
 def __get_resource_path(resource):
     resource_id = resource['id']
