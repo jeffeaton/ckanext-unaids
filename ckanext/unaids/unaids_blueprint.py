@@ -108,13 +108,13 @@ def download_naomi_geodata(package_id):
         raise RuntimeError("Failed to fetch proper geographic package resources")
 
     output = cStringIO.StringIO()
-    output.write(str(area_gejson))
+    output.write(json.dumps(area_gejson))
     output.seek(0)
     return Response(
                 output,
                 mimetype="application/json",
                 headers={"Content-disposition":
-                         "attachment; filename={!r}_naomi_format.geojson".format(package['name'])}
+                         "attachment; filename={!s}_naomi_format.geojson".format(package['name'])}
             )
 
 
