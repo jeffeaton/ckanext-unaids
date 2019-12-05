@@ -89,17 +89,10 @@
 				"preset": "hidden_value",
 				"field_value": "Population Data"
 			}, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "population"
-      }, {
 				"field_name": "resource_type",
 				"preset": "hidden_value",
 				"field_value": "population-data"
-			}, {
-        "field_name": "foreign_keys",
-        "preset": "foreign_keys"
-      }]
+			}]
 		}
   ],
 	"resource_fields": [{
