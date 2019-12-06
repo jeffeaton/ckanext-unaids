@@ -18,7 +18,7 @@
 			"form_placeholder": "eg. my-dataset"
 		},
     {
-      "field_name": "source",
+      "field_name": "notes",
       "label": "Source/Notes",
       "form_snippet": "markdown.html",
       "form_placeholder": "Please share some information about the source of this data."
