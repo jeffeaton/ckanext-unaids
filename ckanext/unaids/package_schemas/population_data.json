@@ -122,6 +122,7 @@
 			"label": "Access Restriction",
 			"preset": "restricted_fields",
 			"validators": "restricted_json",
+      "default_organizations": "unaids",
 			"choices": [{
 					"value": "restricted",
 					"label": "Restrictied to specified users and organizations"

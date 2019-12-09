@@ -154,6 +154,7 @@
       "preset": "restricted_fields",
       "validators": "restricted_json",
       "display_group": "Access Restriction",
+      "default_organizations": "unaids",
       "choices": [{
           "value": "restricted",
           "label": "Restricted to specified users and organizations"

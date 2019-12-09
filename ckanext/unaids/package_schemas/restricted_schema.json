@@ -110,6 +110,7 @@
 	    "preset": "restricted_fields",
 	    "validators": "restricted_json",
       "display_group": "Access Restriction",
+      "default_organizations": "unaids",
 	    "choices":
 	    [
                 {
