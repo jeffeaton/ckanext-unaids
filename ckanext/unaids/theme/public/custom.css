@@ -128,3 +128,44 @@ a.dropdown-item{
 .programmatic-templates{
   font-size:18px;
 }
+
+.fileinput-finish,
+.fileinput-button{
+  width: 110px;
+  height: 34px;
+  text-align: left;
+  margin-top:10px;
+}
+.fileinput-finish i,
+.fileinput-button i{
+  width: 14;
+  height:14;
+  margin-right: 5px;
+}
+aside.secondary{
+  border-right: solid #e7e7e7 2px;
+  background-color: white;
+}
+.format-label{
+    background: url("sprite-resource-icons.png") no-repeat 0 0;
+    width: 32px;
+    height: 35px;
+    background-position: 0px -62px;
+}
+.format-label[data-format=pjnz],
+.format-label[data-format*=pjnz] {
+  width: 31px;
+  height: 35px;
+  background-position: -383px -62px;
+}
+
+.format-label[data-format=url],
+.format-label[data-format*=url] {
+  width: 31px;
+  height: 35px;
+  background-position: -320px -62px;
+}
+.format-label[data-format=html],
+.format-label[data-format*=html]{
+  width: 31px;
+}

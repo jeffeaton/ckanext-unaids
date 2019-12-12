@@ -81,27 +81,6 @@
 			"display_email_name_field": "maintainer"
 		}
 	],
-	"resources": [{
-			"name": "Spectrum File",
-			"about": "A finalised spectrum file.",
-			"resource_type": "spectrum-file",
-			"resource_fields": [{
-				"field_name": "name",
-				"preset": "hidden_value",
-				"field_value": "Spectrum File"
-			}, {
-				"field_name": "resource_type",
-				"preset": "hidden_value",
-				"field_value": "spectrum-file"
-			}, {
-        "field_name": "format",
-        "label": "Format",
-        "preset": "resource_format_autocomplete",
-        "required": true,
-        "default_jinja2": "pjnz"
-      }]
-		}
-  ],
 	"resource_fields": [{
 			"field_name": "url",
 			"label": "URL",
@@ -110,20 +89,21 @@
 		{
 			"field_name": "name",
 			"label": "Name",
-			"form_placeholder": "eg. January 2011 Gold Prices"
+			"form_placeholder": "National Spectrum File Version 5.0"
 		},
 		{
 			"field_name": "description",
-			"label": "Description",
+			"label": "Source/Notes",
 			"form_snippet": "markdown.html",
-			"form_placeholder": "Some useful notes about the data"
+			"form_placeholder": "Some useful notes about the data and it's source."
 		},
-		{
-			"field_name": "format",
-			"label": "Format",
-			"preset": "resource_format_autocomplete",
-			"required": true
-		},
+    {
+     "field_name": "format",
+     "label": "Format",
+     "preset": "resource_format_autocomplete",
+     "required": true,
+     "default_jinja2": "pjnz"
+    },
     {
 			"field_name": "restricted",
 			"label": "Access Restriction",
