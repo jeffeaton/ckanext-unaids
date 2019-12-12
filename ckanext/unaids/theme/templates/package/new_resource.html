@@ -1,0 +1,6 @@
+{% ckan_extends %}
+
+{% block secondary_content %}
+    {{ super() }}
+    {% snippet 'ckanext-file_uploader_ui/upload.html', dataset_type=dataset_type %}
+{% endblock %}
