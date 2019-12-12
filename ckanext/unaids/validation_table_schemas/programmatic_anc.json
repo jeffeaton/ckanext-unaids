@@ -91,8 +91,7 @@
     }
   }],
   "custom-constraint": {
-      "constraint": "ancrt_hiv_status >= ancrt_tested_pos",
-      "constraint": "ancrt_tested >= ancrt_tested_pos",
-      "constraint": "ancrt_known_pos >= ancrt_already_art"
+      "constraint": "ancrt_already_art <= ancrt_known_pos",
+      "constraint": "ancrt_test_pos <= ancrt_tested_pos"
   }
 }
