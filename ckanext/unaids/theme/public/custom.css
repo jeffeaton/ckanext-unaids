@@ -169,3 +169,7 @@ aside.secondary{
 .format-label[data-format*=html]{
   width: 31px;
 }
+
+.drag-and-drop{
+  min-height: 300px;
+}
