@@ -5,6 +5,7 @@ import ckan.model.license as core_licenses
 import ckan.model.package as package
 from unaids_blueprint import unaids_blueprint
 from collections import OrderedDict
+from ckan.lib.plugins import DefaultTranslation
 
 log = logging.getLogger(__name__)
 
@@ -19,7 +20,7 @@ def add_licenses():
         ]
 
 
-class UNAIDSPlugin(p.SingletonPlugin):
+class UNAIDSPlugin(p.SingletonPlugin, DefaultTranslation):
     """
     This plugin implements the configurations needed for AIDS data exchange
 
@@ -28,6 +29,8 @@ class UNAIDSPlugin(p.SingletonPlugin):
     p.implements(p.IConfigurer)
     p.implements(p.IFacets, inherit=True)
     p.implements(p.IBlueprint)
+    p.implements(p.ITranslation)
+    p.implements(p.IConfigurer)
 
     # IConfigurer
     def update_config(self, config):
