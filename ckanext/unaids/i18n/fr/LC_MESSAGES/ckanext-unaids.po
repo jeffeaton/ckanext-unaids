@@ -8,39 +8,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-unaids 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-12-19 10:33+0000\n"
+"POT-Creation-Date: 2019-12-30 11:10+0000\n"
 "PO-Revision-Date: 2019-12-19 15:05+0200\n"
+"Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.2.4\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: ckanext/unaids/licenses.py:15
 msgid "Creative Commons Attribution for Intergovernmental Organisations"
 msgstr ""
 
-#: ckanext/unaids/plugin.py:47
+#: ckanext/unaids/plugin.py:50
 msgid "Organizations"
 msgstr "Organisations"
 
-#: ckanext/unaids/plugin.py:48
+#: ckanext/unaids/plugin.py:51
 msgid "Data Type"
 msgstr "Type de donnés"
 
-#: ckanext/unaids/plugin.py:49
+#: ckanext/unaids/plugin.py:52
 msgid "Tags"
 msgstr ""
 
-#: ckanext/unaids/plugin.py:50
+#: ckanext/unaids/plugin.py:53
 msgid "Year"
 msgstr "Année"
 
-#: ckanext/unaids/plugin.py:51
+#: ckanext/unaids/plugin.py:54
 msgid "Location"
 msgstr "Emplacement"
 
@@ -66,10 +65,10 @@ msgstr ""
 
 #: ckanext/unaids/theme/templates/footer.html:26
 msgid ""
-"An open source <a class=\"hide-text\" target=\"_blank\" href=\"https://"
-"ckan.org/\"><strong>CKAN</strong></a> project,<br/> built for UNAIDS by "
-"<a class=\"hide-text\" target=\"_blank\" href=\"http://fjelltopp.org"
-"\"><strong>Fjelltopp</strong></a>."
+"An open source <a class=\"hide-text\" target=\"_blank\" "
+"href=\"https://ckan.org/\"><strong>CKAN</strong></a> project,<br/> built "
+"for UNAIDS by <a class=\"hide-text\" target=\"_blank\" "
+"href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
 msgstr ""
 
 #: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:5
@@ -99,12 +98,12 @@ msgstr ""
 
 #: ckanext/unaids/theme/templates/home/layout1.html:11
 msgid ""
-"<span style='font-size: 2em; color: grey;'>The AIDS Data Repository<br /"
-">aims to improve the</span><br /> <span style='font-size: 2.75em; font-"
-"weight: bold;'>quality, accessibility <br /> and consistency</span> "
-"<span style='font-size: 2em;'> of HIV data<br />and HIV estimates by</"
-"span> <span style='font-size: 2em; color: grey;'>providing a</span><br /"
-"> <span style='font-size: 2.5em; font-weight: bold;'>centralised "
+"<span style='font-size: 2em; color: grey;'>The AIDS Data Repository<br "
+"/>aims to improve the</span><br /> <span style='font-size: 2.75em; font-"
+"weight: bold;'>quality, accessibility <br /> and consistency</span> <span"
+" style='font-size: 2em;'> of HIV data<br />and HIV estimates by</span> "
+"<span style='font-size: 2em; color: grey;'>providing a</span><br /> <span"
+" style='font-size: 2.5em; font-weight: bold;'>centralised "
 "platform</span><br /> <span style='font-size: 2em;'>with tools to help "
 "countries</span> <span style='font-size: 2em; font-weight: "
 "bold;'>manage<br />and share</span> <span style='font-size: 2em; color: "
@@ -163,3 +162,4 @@ msgstr ""
 #: ckanext/unaids/theme/templates/snippets/search_form.html:23
 msgid "Filter Results"
 msgstr ""
+
