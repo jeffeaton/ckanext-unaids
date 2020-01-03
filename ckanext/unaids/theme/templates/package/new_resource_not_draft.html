@@ -1,0 +1,37 @@
+{% extends "package/resource_edit_base.html" %}
+
+{% block subtitle %}{{ _('Add resource') }} - {{ h.dataset_display_name(pkg) }}{% endblock %}
+{% block form_title %}{{ _('Add resource') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  {{ super() }}
+  <li class="active"><a href="#">{{ _('Add New Resource') }}</a></li>
+{% endblock %}
+
+{% block form %}
+  {% snippet resource_form_snippet, data=data, errors=errors, error_summary=error_summary, include_metadata=false, pkg_name=pkg_name, stage=stage, allow_upload=g.ofs_impl and logged_in, dataset_type=dataset_type %}
+{% endblock %}
+
+{% block content_primary_nav %}
+  <li class="active"><a href="#"><i class="fa fa-pencil-square-o"></i> {{ _('New resource') }}</a></li>
+{% endblock %}
+
+{% block secondary_content %}
+  {% snippet 'package/snippets/resource_help.html' %}
+
+  {% if request.GET is defined %}
+    {% set resource_type = request.GET["resource_type"] %}
+  {% else %}
+    {% set resource_type = request.args.get("resource_type") %}
+  {% endif %}
+
+  {%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
+  {% if not schema.get("resource_schemas",{}).get(resource_type, {}).get('bulk_upload', False) %}
+  <section class="module module-narrow module-shallow">
+      <h2 class="module-heading"><i class="fa fa-upload"></i> {{ _('Bulk Upload') }}</h2>
+      <div class="module-content"><p>{{ _('Bulk upload is not possible for this resource.') }}</p></div>
+  </section>
+  {% else %}
+    {% snippet 'ckanext-file_uploader_ui/upload.html' %}
+  {% endif %}
+{% endblock %}
