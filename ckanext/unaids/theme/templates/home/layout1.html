@@ -8,18 +8,11 @@
             <center>
             <!--<a class="media-image" href="/about">
               <!--<img class="img-responsive" src="{{ h.url_for_static('/aim.png') }}" alt="aim" width="420" height="220" /> -->
-              {{_("<span style='font-size: 2em; color: grey;'>The AIDS Data Repository<br />aims to improve the</span><br />
-              <span style='font-size: 2.75em; font-weight: bold;'>quality, accessibility <br /> and consistency</span>
-              <span style='font-size: 2em;'> of HIV data<br />and HIV estimates by</span>
-              <span style='font-size: 2em; color: grey;'>providing a</span><br />
-              <span style='font-size: 2.5em; font-weight: bold;'>centralised platform</span><br />
-              <span style='font-size: 2em;'>with tools to help countries</span>
-              <span style='font-size: 2em; font-weight: bold;'>manage<br />and share</span>
-              <span style='font-size: 2em; color: grey;''>their HIV data.</span>")}}
+              {{_('<span style="font-size: 2em; color: grey;">The AIDS Data Repository<br />aims to improve the</span><br /><span style="font-size: 2.75em; font-weight: bold;">quality, accessibility <br /> and consistency</span><span style="font-size: 2em;"> of HIV data<br />and HIV estimates by </span><span style="font-size: 2em; color: grey;">providing a</span><br /><span style="font-size: 2.5em; font-weight: bold;">centralised platform</span><br /><span style="font-size: 2em;">with tools to help countries </span><span style="font-size: 2em; font-weight: bold;">manage<br />and share </span><span style="font-size: 2em; color: grey;">their HIV data.</span>')}}
             <!--</a>-->
             </center>
             <a class="pull-right" href="/pages/about">
-              Find out more...
+              {{_('Find out more...')}}
             </a>
           </section>
 
@@ -47,7 +40,12 @@
     <div class='row'>
       <div class="col-xs-12">
         <center>
-          <a class="btn btn-primary btn-lg template-button" href="/dataset/unaids-naomi-model-input-templates-2019" target="_blank"><i class="fa fa-arrow-circle-o-down"></i><H2>UNAIDS Naomi Model Input Templates</H2></a>
+          <a class="btn btn-primary btn-lg template-button"
+             href="/dataset/unaids-naomi-model-input-templates-2019"
+             target="_blank">
+            <i class="fa fa-arrow-circle-o-down"></i>
+            <H2>{{_('UNAIDS Naomi Model Input Templates')}}</H2>
+          </a>
         </center>
       </div>
     </div>

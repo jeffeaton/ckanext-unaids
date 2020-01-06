@@ -126,7 +126,7 @@
         }]
     }, {
       "name": "Regional Geometry",
-      "about": "A validated SHP or GeoJSON geometry file.",
+      "about": "A validated geometry file in SHP or GeoJSON format.",
       "resource_type": "geographic-regional-geometry",
       "resource_fields": [{
         "field_name": "name",
@@ -153,7 +153,7 @@
       }]
     }, {
         "name": "Area ID Crosswalk Table",
-        "about": "OPTIONAL - Crosswalk table between Area IDs and other systems e.g. dhis2.",
+        "about": "Crosswalk table between area IDs and other systems e.g. dhis2.",
         "resource_type": "geographic-crosswalk",
         "resource_fields": [{
           "field_name": "name",
@@ -162,7 +162,7 @@
         }, {
           "field_name": "description",
           "preset": "hidden_value",
-          "field_value":  "Crosswalk table between Area IDs and other systems."
+          "field_value":  "Crosswalk table between area IDs and other systems e.g. dhis2."
         },{
           "field_name": "schema",
           "preset": "hidden_value",
