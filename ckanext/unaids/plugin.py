@@ -7,6 +7,10 @@ from unaids_blueprint import unaids_blueprint
 from collections import OrderedDict
 from ckan.lib.plugins import DefaultTranslation
 
+from ckanext.unaids.helpers import (
+    url_for_translated_static_or_external
+)
+
 log = logging.getLogger(__name__)
 
 
@@ -31,6 +35,7 @@ class UNAIDSPlugin(p.SingletonPlugin, DefaultTranslation):
     p.implements(p.IBlueprint)
     p.implements(p.ITranslation)
     p.implements(p.IConfigurer)
+    p.implements(p.ITemplateHelpers)
 
     # IConfigurer
     def update_config(self, config):
@@ -57,3 +62,9 @@ class UNAIDSPlugin(p.SingletonPlugin, DefaultTranslation):
     def organization_facets(self, facet_dict, org_type, package_type):
 
         return facet_dict
+
+    # ITemplateHelpers
+    def get_helpers(self):
+        return {
+            u'url_for_translated_static_or_external': url_for_translated_static_or_external
+        }
