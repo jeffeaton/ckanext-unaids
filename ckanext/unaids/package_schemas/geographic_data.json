@@ -208,7 +208,7 @@
       "display_group": "Access Restriction",
       "choices": [{
           "value": "restricted",
-          "label": "Restrictied to specified users and organizations"
+          "label": "Restricted to specified users and organizations"
         },
         {
           "value": "public",

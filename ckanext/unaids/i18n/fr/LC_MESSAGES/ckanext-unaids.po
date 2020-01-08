@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-06 15:56+0000\n"
+"POT-Creation-Date: 2020-01-08 11:47+0000\n"
 "PO-Revision-Date: 2019-12-19 15:05+0200\n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -147,6 +147,18 @@ msgstr "Untranslated French"
 
 #: ckanext/unaids/i18n/extra_translations.py:31
 msgid "A validated population data file."
+msgstr "Untranslated French"
+
+#: ckanext/unaids/i18n/extra_translations.py:32
+msgid "Source/Notes"
+msgstr "Untranslated French"
+
+#: ckanext/unaids/i18n/extra_translations.py:33
+msgid "General"
+msgstr "Untranslated French"
+
+#: ckanext/unaids/i18n/extra_translations.py:34
+msgid "URL"
 msgstr "Untranslated French"
 
 #: ckanext/unaids/theme/templates/footer.html:16
