@@ -6,10 +6,7 @@ import ckan.model.package as package
 from unaids_blueprint import unaids_blueprint
 from collections import OrderedDict
 from ckan.lib.plugins import DefaultTranslation
-
-from ckanext.unaids.helpers import (
-    url_for_translated_static_or_external
-)
+from ckanext.unaids.helpers import get_logo_path
 
 log = logging.getLogger(__name__)
 
@@ -66,5 +63,5 @@ class UNAIDSPlugin(p.SingletonPlugin, DefaultTranslation):
     # ITemplateHelpers
     def get_helpers(self):
         return {
-            u'url_for_translated_static_or_external': url_for_translated_static_or_external
+            u'get_logo_path': get_logo_path
         }
