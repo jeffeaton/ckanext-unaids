@@ -78,7 +78,7 @@ msgstr "Un jeu de données de CPN valide."
 
 #: ckanext/unaids/i18n/extra_translations.py:14
 msgid "ART Data"
-msgstr "Données relatives aux traitements ART"
+msgstr "Données de ART"
 
 #: ckanext/unaids/i18n/extra_translations.py:15
 msgid "eg. 2019 ART Numbers"
