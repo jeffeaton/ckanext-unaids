@@ -140,6 +140,10 @@ msgstr "Fichier de géométrie validé, au format SHP ou GeoJSON."
 msgid "Area ID Crosswalk Table"
 msgstr "Tableau de correspondance des identifiants de zones"
 
+#: ckanext/unaids/i18n/extra_translations.py:29
+msgid "Area ID"
+msgstr "Identifiants de zones"
+
 #: ckanext/unaids/i18n/extra_translations.py:30
 msgid "Crosswalk table between area IDs and other systems e.g. dhis2."
 msgstr "Tableau de correspondance entre les identifiants de zones et d’autres systèmes, par exemple dhis2."

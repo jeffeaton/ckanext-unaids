@@ -27,6 +27,7 @@ extra_translations = [
     _('Regional Geometry'),
     _('A validated geometry file in SHP or GeoJSON format.'),
     _('Area ID Crosswalk Table'),
+    _('Area ID'),
     _('Crosswalk table between area IDs and other systems e.g. dhis2.'),
     _('A validated population data file.'),
     _('Source/Notes'),
