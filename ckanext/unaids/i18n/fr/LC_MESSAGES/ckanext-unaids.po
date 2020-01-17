@@ -1,0 +1,310 @@
+# French translations for ckanext-unaids.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the ckanext-unaids
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-01-17 13:34+0000\n"
+"PO-Revision-Date: 2019-12-19 15:05+0200\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ckanext/unaids/licenses.py:15
+msgid "Creative Commons Attribution for Intergovernmental Organisations"
+msgstr ""
+"Licence Creative Commons Attribution pour les organisations "
+"intergouvernementales"
+
+#: ckanext/unaids/plugin.py:52
+msgid "Organizations"
+msgstr "Organisations"
+
+#: ckanext/unaids/plugin.py:53
+msgid "Data Type"
+msgstr "Type de donnés"
+
+#: ckanext/unaids/plugin.py:54
+msgid "Tags"
+msgstr "Balises"
+
+#: ckanext/unaids/plugin.py:55
+msgid "Year"
+msgstr "Année"
+
+#: ckanext/unaids/plugin.py:56
+msgid "Location"
+msgstr "Lieu"
+
+#: ckanext/unaids/i18n/extra_translations.py:6
+msgid "Programmatic Data"
+msgstr "Données programmatiques"
+
+#: ckanext/unaids/i18n/extra_translations.py:7
+msgid "Geographic Data"
+msgstr "Données géographiques"
+
+#: ckanext/unaids/i18n/extra_translations.py:8
+msgid "Spectrum File"
+msgstr "Fichier Spectrum"
+
+#: ckanext/unaids/i18n/extra_translations.py:9
+msgid "Population Data"
+msgstr "Données de populations"
+
+#: ckanext/unaids/i18n/extra_translations.py:10
+msgid "Survey Data"
+msgstr "Données d’enquête"
+
+#: ckanext/unaids/i18n/extra_translations.py:11
+#: ckanext/unaids/i18n/extra_translations.py:36
+#: ckanext/unaids/theme/templates/footer.html:10
+msgid "About"
+msgstr "À propos"
+
+#: ckanext/unaids/i18n/extra_translations.py:12
+msgid "ANC Data"
+msgstr "Données de CPN"
+
+#: ckanext/unaids/i18n/extra_translations.py:13
+msgid "A validated ANC dataset."
+msgstr "Un jeu de données de CPN valide."
+
+#: ckanext/unaids/i18n/extra_translations.py:14
+msgid "ART Data"
+msgstr "Données de ART"
+
+#: ckanext/unaids/i18n/extra_translations.py:15
+msgid "eg. 2019 ART Numbers"
+msgstr "Par exemple, nombres d’ART en 2019"
+
+#: ckanext/unaids/i18n/extra_translations.py:16
+msgid "A validated ART dataset."
+msgstr "Un jeu de données relatives aux ART valide."
+
+#: ckanext/unaids/i18n/extra_translations.py:17
+msgid "Please share some information about the source of this data."
+msgstr "Veuillez fournir des informations concernant la provenance de ces données."
+
+#: ckanext/unaids/i18n/extra_translations.py:18
+msgid "Restricted to specified users and organizations"
+msgstr "Accessible uniquement aux utilisateurs et organisations définis"
+
+#: ckanext/unaids/i18n/extra_translations.py:19
+msgid "Access Restriction"
+msgstr "Accès restreint"
+
+#: ckanext/unaids/i18n/extra_translations.py:20
+msgid "National Spectrum File Version 5.0"
+msgstr "Fichier Spectrum national version 5.0"
+
+#: ckanext/unaids/i18n/extra_translations.py:21
+msgid "Geographical Location"
+msgstr "Localisation"
+
+#: ckanext/unaids/i18n/extra_translations.py:22
+msgid "Country or province"
+msgstr "Pays ou province"
+
+#: ckanext/unaids/i18n/extra_translations.py:23
+msgid "Location Hierarchy"
+msgstr "Hiérarchie des lieux"
+
+#: ckanext/unaids/i18n/extra_translations.py:24
+msgid "A validated location hierarchy."
+msgstr "Une hiérarchie des lieux validée."
+
+#: ckanext/unaids/i18n/extra_translations.py:25
+msgid "Areas Metadata"
+msgstr "Métadonnées des zones"
+
+#: ckanext/unaids/i18n/extra_translations.py:26
+msgid "A validated areas metadata table."
+msgstr "Tableau de métadonnées des zones validées."
+
+#: ckanext/unaids/i18n/extra_translations.py:27
+msgid "Regional Geometry"
+msgstr "Géométrie régionale"
+
+#: ckanext/unaids/i18n/extra_translations.py:28
+msgid "A validated geometry file in SHP or GeoJSON format."
+msgstr "Fichier de géométrie validé, au format SHP ou GeoJSON."
+
+#: ckanext/unaids/i18n/extra_translations.py:29
+msgid "Area ID Crosswalk Table"
+msgstr "Tableau de correspondance des identifiants de zones"
+
+#: ckanext/unaids/i18n/extra_translations.py:30
+msgid "Area ID"
+msgstr "Identifiants de zones"
+
+#: ckanext/unaids/i18n/extra_translations.py:31
+msgid "Crosswalk table between area IDs and other systems e.g. dhis2."
+msgstr ""
+"Tableau de correspondance entre les identifiants de zones et d’autres "
+"systèmes, par exemple dhis2."
+
+#: ckanext/unaids/i18n/extra_translations.py:32
+msgid "A validated population data file."
+msgstr "Fichier de données de populations validées."
+
+#: ckanext/unaids/i18n/extra_translations.py:33
+msgid "Source/Notes"
+msgstr "Source/Notes"
+
+#: ckanext/unaids/i18n/extra_translations.py:34
+msgid "General"
+msgstr "Général"
+
+#: ckanext/unaids/i18n/extra_translations.py:35
+msgid "URL"
+msgstr "URL"
+
+#: ckanext/unaids/theme/templates/footer.html:16
+msgid "Terms and Conditions"
+msgstr "Conditions générales"
+
+#: ckanext/unaids/theme/templates/footer.html:17
+msgid "Cookie Policy"
+msgstr "Politique de confidentialité"
+
+#: ckanext/unaids/theme/templates/footer.html:18
+msgid "Github Source Code"
+msgstr "Code source Github"
+
+#: ckanext/unaids/theme/templates/footer.html:19
+msgid "Report a Bug"
+msgstr "Signaler une erreur"
+
+#: ckanext/unaids/theme/templates/footer.html:26
+msgid ""
+"An open source <a class=\"hide-text\" target=\"_blank\" "
+"href=\"https://ckan.org/\"><strong>CKAN</strong></a> project,<br/> built "
+"for UNAIDS by <a class=\"hide-text\" target=\"_blank\" "
+"href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
+msgstr ""
+"Projet <a class=\"hide-text\" target=\"_blank\" "
+"href=\"https://ckan.org/\"><strong>CKAN</strong></a> libre,<br/> élaboré "
+"pour l’ONUSIDA par <a class=\"hide-text\" target=\"_blank\" "
+"href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
+
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:4
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:31
+msgid "Bulk Upload"
+msgstr "Transfert groupé"
+
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:6
+msgid "Drag & Drop files here to initiate bulk upload"
+msgstr "Glissez et déposez les fichiers ici pour lancer le transfert groupé"
+
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:13
+msgid "Add files..."
+msgstr "Ajouter des fichiers..."
+
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:18
+msgid "Finish"
+msgstr "Terminer"
+
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:56
+msgid "Processing..."
+msgstr "En cours..."
+
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:95
+msgid "Error"
+msgstr "Erreur"
+
+#: ckanext/unaids/theme/templates/home/layout1.html:11
+msgid ""
+"<span style=\"font-size: 2em; color: grey;\">The AIDS Data Repository<br "
+"/>aims to improve the</span><br /><span style=\"font-size: 2.75em; font-"
+"weight: bold;\">quality, accessibility <br /> and consistency</span><span"
+" style=\"font-size: 2em;\"> of HIV data<br />and HIV estimates by "
+"</span><span style=\"font-size: 2em; color: grey;\">providing a</span><br"
+" /><span style=\"font-size: 2.5em; font-weight: bold;\">centralised "
+"platform</span><br /><span style=\"font-size: 2em;\">with tools to help "
+"countries </span><span style=\"font-size: 2em; font-weight: "
+"bold;\">manage<br />and share </span><span style=\"font-size: 2em; color:"
+" grey;\">their HIV data.</span>"
+msgstr ""
+"<span style=\"font-size: 2em; color: grey;\">Le fichier de données sur le"
+" sida (ADR)<br />a vocation à améliorer la </span><span style=\"font-"
+"size: 2.5em; font-weight: bold;\">qualité,<br />l’accessibilité et la "
+"cohérence</span><br /> <span style=\"font-size: 2em;\"> des données et "
+"estimations concernant <br />le VIH. </span><span style=\"font-size: 2em;"
+" color: grey;\">Pour ce faire, ce projet fournit aux pays </span><span "
+"style=\"font-size: 2.5em; font-weight: bold;\">une plateforme "
+"centrale</span><br /><span style=\"font-size: 2em;\">accompagnée d’outils"
+" afin de les aider </span><span style=\"font-size: 2em; font-weight: "
+"bold;\">à gérer et communiquer </span><span style=\"font-size: 2em; "
+"color: grey;\">ces données.</span>"
+
+#: ckanext/unaids/theme/templates/home/layout1.html:15
+msgid "Find out more..."
+msgstr "Plus d’informations..."
+
+#: ckanext/unaids/theme/templates/home/layout1.html:36
+msgid "Featured Dataset"
+msgstr "Jeu de données disponible"
+
+#: ckanext/unaids/theme/templates/home/layout1.html:47
+msgid "UNAIDS Naomi Model Input Templates"
+msgstr "Modèles de saisie du modèle Naomi de l’ONUSIDA"
+
+#: ckanext/unaids/theme/templates/home/layout1.html:55
+msgid "Featured Organisations"
+msgstr "Organisations participantes"
+
+#: ckanext/unaids/theme/templates/home/layout1.html:86
+msgid "The AIDS Data Repository is a project by"
+msgstr "Le fichier de données sur le sida (ADR) est un projet de"
+
+#: ckanext/unaids/theme/templates/home/layout1.html:102
+msgid "With support from"
+msgstr "Avec l’aide de"
+
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:3
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:4
+msgid "Add resource"
+msgstr "Ajouter une ressource"
+
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:8
+msgid "Add New Resource"
+msgstr "Ajouter une nouvelle ressource"
+
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:16
+msgid "New resource"
+msgstr "Nouvelle ressource"
+
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:32
+msgid "Bulk upload is not possible for this resource."
+msgstr "Cette ressource ne permet pas le transfert groupé."
+
+#: ckanext/unaids/theme/templates/package/resource_edit_base.html:19
+msgid "Template"
+msgstr "Modèle"
+
+#: ckanext/unaids/theme/templates/snippets/add_dataset.html:8
+msgid "General Data"
+msgstr "Données générales"
+
+#: ckanext/unaids/theme/templates/snippets/dataset_selector.html:3
+msgid "Add Data Package"
+msgstr "Ajouter un ensemble de données"
+
+#: ckanext/unaids/theme/templates/snippets/search_form.html:17
+msgid "Remove"
+msgstr "Supprimer"
+
+#: ckanext/unaids/theme/templates/snippets/search_form.html:23
+msgid "Filter Results"
+msgstr "Résultats du filtre"
+
