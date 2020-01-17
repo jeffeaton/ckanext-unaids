@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-08 11:47+0000\n"
+"POT-Creation-Date: 2020-01-17 13:34+0000\n"
 "PO-Revision-Date: 2019-12-19 15:05+0200\n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -21,25 +21,27 @@ msgstr ""
 
 #: ckanext/unaids/licenses.py:15
 msgid "Creative Commons Attribution for Intergovernmental Organisations"
-msgstr "Licence Creative Commons Attribution pour les organisations intergouvernementales"
+msgstr ""
+"Licence Creative Commons Attribution pour les organisations "
+"intergouvernementales"
 
-#: ckanext/unaids/plugin.py:50
+#: ckanext/unaids/plugin.py:52
 msgid "Organizations"
 msgstr "Organisations"
 
-#: ckanext/unaids/plugin.py:51
+#: ckanext/unaids/plugin.py:53
 msgid "Data Type"
 msgstr "Type de donnés"
 
-#: ckanext/unaids/plugin.py:52
+#: ckanext/unaids/plugin.py:54
 msgid "Tags"
 msgstr "Balises"
 
-#: ckanext/unaids/plugin.py:53
+#: ckanext/unaids/plugin.py:55
 msgid "Year"
 msgstr "Année"
 
-#: ckanext/unaids/plugin.py:54
+#: ckanext/unaids/plugin.py:56
 msgid "Location"
 msgstr "Lieu"
 
@@ -64,6 +66,7 @@ msgid "Survey Data"
 msgstr "Données d’enquête"
 
 #: ckanext/unaids/i18n/extra_translations.py:11
+#: ckanext/unaids/i18n/extra_translations.py:36
 #: ckanext/unaids/theme/templates/footer.html:10
 msgid "About"
 msgstr "À propos"
@@ -140,27 +143,29 @@ msgstr "Fichier de géométrie validé, au format SHP ou GeoJSON."
 msgid "Area ID Crosswalk Table"
 msgstr "Tableau de correspondance des identifiants de zones"
 
-#: ckanext/unaids/i18n/extra_translations.py:29
+#: ckanext/unaids/i18n/extra_translations.py:30
 msgid "Area ID"
 msgstr "Identifiants de zones"
 
-#: ckanext/unaids/i18n/extra_translations.py:30
-msgid "Crosswalk table between area IDs and other systems e.g. dhis2."
-msgstr "Tableau de correspondance entre les identifiants de zones et d’autres systèmes, par exemple dhis2."
-
 #: ckanext/unaids/i18n/extra_translations.py:31
+msgid "Crosswalk table between area IDs and other systems e.g. dhis2."
+msgstr ""
+"Tableau de correspondance entre les identifiants de zones et d’autres "
+"systèmes, par exemple dhis2."
+
+#: ckanext/unaids/i18n/extra_translations.py:32
 msgid "A validated population data file."
 msgstr "Fichier de données de populations validées."
 
-#: ckanext/unaids/i18n/extra_translations.py:32
+#: ckanext/unaids/i18n/extra_translations.py:33
 msgid "Source/Notes"
 msgstr "Source/Notes"
 
-#: ckanext/unaids/i18n/extra_translations.py:33
+#: ckanext/unaids/i18n/extra_translations.py:34
 msgid "General"
 msgstr "Général"
 
-#: ckanext/unaids/i18n/extra_translations.py:34
+#: ckanext/unaids/i18n/extra_translations.py:35
 msgid "URL"
 msgstr "URL"
 
@@ -187,30 +192,33 @@ msgid ""
 "for UNAIDS by <a class=\"hide-text\" target=\"_blank\" "
 "href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
 msgstr ""
-"Projet <a class=\"hide-text\" target=\"_blank\" href=\"https://ckan.org/\"><strong>CKAN</strong></a> libre,<br/> élaboré pour l’ONUSIDA par <a class=\"hide-text\" target=\"_blank\" href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
+"Projet <a class=\"hide-text\" target=\"_blank\" "
+"href=\"https://ckan.org/\"><strong>CKAN</strong></a> libre,<br/> élaboré "
+"pour l’ONUSIDA par <a class=\"hide-text\" target=\"_blank\" "
+"href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
 
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:5
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:4
 #: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:31
 msgid "Bulk Upload"
 msgstr "Transfert groupé"
 
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:7
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:6
 msgid "Drag & Drop files here to initiate bulk upload"
 msgstr "Glissez et déposez les fichiers ici pour lancer le transfert groupé"
 
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:14
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:13
 msgid "Add files..."
 msgstr "Ajouter des fichiers..."
 
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:19
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:18
 msgid "Finish"
 msgstr "Terminer"
 
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:57
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:56
 msgid "Processing..."
 msgstr "En cours..."
 
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:96
+#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:95
 msgid "Error"
 msgstr "Erreur"
 
@@ -218,23 +226,26 @@ msgstr "Erreur"
 msgid ""
 "<span style=\"font-size: 2em; color: grey;\">The AIDS Data Repository<br "
 "/>aims to improve the</span><br /><span style=\"font-size: 2.75em; font-"
-"weight: bold;\">quality, accessibility <br /> and consistency</span><span "
-"style=\"font-size: 2em;\"> of HIV data<br />and HIV estimates by </span><span"
-" style=\"font-size: 2em; color: grey;\">providing a</span><br /><span style"
-"=\"font-size: 2.5em; font-weight: bold;\">centralised platform</span><br "
-"/><span style=\"font-size: 2em;\">with tools to help countries </span><span "
-"style=\"font-size: 2em; font-weight: bold;\">manage<br />and share "
-"</span><span style=\"font-size: 2em; color: grey;\">their HIV data.</span>"
+"weight: bold;\">quality, accessibility <br /> and consistency</span><span"
+" style=\"font-size: 2em;\"> of HIV data<br />and HIV estimates by "
+"</span><span style=\"font-size: 2em; color: grey;\">providing a</span><br"
+" /><span style=\"font-size: 2.5em; font-weight: bold;\">centralised "
+"platform</span><br /><span style=\"font-size: 2em;\">with tools to help "
+"countries </span><span style=\"font-size: 2em; font-weight: "
+"bold;\">manage<br />and share </span><span style=\"font-size: 2em; color:"
+" grey;\">their HIV data.</span>"
 msgstr ""
-"<span style=\"font-size: 2em; color: grey;\">Le fichier de données sur le sida (ADR)"
-"<br />a vocation à améliorer la </span><span style=\"font-size: 2.5em; font-"
-"weight: bold;\">qualité,<br />l’accessibilité et la cohérence</span><br /> <span "
-"style=\"font-size: 2em;\"> des données et estimations concernant <br />le VIH. </span><span"
-" style=\"font-size: 2em; color: grey;\">Pour ce faire, ce projet fournit aux pays </span><span style"
-"=\"font-size: 2.5em; font-weight: bold;\">une plateforme centrale</span><br "
-"/><span style=\"font-size: 2em;\">accompagnée d’outils afin de les aider </span><span "
-"style=\"font-size: 2em; font-weight: bold;\">à gérer et communiquer "
-"</span><span style=\"font-size: 2em; color: grey;\">ces données.</span>"
+"<span style=\"font-size: 2em; color: grey;\">Le fichier de données sur le"
+" sida (ADR)<br />a vocation à améliorer la </span><span style=\"font-"
+"size: 2.5em; font-weight: bold;\">qualité,<br />l’accessibilité et la "
+"cohérence</span><br /> <span style=\"font-size: 2em;\"> des données et "
+"estimations concernant <br />le VIH. </span><span style=\"font-size: 2em;"
+" color: grey;\">Pour ce faire, ce projet fournit aux pays </span><span "
+"style=\"font-size: 2.5em; font-weight: bold;\">une plateforme "
+"centrale</span><br /><span style=\"font-size: 2em;\">accompagnée d’outils"
+" afin de les aider </span><span style=\"font-size: 2em; font-weight: "
+"bold;\">à gérer et communiquer </span><span style=\"font-size: 2em; "
+"color: grey;\">ces données.</span>"
 
 #: ckanext/unaids/theme/templates/home/layout1.html:15
 msgid "Find out more..."
@@ -296,3 +307,4 @@ msgstr "Supprimer"
 #: ckanext/unaids/theme/templates/snippets/search_form.html:23
 msgid "Filter Results"
 msgstr "Résultats du filtre"
+
