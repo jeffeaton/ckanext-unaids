@@ -5,6 +5,8 @@ import ckan.model.license as core_licenses
 import ckan.model.package as package
 from unaids_blueprint import unaids_blueprint
 from collections import OrderedDict
+from ckan.lib.plugins import DefaultTranslation
+from ckanext.unaids.helpers import get_logo_path
 
 log = logging.getLogger(__name__)
 
@@ -19,7 +21,7 @@ def add_licenses():
         ]
 
 
-class UNAIDSPlugin(p.SingletonPlugin):
+class UNAIDSPlugin(p.SingletonPlugin, DefaultTranslation):
     """
     This plugin implements the configurations needed for AIDS data exchange
 
@@ -28,6 +30,9 @@ class UNAIDSPlugin(p.SingletonPlugin):
     p.implements(p.IConfigurer)
     p.implements(p.IFacets, inherit=True)
     p.implements(p.IBlueprint)
+    p.implements(p.ITranslation)
+    p.implements(p.IConfigurer)
+    p.implements(p.ITemplateHelpers)
 
     # IConfigurer
     def update_config(self, config):
@@ -54,3 +59,9 @@ class UNAIDSPlugin(p.SingletonPlugin):
     def organization_facets(self, facet_dict, org_type, package_type):
 
         return facet_dict
+
+    # ITemplateHelpers
+    def get_helpers(self):
+        return {
+            u'get_logo_path': get_logo_path
+        }

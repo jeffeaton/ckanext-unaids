@@ -25,5 +25,13 @@ setup(
     [ckan.plugins]
     # Add plugins here, eg
     unaids=ckanext.unaids.plugin:UNAIDSPlugin
+    [babel.extractors]
+    ckan = ckan.lib.extract:extract_ckan
     """,
+    message_extractors={
+        'ckanext': [
+            ('**.py', 'python', None),
+            ('**.js', 'javascript', None),
+            ('**/templates/**.html', 'ckan', None),
+        ]}
 )
