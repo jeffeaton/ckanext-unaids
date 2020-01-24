@@ -80,9 +80,15 @@
 	    "display_property": "dc:contributor",
 	    "display_snippet": "email.html",
 	    "display_email_name_field": "maintainer"
-	}
-    ],
-    "resource_fields": [
+	},
+  {
+    "field_name": "geo-location",
+    "label": "Geographical Location",
+    "form_placeholder": "Country or province",
+    "preset": "country_list",
+    "display_property": "dc:contributor"
+  }
+  ],"resource_fields": [
 	{
 	    "field_name": "url",
 	    "label": "URL",
