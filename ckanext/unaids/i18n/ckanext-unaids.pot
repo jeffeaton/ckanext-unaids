@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-unaids 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-17 13:34+0000\n"
+"POT-Creation-Date: 2020-01-20 18:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,6 @@ msgid "Survey Data"
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:11
-#: ckanext/unaids/i18n/extra_translations.py:36
 #: ckanext/unaids/theme/templates/footer.html:10
 msgid "About"
 msgstr ""
@@ -163,6 +162,10 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
+#: ckanext/unaids/i18n/extra_translations.py:36
+msgid "Email"
+msgstr ""
+
 #: ckanext/unaids/theme/templates/footer.html:16
 msgid "Terms and Conditions"
 msgstr ""
@@ -185,31 +188,6 @@ msgid ""
 "href=\"https://ckan.org/\"><strong>CKAN</strong></a> project,<br/> built for "
 "UNAIDS by <a class=\"hide-text\" target=\"_blank\" "
 "href=\"http://fjelltopp.org\"><strong>Fjelltopp</strong></a>."
-msgstr ""
-
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:4
-#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:31
-msgid "Bulk Upload"
-msgstr ""
-
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:6
-msgid "Drag & Drop files here to initiate bulk upload"
-msgstr ""
-
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:13
-msgid "Add files..."
-msgstr ""
-
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:18
-msgid "Finish"
-msgstr ""
-
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:56
-msgid "Processing..."
-msgstr ""
-
-#: ckanext/unaids/theme/templates/ckanext-file_uploader_ui/upload.html:95
-msgid "Error"
 msgstr ""
 
 #: ckanext/unaids/theme/templates/home/layout1.html:11
@@ -249,6 +227,37 @@ msgstr ""
 msgid "With support from"
 msgstr ""
 
+#: ckanext/unaids/theme/templates/organization/member_new.html:8
+msgid ""
+"Add a ckan user to your organisation by searching for their username and "
+"assigning them a role. See the note on the left about role descriptions."
+msgstr ""
+
+#: ckanext/unaids/theme/templates/organization/member_new.html:16
+#: ckanext/unaids/theme/templates/organization/member_new.html:25
+msgid "Username"
+msgstr ""
+
+#: ckanext/unaids/theme/templates/organization/member_new.html:33
+msgid "Role"
+msgstr ""
+
+#: ckanext/unaids/theme/templates/organization/member_new.html:38
+msgid "Are you sure you want to delete this member?"
+msgstr ""
+
+#: ckanext/unaids/theme/templates/organization/member_new.html:38
+msgid "Delete"
+msgstr ""
+
+#: ckanext/unaids/theme/templates/organization/member_new.html:40
+msgid "Update Member"
+msgstr ""
+
+#: ckanext/unaids/theme/templates/organization/member_new.html:44
+msgid "Add Member"
+msgstr ""
+
 #: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:3
 #: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:4
 msgid "Add resource"
@@ -260,6 +269,10 @@ msgstr ""
 
 #: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:16
 msgid "New resource"
+msgstr ""
+
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:31
+msgid "Bulk Upload"
 msgstr ""
 
 #: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:32

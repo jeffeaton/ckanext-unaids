@@ -32,5 +32,6 @@ extra_translations = [
     _('A validated population data file.'),
     _('Source/Notes'),
     _('General'),
-    _('URL')
+    _('URL'),
+    _('Email')
 ]
