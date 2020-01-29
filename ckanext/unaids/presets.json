@@ -34,6 +34,18 @@
             "validators": "unicode",
             "form_snippet": "validators.html"
         }
+    },{
+        "preset_name": "user",
+        "values": {
+            "validators": "unicode",
+            "form_snippet": "user.html"
+        }
+    },{
+        "preset_name": "text_template",
+        "values": {
+          "validators": "unicode",
+          "form_snippet": "text_template.html"
+        }
     }
   ]
 }
