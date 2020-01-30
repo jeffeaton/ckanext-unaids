@@ -57,12 +57,5 @@
     }
   ],
   "require_field_order": false,
-  "primaryKey": ["area_id", "sex", "age_group", "year"],
-  "foreignKeys": [{
-    "fields": "area_id",
-    "reference": {
-      "resource": "naomi_geographic",
-      "fields": "area_id"
-    }
-  }]
+  "primaryKey": ["area_id", "sex", "age_group", "year"]
 }

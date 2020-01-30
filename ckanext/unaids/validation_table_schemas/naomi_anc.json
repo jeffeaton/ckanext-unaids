@@ -83,13 +83,6 @@
   ],
   "require_field_order": false,
   "primaryKey": ["area_id", "year", "age_group"],
-  "foreignKeys": [{
-    "fields": "area_id",
-    "reference": {
-      "resource": "geographic_location_hierarchy",
-      "fields": "area_id"
-    }
-  }],
   "custom-constraint": {
       "constraint": "ancrt_already_art <= ancrt_known_pos",
       "constraint": "ancrt_test_pos <= ancrt_tested_pos"
