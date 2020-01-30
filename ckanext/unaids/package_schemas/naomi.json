@@ -11,7 +11,11 @@
       "label": "Auto-Title",
       "preset": "text_template",
       "template": "{geo-location} Naomi Data {year} {version}",
-      "form_placeholder": "Naomi Dataset DRAFT"
+      "form_placeholder": "Naomi Dataset DRAFT",
+      "classes": ["control-large"],
+      "form_attrs":{
+        "data-module":"slug-preview-target"
+      }
     },
     {
       "field_name": "name",
@@ -224,6 +228,7 @@
       "label": "Access Restriction",
       "preset": "restricted_fields",
       "validators": "restricted_json",
+      "default_organizations": "unaids",
       "choices": [{
           "value": "restricted",
           "label": "Restrictied to specified users and organizations"
