@@ -70,9 +70,9 @@
     },
     {
       "field_name": "notes",
-      "label": "Description",
+      "label": "Description/Source",
       "form_snippet": "markdown.html",
-      "form_placeholder": "eg. Some useful notes about the data"
+      "form_placeholder": "eg. Some useful notes about the data. Please write a little about where this data came from and give any relevant references"
     },
     {
       "field_name": "license_id",
