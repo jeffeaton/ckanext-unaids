@@ -1,6 +1,6 @@
 {
   "scheming_version": 1,
-  "dataset_type": "geographic-data-package",
+  "dataset_type": "geographic-data-package-new-meta",
   "name": "Geographic Data",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
