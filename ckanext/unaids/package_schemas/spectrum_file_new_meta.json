@@ -33,13 +33,14 @@
 		{
 			"field_name": "year",
 			"label": "Year",
-			"preset": "year"
+			"preset": "year",
+			"validators": "not_empty"
 		},
 		{
 			"field_name": "version",
 			"label": "Version",
-			"validators": "ignore_missing unicode package_version_validator",
-			"form_placeholder": "1.0"
+			"validators": "unicode package_version_validator",
+			"form_placeholder": "e.g. FINAL / DRAFT / v1"
 		},
 		{
 			"field_name": "tag_string",
