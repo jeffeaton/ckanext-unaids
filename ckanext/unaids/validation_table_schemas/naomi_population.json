@@ -2,7 +2,7 @@
   "fields": [{
       "name": "area_id",
       "title": "Area ID",
-      "description": "Must be an area_id from the agreed area hierarchy.",
+      "description": "An area_id from the specified area hierarchy.",
       "type": "string",
       "constraints": {
         "required": true
@@ -12,6 +12,18 @@
       "name": "area_name",
       "title": "Area Name",
       "description": "Area name corresponding to area_id (optional).",
+      "type": "string"
+    },
+    {
+      "name": "source",
+      "title": "Source",
+      "description": "Source of population data.",
+      "type": "string"
+    },
+    {
+      "name": "calendar_quarter",
+      "title": "Calendar Quarter",
+      "description": "Calendar quarter",
       "type": "string"
     },
     {
@@ -27,29 +39,17 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "The age group.",
+      "description": "The age group",
       "type": "string",
       "constraints": {
-        "required": true,
-        "enum": ["00-14", "15+", "00+"]
+        "required": true
       }
     },
     {
-      "name": "year",
-      "title": "Year",
-      "description": "The year.",
-      "type": "integer",
-      "constraints": {
-          "required": true,
-          "minimum": 1970,
-          "maximum": 2021
-      }
-    },
-    {
-      "name": "current_art",
-      "title": "Number on ART",
-      "description": "Number currently receiving ART at the end of reporting period (year).",
-      "type": "integer",
+      "name": "population",
+      "title": "Population",
+      "description": "Population for the group.",
+      "type": "number",
       "constraints": {
         "required": true,
         "minimum": 0
@@ -57,5 +57,5 @@
     }
   ],
   "require_field_order": false,
-  "primaryKey": ["area_id", "sex", "age_group", "year"]
+  "primaryKey": ["area_id", "calendar_quarter", "sex", "age_group"]
 }

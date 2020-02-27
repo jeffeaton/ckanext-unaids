@@ -1,0 +1,26 @@
+{% import 'macros/form.html' as form %}
+{% resource 'ckanext-unaids/text_template.js' %}
+{% set error = errors[field.field_name] %}
+<div class="text-template form-group{{ " error" if error }}">
+  <label class="control-label">
+    {% if h.scheming_field_required(field) %}
+      <span title="{{ _("This field is required") }}" class="control-required">*</span>
+    {% endif %}
+    {{ h.scheming_language_text(field.label) or _('Custom') }}
+  </label>
+  <div class="controls control-full {{ " " ~ field.classes | join(' ') }}">
+    <div class="{{field.field_name}}-formatted-text formatted-text"
+         data-module="text_template"
+         data-module-template="{{h.scheming_language_text(field.template)}}"
+         data-module-update='#field-{{field.field_name}}'>
+      {{h.scheming_language_text(data[field.form_placeholder])}}
+    </div>
+    <input class="form-control hidden"
+           id="{{'field-' + field.field_name}}"
+           name="{{field.field_name}}"
+           value="{{data[field.field_name]}}"
+           {{ form.attributes(field.get("form_attrs", {})) }}/>
+    {% if error and error is iterable %}<span class="error-block">{{ error|join(', ') }}</span>{% endif %}
+  </div>
+</div>
+{%- snippet 'scheming/form_snippets/help_text.html', field=field -%}
