@@ -79,7 +79,12 @@
 			"display_property": "dc:contributor",
 			"display_snippet": "email.html",
 			"display_email_name_field": "maintainer"
-		}
+		},
+    {
+      "field_name": "type_name",
+      "preset": "hidden_value",
+      "field_value": "Spectrum File"
+    }
 	],
 	"resource_fields": [{
 			"field_name": "url",

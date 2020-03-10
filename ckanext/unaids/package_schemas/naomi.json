@@ -89,6 +89,11 @@
       "preset": "dataset_organization",
       "private": false,
       "visibility_classes": ["hidden"]
+    },
+    {
+      "field_name": "type_name",
+      "preset": "hidden_value",
+      "field_value": "Naomi Data"
     }
   ],
   "resources": [{

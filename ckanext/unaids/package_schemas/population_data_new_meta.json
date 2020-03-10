@@ -86,7 +86,12 @@
 			"field_name": "owner_org",
 			"label": "Organization",
 			"preset": "dataset_organization"
-		}
+		},
+    {
+      "field_name": "type_name",
+      "preset": "hidden_value",
+      "field_value": "Population Data"
+    }
 	],
 	"resources": [{
 			"name": "Population Data",

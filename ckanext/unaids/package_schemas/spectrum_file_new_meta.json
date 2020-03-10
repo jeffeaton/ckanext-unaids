@@ -87,7 +87,12 @@
 			"field_name": "owner_org",
 			"label": "Organization",
 			"preset": "dataset_organization"
-		}
+		},
+    {
+      "field_name": "type_name",
+      "preset": "hidden_value",
+      "field_value": "Spectrum File"
+    }
 	],
 	"resource_fields": [{
 			"field_name": "url",
