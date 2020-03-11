@@ -1,6 +1,6 @@
 {
   "scheming_version": 1,
-  "dataset_type": "survey-data-package-new-meta",
+  "dataset_type": "survey-data-package-2",
   "name": "Survey Data",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",

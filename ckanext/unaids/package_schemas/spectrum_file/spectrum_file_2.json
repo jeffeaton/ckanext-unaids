@@ -1,6 +1,6 @@
 {
 	"scheming_version": 1,
-	"dataset_type": "spectrum-file-new-meta",
+	"dataset_type": "spectrum-file-2",
 	"name": "Spectrum File",
 	"about": "",
 	"about_url": "http://github.com/ckan/ckanext-scheming",

@@ -1,6 +1,6 @@
 {
 	"scheming_version": 1,
-	"dataset_type": "population-data-package-new-meta",
+	"dataset_type": "population-data-package-2",
 	"name": "Population Data",
 	"about": "",
 	"about_url": "http://github.com/ckan/ckanext-scheming",
