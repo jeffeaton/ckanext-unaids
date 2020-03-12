@@ -39,7 +39,20 @@
       "preset": "year",
       "validators": "not_empty unique_combination"
     },
-    
+    {
+      "preset": "select",
+      "field_name": "published_state",
+      "label": "Version",
+      "validators": "not_empty",
+      "default": "Draft",
+      "choices": [{
+          "value": "Finalised",
+          "label": "Finalised"
+      }, {
+          "value": "Draft",
+          "label": "Draft"
+      }]
+    },
     {
       "field_name": "tag_string",
       "label": "Tags",

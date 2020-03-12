@@ -3,8 +3,9 @@ import logging
 import cStringIO
 import json
 import os
-from flask import Blueprint, Response, abort, request, jsonify
+from flask import Blueprint, Response, abort, request, redirect
 import ckan.plugins.toolkit as t
+import ckan.lib.helpers as h
 from ckanext.validation.jobs import _load_dataframe
 from ckanext.validation.helpers import validation_load_schemed_table
 
@@ -40,8 +41,10 @@ def download_table_template(validation_schema):
             return Response(
                 csv_content,
                 mimetype="text/csv",
-                headers={"Content-disposition":
-                         "attachment; filename=" + str(validation_schema) + ".csv"}
+                headers={
+                    "Content-disposition":
+                    "attachment; filename=" + str(validation_schema) + ".csv"
+                }
             )
 
         elif format == 'xls':
@@ -52,13 +55,18 @@ def download_table_template(validation_schema):
             return Response(
                 out,
                 mimetype="application/xls",
-                headers={"Content-disposition":
-                         "attachment; filename=" + str(validation_schema) + ".xls"}
+                headers={
+                    "Content-disposition":
+                    "attachment; filename=" + str(validation_schema) + ".xls"
+                }
             )
 
     except AttributeError as e:
         log.exception(e)
-        abort(404, "404 Not Found Error: No schema exists for " + validation_schema)
+        abort(
+            404,
+            "404 Not Found Error: No schema exists for " + validation_schema
+        )
 
     except Exception as e:
         log.exception(e)
@@ -124,6 +132,28 @@ def download_naomi_geodata(package_id):
             )
 
 
+def update_package_field(pkg_id, pkg_field, value):
+    """
+    Calls the update package action.
+    """
+    return_page = request.args.get('return_page', '/')
+    try:
+        pkg = t.get_action('package_show')({}, {'id': pkg_id})
+        pkg[pkg_field] = value
+        t.get_action('package_update')({}, pkg)
+        h.flash_success(t._('Package has been marked as "Finalised".'))
+        return redirect(return_page, code=302)
+
+    except Exception as e:
+        log.exception(e)
+        h.flash_error(
+            t._('Package update failed, please <a target="_blank" href="/bug">'
+                'report the bug.</a> {}').format(e),
+            allow_html=True
+        )
+        return redirect(return_page, code=302)
+
+
 def _convert_string_bool(input):
     if not input or input in ['False', 'FALSE', 'false', 'f', 'F']:
         return False
@@ -157,4 +187,8 @@ unaids_blueprint.add_url_rule(
 unaids_blueprint.add_url_rule(
     u'/template/<validation_schema>',
     view_func=download_table_template
+)
+unaids_blueprint.add_url_rule(
+    u'/update_field/<pkg_id>/<pkg_field>/<value>',
+    view_func=update_package_field
 )
