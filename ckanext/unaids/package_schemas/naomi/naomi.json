@@ -1,6 +1,6 @@
 {
   "scheming_version": 1,
-  "dataset_type": "naomi-dataset",
+  "dataset_type": "naomi-data-package",
   "name": "Naomi Inputs",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
@@ -39,6 +39,7 @@
       "preset": "year",
       "validators": "not_empty unique_combination"
     },
+    
     {
       "field_name": "tag_string",
       "label": "Tags",
