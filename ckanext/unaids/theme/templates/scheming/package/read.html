@@ -1,0 +1,19 @@
+{% ckan_extends %}
+
+{% block page_heading %}
+  {{super()}}
+  {% if pkg.get('published_state', '').lower().startswith('draft') %}
+    [{{ _(pkg.published_state) }}]
+  {% endif %}
+{% endblock %}
+
+{% block package_notes %}
+{% set published_state = pkg.get('published_state', '').lower() %}
+{% if schema.get('resources') and h.get_missing_resources(pkg, schema)|length == 0 and published_state.startswith('draft') %}
+  <div class="alert alert-success fade in alert-info">
+    Thankyou for adding all the required resources. <br/>
+    Once you are happy with them, <a href='{{h.url_for('unaids_blueprint.update_package_field', pkg_id=pkg.id, pkg_field='published_state', value='Finalised')}}?return_page={{request.url}}'>click here to mark your package "Finalised" </a>.
+  </div>
+{% endif %}
+{{super()}}
+{% endblock %}

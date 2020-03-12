@@ -26,7 +26,6 @@ this.ckan.module('text_template', function ($) {
       this._form = form;
       var text = this._format(this.options.template, this._form)
       $(this.el).text(text);
-      $('#field-name').slug().val(text).trigger('change');
     },
     _onKeyup: function (){
       $(this.el).text($(this.options.update).val());
