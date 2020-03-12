@@ -39,6 +39,7 @@
       "preset": "year",
       "validators": "not_empty unique_combination"
     },
+    
     {
       "field_name": "tag_string",
       "label": "Tags",
