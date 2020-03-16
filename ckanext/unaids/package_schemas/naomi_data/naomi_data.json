@@ -15,14 +15,17 @@
       "classes": ["control-large", "hidden"],
       "form_attrs":{
         "data-module":"slug-preview-target"
-      }
+      },
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "name",
       "label": "URL",
       "preset": "dataset_slug",
       "form_placeholder": "eg. my-dataset",
-      "validators": "auto_create_valid_name not_empty unicode name_validator package_name_validator"
+      "classes": ["hidden"],
+      "validators": "auto_create_valid_name not_empty unicode name_validator package_name_validator",
+      "display_group": "Naomi Data Package"
 
     },
     {
@@ -31,21 +34,24 @@
       "form_placeholder": "Country",
       "preset": "country_list",
       "display_property": "dc:contributor",
-      "validators": "not_empty unique_combination"
+      "validators": "not_empty unique_combination",
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "year",
       "label": "Year",
       "preset": "year",
-      "validators": "not_empty unique_combination"
+      "validators": "not_empty unique_combination",
+      "display_group": "Naomi Data Package"
     },
-    
+
     {
       "field_name": "tag_string",
       "label": "Tags",
       "preset": "tag_string_autocomplete",
       "default": "Naomi, ANC, ART, SVY",
-      "classes": ["hidden"]
+      "classes": ["hidden"],
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "maintainer",
@@ -54,7 +60,8 @@
       "user_field": "fullname",
       "form_placeholder": "e.g. Joe Bloggs",
       "display_property": "dc:contributor",
-      "validators": "not_empty"
+      "validators": "not_empty",
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "maintainer_email",
@@ -64,13 +71,15 @@
       "user_field": "email",
       "display_snippet": "email.html",
       "display_email_name_field": "maintainer",
-      "validators": "not_empty"
+      "validators": "not_empty",
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "notes",
       "label": "Description/Source",
       "form_snippet": "markdown.html",
-      "default": "Inputs and corresponding outputs for the Naomi subnational estimation model."
+      "default": "Inputs and corresponding outputs for the Naomi subnational estimation model.",
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "license_id",
@@ -78,21 +87,24 @@
       "form_snippet": "license.html",
       "default": "cc-by-igo",
       "classes": ["hidden"],
-      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+      "help_text": "License definitions and additional information can be found at http://opendefinition.org/",
+      "display_group": "Naomi Data Package"
     },
     {
       "field_name": "owner_org",
       "label": "Organization",
       "preset": "dataset_organization",
       "private": false,
-      "visibility_classes": ["hidden"]
+      "visibility_classes": ["hidden"],
+      "display_group": "Naomi Data Package"
     },
     {
       "label": "Data Type",
       "field_name": "type_name",
       "preset": "hidden_value",
       "field_value": "Naomi Data",
-      "validators": "unique_combination"
+      "validators": "unique_combination",
+      "display_group": "Naomi Data Package"
     }
   ],
   "resources": [{
