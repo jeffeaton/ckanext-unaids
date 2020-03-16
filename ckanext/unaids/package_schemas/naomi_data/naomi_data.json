@@ -14,19 +14,18 @@
       "form_placeholder": "Naomi Dataset DRAFT",
       "classes": ["control-large", "hidden"],
       "form_attrs":{
-        "data-module":"slug-preview-target"
+        "data-module":"auto-url-preview-target"
       },
       "display_group": "Naomi Data Package"
     },
     {
       "field_name": "name",
       "label": "URL",
-      "preset": "dataset_slug",
+      "preset": "auto_url",
       "form_placeholder": "eg. my-dataset",
       "classes": ["hidden"],
       "validators": "auto_create_valid_name not_empty unicode name_validator package_name_validator",
       "display_group": "Naomi Data Package"
-
     },
     {
       "field_name": "geo-location",

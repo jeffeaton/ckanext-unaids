@@ -46,6 +46,12 @@
           "validators": "unicode",
           "form_snippet": "text_template.html"
         }
+    },{
+        "preset_name": "auto_url",
+        "values": {
+          "validators": "not_empty unicode name_validator package_name_validator auto_create_valid_name",
+          "form_snippet": "auto_url.html"
+        }
     }
   ]
 }
