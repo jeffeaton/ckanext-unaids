@@ -87,6 +87,11 @@
     "form_placeholder": "Country or province",
     "preset": "country_list",
     "display_property": "dc:contributor"
+  },
+  {
+    "field_name": "type_name",
+    "preset": "hidden_value",
+    "field_value": "General Data"
   }
   ],"resource_fields": [
 	{
