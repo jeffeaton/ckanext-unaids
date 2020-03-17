@@ -1,6 +1,6 @@
 {
   "scheming_version": 1,
-  "dataset_type": "geographic-data-package-new-meta",
+  "dataset_type": "geographic-data-package-2",
   "name": "Geographic Data",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
@@ -87,6 +87,11 @@
       "field_name": "owner_org",
       "label": "Organization",
       "preset": "dataset_organization"
+    },
+    {
+      "field_name": "type_name",
+      "preset": "hidden_value",
+      "field_value": "Geographic Data"
     }
   ],
   "resources": [{
