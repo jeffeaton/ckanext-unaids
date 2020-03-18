@@ -12,7 +12,7 @@
       "form_snippet": "text.html",
       "validators": "autogenerate",
       "classes": ["hidden"],
-      "template": "{} Naomi Data {}",
+      "template": "{} Naomi Inputs and Outputs {}",
       "template_args": ["geo-location", "year"],
       "display_group": "Naomi Data Package"
     },
@@ -66,11 +66,9 @@
       "field_name": "maintainer_email",
       "label": "Contact Email",
       "form_placeholder": "joe@example.com",
-      "preset": "user",
-      "user_field": "email",
       "display_snippet": "email.html",
       "display_email_name_field": "maintainer",
-      "validators": "not_empty",
+      "validators": "email_validator",
       "display_group": "Naomi Data Package"
     },
     {
@@ -107,8 +105,8 @@
     }
   ],
   "resources": [{
-      "name": "Naomi Output",
-      "about": "A ZIP file containing the output of the Naomi model",
+      "name": "Naomi Spectrum Digest",
+      "about": "A ZIP file containing the input and output of the Naomi and Spectrum models",
       "resource_type": "naomi-output-zip",
       "resource_fields": [{
         "field_name": "name",
@@ -126,8 +124,8 @@
         "field_value": "naomi-output-zip"
       }]
     }, {
-      "name": "Naomi Model Options Specification",
-      "about": "The JSON file output by Naomi detailing the model options chosen.",
+      "name": "Naomi JSON File",
+      "about": "The JSON file created by \"File Save\" in the top left corner of the Naomi UI.",
       "resource_type": "naomi-output-json",
       "resource_fields": [{
         "field_name": "name",
@@ -230,6 +228,12 @@
         "preset": "hidden_value",
         "field_value": "naomi_geographic"
       }, {
+        "field_name": "format",
+        "label": "Format",
+        "preset": "resource_format_autocomplete",
+        "required": true,
+        "default": "GeoJSON"
+      }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "naomi-geographic"
@@ -239,6 +243,7 @@
       "name": "Spectrum File",
       "about": "A spectrum file used to run the Naomi model",
       "resource_type": "naomi-spectrum-file",
+      "bulk_upload": true,
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -253,6 +258,11 @@
         "field_name": "resource_type",
         "preset": "hidden_value",
         "field_value": "naomi-spectrum-file"
+      }, {
+          "field_name": "url",
+          "label": "URL",
+          "preset": "resource_url_upload",
+          "upload_label": "File (bulk drag-drop upload available)"
       }]
     }
   ],
