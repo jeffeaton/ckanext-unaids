@@ -1,7 +1,7 @@
 {
   "scheming_version": 1,
   "dataset_type": "naomi-data-package",
-  "name": "Naomi Data",
+  "name": "Naomi Inputs and Outputs",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "add_data_on_create": false,
