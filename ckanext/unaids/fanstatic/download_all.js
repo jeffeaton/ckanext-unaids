@@ -34,8 +34,9 @@ this.ckan.module('download_all', function ($) {
         link.setAttribute('download', name);
         link.click();
         if (++count >= 10) {
-            await new Promise(r => setTimeout(r, 2000));
-            count = 0;
+          // need to pause every 10 files for Google Chrome to work
+          await new Promise(r => setTimeout(r, 2000));
+          count = 0;
         }
       }
       document.body.removeChild(link);
