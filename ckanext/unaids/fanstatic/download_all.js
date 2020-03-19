@@ -21,17 +21,22 @@ this.ckan.module('download_all', function ($) {
       event.preventDefault();
       this.downloadAll(this.options.files);
     },
-    downloadAll: function (urls) {
+    downloadAll: async function (urls) {
       var link = document.createElement('a');
       link.setAttribute('target', "_blank");
       link.style.display = 'none';
+      var count = 0;
       document.body.appendChild(link);
       for (var i = 0; i < urls.length; i++) {
         var name = urls[i].split('/');
         name = name[name.length - 1];
         link.setAttribute('href', urls[i]);
-        link.setAttribute('download', name)
+        link.setAttribute('download', name);
         link.click();
+        if (++count >= 10) {
+            await new Promise(r => setTimeout(r, 2000));
+            count = 0;
+        }
       }
       document.body.removeChild(link);
     }
