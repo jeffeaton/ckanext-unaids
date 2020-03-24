@@ -8,6 +8,7 @@ extra_translations = [
     _('Spectrum File'),
     _('Population Data'),
     _('Survey Data'),
+    _('Naomi Inputs and Outputs'),
     _('About'),
     _('ANC Data'),
     _('A validated ANC dataset.'),
@@ -33,5 +34,19 @@ extra_translations = [
     _('Source/Notes'),
     _('General'),
     _('URL'),
-    _('Email')
+    _('Email'),
+    _('Naomi Data Package'),
+    _('Description/Source'),
+    _('Inputs and corresponding outputs for the Naomi subnational estimation model.'),
+    _('A ZIP file containing the input and output of the Naomi and Spectrum models'),
+    _('The JSON file created by "File Save" in the top left corner of the Naomi UI.'),
+    _('A validated Naomi ANC dataset. '),
+    _('A validated Naomi ART dataset. '),
+    _('A validated Naomi survey dataset '),
+    _('A validated Naomi population dataset '),
+    _('A validated Naomi geographic dataset '),
+    _('A spectrum file used to run the Naomi model '),
+    _('License definitions and additional information can be found at http://opendefinition.org/'),
+    _('Reorder resources'),
+
 ]
