@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-unaids 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-03-24 22:18+0100\n"
+"POT-Creation-Date: 2020-03-25 11:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,27 +199,27 @@ msgid "The JSON file created by \"File Save\" in the top left corner of the Naom
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:43
-msgid "A validated Naomi ANC dataset. "
+msgid "A validated Naomi ANC dataset."
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:44
-msgid "A validated Naomi ART dataset. "
+msgid "A validated Naomi ART dataset."
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:45
-msgid "A validated Naomi survey dataset "
+msgid "A validated Naomi survey dataset"
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:46
-msgid "A validated Naomi population dataset "
+msgid "A validated Naomi population dataset"
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:47
-msgid "A validated Naomi geographic dataset "
+msgid "A validated Naomi geographic dataset"
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:48
-msgid "A spectrum file used to run the Naomi model "
+msgid "A spectrum file used to run the Naomi model"
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:49
