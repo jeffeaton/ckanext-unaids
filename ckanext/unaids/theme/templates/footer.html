@@ -7,16 +7,16 @@
     {% block footer_nav %}
       <ul class="list-unstyled">
         {% block footer_links %}
-          <li><a href="/pages/about">{{ _('About') }}</a></li>
+          <li><a href={{h.url_for("/pages/about")}}>{{ _('About') }}</a></li>
         {% endblock %}
       </ul>
       <ul class="list-unstyled">
         {% block footer_links_ckan %}
           {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-          <li><a href="/pages/terms-and-conditions">{{ _('Terms and Conditions') }}</a></li>
-          <li><a href="/pages/cookies">{{ _('Cookie Policy') }}</a></li>
+          <li><a href={{h.url_for("/pages/terms-and-conditions")}}>{{ _('Terms and Conditions') }}</a></li>
+          <li><a href={{h.url_for("/pages/cookies")}}>{{ _('Cookie Policy') }}</a></li>
           <li><a target="blank" href="https://github.com/fjelltopp/adx_develop">{{_('Github Source Code')}}</a></li>
-          <li><a target="blank" href="https://adr.unaids.org/bug">{{_('Report a Bug')}}</a></li>
+          <li><a target="blank" href="https://adr.unaids.org/bug")>{{_('Report a Bug')}}</a></li>
         {% endblock %}
       </ul>
     {% endblock %}
