@@ -20,7 +20,6 @@ msgstr ""
 "Generated-By: Babel 2.3.4\n"
 
 #: ckanext/unaids/helpers.py:71
-#, fuzzy
 msgid "Naomi Geographic Data Input"
 msgstr ""
 
@@ -186,9 +185,8 @@ msgid "Email"
 msgstr "e-mail"
 
 #: ckanext/unaids/i18n/extra_translations.py:38
-#, fuzzy
 msgid "Naomi Data Package"
-msgstr "Ajouter un ensemble de données"
+msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:39
 msgid "Description/Source"
@@ -243,9 +241,8 @@ msgid ""
 msgstr ""
 
 #: ckanext/unaids/i18n/extra_translations.py:50
-#, fuzzy
 msgid "Reorder resources"
-msgstr "Nouvelle ressource"
+msgstr ""
 
 #: ckanext/unaids/theme/templates/footer.html:16
 msgid "Terms and Conditions"
