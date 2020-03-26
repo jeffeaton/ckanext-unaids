@@ -8,25 +8,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-18 10:03+0100\n"
-"PO-Revision-Date: 2019-12-19 15:05+0200\n"
+"POT-Creation-Date: 2020-03-25 11:31+0100\n"
+"PO-Revision-Date: 2020-03-26 12:17+0100\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 2.3\n"
 
-#: ckanext/unaids/helpers.py:67
-#, fuzzy
+#: ckanext/unaids/helpers.py:71
 msgid "Naomi Geographic Data Input"
-msgstr ""
+msgstr "Entrée de données géographiques pour le modèle Naomi"
 
-#: ckanext/unaids/helpers.py:68
+#: ckanext/unaids/helpers.py:72
 msgid "Geographic data formatted for the Naomi model."
-msgstr ""
+msgstr "Données géographiques formatées pour le modèle Naomi."
 
 #: ckanext/unaids/licenses.py:15
 msgid "Creative Commons Attribution for Intergovernmental Organisations"
@@ -34,23 +34,23 @@ msgstr ""
 "Licence Creative Commons Attribution pour les organisations "
 "intergouvernementales"
 
-#: ckanext/unaids/plugin.py:58
+#: ckanext/unaids/plugin.py:59
 msgid "Organizations"
 msgstr "Organisations"
 
-#: ckanext/unaids/plugin.py:59
+#: ckanext/unaids/plugin.py:60
 msgid "Data Type"
 msgstr "Type de donnés"
 
-#: ckanext/unaids/plugin.py:60
-msgid "Tags"
-msgstr "Balises"
-
 #: ckanext/unaids/plugin.py:61
+msgid "Tags"
+msgstr "Mots clés"
+
+#: ckanext/unaids/plugin.py:62
 msgid "Year"
 msgstr "Année"
 
-#: ckanext/unaids/plugin.py:62
+#: ckanext/unaids/plugin.py:63
 msgid "Location"
 msgstr "Lieu"
 
@@ -68,118 +68,188 @@ msgstr "Fichier Spectrum"
 
 #: ckanext/unaids/i18n/extra_translations.py:9
 msgid "Population Data"
-msgstr "Données de populations"
+msgstr "Données démographiques (Population)"
 
 #: ckanext/unaids/i18n/extra_translations.py:10
 msgid "Survey Data"
 msgstr "Données d’enquête"
 
 #: ckanext/unaids/i18n/extra_translations.py:11
+msgid "Naomi Inputs and Outputs"
+msgstr "Entrées et sorties pour le modèle Naomi"
+
+#: ckanext/unaids/i18n/extra_translations.py:12
 #: ckanext/unaids/theme/templates/footer.html:10
 msgid "About"
 msgstr "À propos"
 
-#: ckanext/unaids/i18n/extra_translations.py:12
+#: ckanext/unaids/i18n/extra_translations.py:13
 msgid "ANC Data"
 msgstr "Données de CPN"
 
-#: ckanext/unaids/i18n/extra_translations.py:13
+#: ckanext/unaids/i18n/extra_translations.py:14
 msgid "A validated ANC dataset."
 msgstr "Un jeu de données de CPN valide."
 
-#: ckanext/unaids/i18n/extra_translations.py:14
-msgid "ART Data"
-msgstr "Données de ART"
-
 #: ckanext/unaids/i18n/extra_translations.py:15
-msgid "eg. 2019 ART Numbers"
-msgstr "Par exemple, nombres d’ART en 2019"
+msgid "ART Data"
+msgstr "Données de TARV"
 
 #: ckanext/unaids/i18n/extra_translations.py:16
+msgid "eg. 2019 ART Numbers"
+msgstr "Par exemple, nombres sur TARV en 2019"
+
+#: ckanext/unaids/i18n/extra_translations.py:17
 msgid "A validated ART dataset."
 msgstr "Un jeu de données relatives aux ART valide."
 
-#: ckanext/unaids/i18n/extra_translations.py:17
+#: ckanext/unaids/i18n/extra_translations.py:18
 msgid "Please share some information about the source of this data."
 msgstr "Veuillez fournir des informations concernant la provenance de ces données."
 
-#: ckanext/unaids/i18n/extra_translations.py:18
+#: ckanext/unaids/i18n/extra_translations.py:19
 msgid "Restricted to specified users and organizations"
 msgstr "Accessible uniquement aux utilisateurs et organisations définis"
 
-#: ckanext/unaids/i18n/extra_translations.py:19
+#: ckanext/unaids/i18n/extra_translations.py:20
 msgid "Access Restriction"
 msgstr "Accès restreint"
 
-#: ckanext/unaids/i18n/extra_translations.py:20
+#: ckanext/unaids/i18n/extra_translations.py:21
 msgid "National Spectrum File Version 5.0"
 msgstr "Fichier Spectrum national version 5.0"
 
-#: ckanext/unaids/i18n/extra_translations.py:21
+#: ckanext/unaids/i18n/extra_translations.py:22
 msgid "Geographical Location"
 msgstr "Localisation"
 
-#: ckanext/unaids/i18n/extra_translations.py:22
+#: ckanext/unaids/i18n/extra_translations.py:23
 msgid "Country or province"
 msgstr "Pays ou province"
 
-#: ckanext/unaids/i18n/extra_translations.py:23
-msgid "Location Hierarchy"
-msgstr "Hiérarchie des lieux"
-
 #: ckanext/unaids/i18n/extra_translations.py:24
-msgid "A validated location hierarchy."
-msgstr "Une hiérarchie des lieux validée."
+msgid "Location Hierarchy"
+msgstr "Hiérarchie géographique"
 
 #: ckanext/unaids/i18n/extra_translations.py:25
-msgid "Areas Metadata"
-msgstr "Métadonnées des zones"
+msgid "A validated location hierarchy."
+msgstr "Une hiérarchie validée."
 
 #: ckanext/unaids/i18n/extra_translations.py:26
+msgid "Areas Metadata"
+msgstr "Métadonnées pour chaque zone"
+
+#: ckanext/unaids/i18n/extra_translations.py:27
 msgid "A validated areas metadata table."
 msgstr "Tableau de métadonnées des zones validées."
 
-#: ckanext/unaids/i18n/extra_translations.py:27
+#: ckanext/unaids/i18n/extra_translations.py:28
 msgid "Regional Geometry"
 msgstr "Géométrie régionale"
 
-#: ckanext/unaids/i18n/extra_translations.py:28
+#: ckanext/unaids/i18n/extra_translations.py:29
 msgid "A validated geometry file in SHP or GeoJSON format."
 msgstr "Fichier de géométrie validé, au format SHP ou GeoJSON."
 
-#: ckanext/unaids/i18n/extra_translations.py:29
+#: ckanext/unaids/i18n/extra_translations.py:30
 msgid "Area ID Crosswalk Table"
 msgstr "Tableau de correspondance des identifiants de zones"
 
-#: ckanext/unaids/i18n/extra_translations.py:30
+#: ckanext/unaids/i18n/extra_translations.py:31
 msgid "Area ID"
 msgstr "Identifiants de zones"
 
-#: ckanext/unaids/i18n/extra_translations.py:31
+#: ckanext/unaids/i18n/extra_translations.py:32
 msgid "Crosswalk table between area IDs and other systems e.g. dhis2."
 msgstr ""
 "Tableau de correspondance entre les identifiants de zones et d’autres "
 "systèmes, par exemple dhis2."
 
-#: ckanext/unaids/i18n/extra_translations.py:32
+#: ckanext/unaids/i18n/extra_translations.py:33
 msgid "A validated population data file."
 msgstr "Fichier de données de populations validées."
 
-#: ckanext/unaids/i18n/extra_translations.py:33
-msgid "Source/Notes"
-msgstr "Source/Notes"
-
 #: ckanext/unaids/i18n/extra_translations.py:34
+msgid "Source/Notes"
+msgstr "La source/Remarques"
+
+#: ckanext/unaids/i18n/extra_translations.py:35
 msgid "General"
 msgstr "Général"
 
-#: ckanext/unaids/i18n/extra_translations.py:35
+#: ckanext/unaids/i18n/extra_translations.py:36
 msgid "URL"
 msgstr "URL"
 
-#: ckanext/unaids/i18n/extra_translations.py:36
+#: ckanext/unaids/i18n/extra_translations.py:37
 msgid "Email"
-msgstr "E-mail"
+msgstr "e-mail"
+
+#: ckanext/unaids/i18n/extra_translations.py:38
+msgid "Naomi Data Package"
+msgstr "Paquet de données Naomi"
+
+#: ckanext/unaids/i18n/extra_translations.py:39
+msgid "Description/Source"
+msgstr "Description/Source"
+
+#: ckanext/unaids/i18n/extra_translations.py:40
+msgid ""
+"Inputs and corresponding outputs for the Naomi subnational "
+"estimation model."
+msgstr "Entrées et sorties correspondantes pour le modèle Naomi"
+
+#: ckanext/unaids/i18n/extra_translations.py:41
+msgid ""
+"A ZIP file containing the input and output of the Naomi and "
+"Spectrum models"
+msgstr ""
+"Un fichier ZIP contenant les entrées et sorties des modèles "
+"Naomi et Spectrum"
+
+#: ckanext/unaids/i18n/extra_translations.py:42
+msgid ""
+"The JSON file created by \"File Save\" in the top left corner of the "
+"Naomi UI."
+msgstr ""
+"Le fichier JSON créé par \"Fichier Sauvegarder\" dans le coin supérieur gauche "
+"de l'interface Naomi."
+
+#: ckanext/unaids/i18n/extra_translations.py:43
+msgid "A validated Naomi ANC dataset."
+msgstr "Données CPN pour Naomi validé"
+
+#: ckanext/unaids/i18n/extra_translations.py:44
+msgid "A validated Naomi ART dataset."
+msgstr "Données TARV pour Naomi validé"
+
+#: ckanext/unaids/i18n/extra_translations.py:45
+msgid "A validated Naomi survey dataset"
+msgstr "Un ensemble de données d'enquête pour Naomi validé"
+
+#: ckanext/unaids/i18n/extra_translations.py:46
+msgid "A validated Naomi population dataset"
+msgstr "Les données population pour Naomi validé"
+
+#: ckanext/unaids/i18n/extra_translations.py:47
+msgid "A validated Naomi geographic dataset"
+msgstr "Un ensemble de données géographiques Naomi validé"
+
+#: ckanext/unaids/i18n/extra_translations.py:48
+msgid "A spectrum file used to run the Naomi model"
+msgstr "Un fichier Spectrum utilisé pour exécuter le modèle Naomi"
+
+#: ckanext/unaids/i18n/extra_translations.py:49
+msgid ""
+"License definitions and additional information can be found at "
+"http://opendefinition.org/"
+msgstr ""
+"Les définitions de licence et des informations supplémentaires peuvent être "
+"trouvées sur http://opendefinition.org/"
+
+#: ckanext/unaids/i18n/extra_translations.py:50
+msgid "Reorder resources"
+msgstr "Réorganiser les ressources"
 
 #: ckanext/unaids/theme/templates/footer.html:16
 msgid "Terms and Conditions"
@@ -239,12 +309,16 @@ msgid "Find out more..."
 msgstr "Plus d’informations..."
 
 #: ckanext/unaids/theme/templates/home/layout1.html:36
-msgid "Featured Dataset"
-msgstr "Jeu de données disponible"
+msgid ""
+"UNAIDS is asking all participating countries to submit their 2019/2020 "
+"Naomi Data"
+msgstr ""
+"L'ONUSIDA demande à tous les pays participants de soumettre leurs données Naomi "
+"2019/2020"
 
 #: ckanext/unaids/theme/templates/home/layout1.html:47
-msgid "UNAIDS Naomi Model Input Templates"
-msgstr "Modèles de saisie du modèle Naomi de l’ONUSIDA"
+msgid "Upload UNAIDS Naomi Inputs & Outputs"
+msgstr "Télécharger les entrées et sorties de Naomi"
 
 #: ckanext/unaids/theme/templates/home/layout1.html:55
 msgid "Featured Organisations"
@@ -263,6 +337,8 @@ msgid ""
 "Add a ckan user to your organisation by searching for their username and "
 "assigning them a role. See the note on the left about role descriptions."
 msgstr ""
+"Ajoutez un utilisateur à votre organisation en recherchant son nom d'utilisateur "
+"et en lui attribuant un rôle. Voir la note à gauche sur les descriptions de rôle."
 
 #: ckanext/unaids/theme/templates/organization/member_new.html:16
 #: ckanext/unaids/theme/templates/organization/member_new.html:25
@@ -302,30 +378,29 @@ msgstr "Ajouter une nouvelle ressource"
 msgid "New resource"
 msgstr "Nouvelle ressource"
 
-#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:31
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:32
 msgid "Bulk Upload"
 msgstr "Transfert groupé"
 
-#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:32
+#: ckanext/unaids/theme/templates/package/new_resource_not_draft.html:33
 msgid "Bulk upload is not possible for this resource."
 msgstr "Cette ressource ne permet pas le transfert groupé."
 
 #: ckanext/unaids/theme/templates/package/read.html:9
 msgid "Private"
-msgstr ""
+msgstr "Privée"
 
 #: ckanext/unaids/theme/templates/package/read.html:16
 msgid "Draft"
-msgstr ""
+msgstr "Brouillon"
 
 #: ckanext/unaids/theme/templates/package/read.html:19
-#, fuzzy
 msgid "Deleted"
-msgstr ""
+msgstr "Supprimé"
 
 #: ckanext/unaids/theme/templates/package/read.html:25
 msgid "Download All"
-msgstr ""
+msgstr "Télécharger tout"
 
 #: ckanext/unaids/theme/templates/package/resource_edit_base.html:19
 msgid "Template"
@@ -333,11 +408,19 @@ msgstr "Modèle"
 
 #: ckanext/unaids/theme/templates/package/snippets/resource_item.html:10
 msgid "Last modified"
-msgstr ""
+msgstr "Dernière modification"
+
+#: ckanext/unaids/theme/templates/scheming/form_snippets/text_template.html:8
+msgid "This field is required"
+msgstr "Ce champ est requis"
+
+#: ckanext/unaids/theme/templates/scheming/form_snippets/text_template.html:10
+msgid "Custom"
+msgstr "Personnalisé"
 
 #: ckanext/unaids/theme/templates/scheming/package/snippets/resources_list.html:7
 msgid "Autogenerated Resources"
-msgstr ""
+msgstr "Ressources générées automatiquement"
 
 #: ckanext/unaids/theme/templates/snippets/add_dataset.html:8
 msgid "General Data"
@@ -354,3 +437,9 @@ msgstr "Supprimer"
 #: ckanext/unaids/theme/templates/snippets/search_form.html:23
 msgid "Filter Results"
 msgstr "Résultats du filtre"
+
+#~ msgid "Featured Dataset"
+#~ msgstr "Jeu de données disponible"
+
+#~ msgid "UNAIDS Naomi Model Input Templates"
+#~ msgstr "Modèles de saisie du modèle Naomi de l’ONUSIDA"
