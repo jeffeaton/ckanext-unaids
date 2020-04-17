@@ -24,7 +24,7 @@
       "classes": ["hidden"],
       "template": "{}-naomi-data-{}",
       "template_args": ["geo-location", "year"],
-      "template_formatters": ["lower"],
+      "template_formatters": ["slugify"],
       "display_group": "Naomi Data Package"
     },
     {
