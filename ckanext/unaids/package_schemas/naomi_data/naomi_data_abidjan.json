@@ -1,7 +1,8 @@
 {
   "scheming_version": 1,
   "dataset_type": "naomi-data-package-2",
-  "name": "Naomi Inputs and Outputs - Abidjan Workshop",
+  "name": "Naomi Inputs and Outputs",
+  "link_name": "Naomi Inputs and Outputs - Abidjan Workshop",
   "about": "",
   "about_url": "http://github.com/ckan/ckanext-scheming",
   "add_data_on_create": false,
@@ -14,6 +15,7 @@
       "classes": ["hidden"],
       "template": "{} Naomi Inputs and Outputs {}",
       "template_args": ["geo-location", "year"],
+      "template_formatters": ["comma_swap"],
       "display_group": "Naomi Data Package"
     },
     {
@@ -24,7 +26,7 @@
       "classes": ["hidden"],
       "template": "{}-naomi-data-{}",
       "template_args": ["geo-location", "year"],
-      "template_formatters": ["lower"],
+      "template_formatters": ["slugify"],
       "display_group": "Naomi Data Package"
     },
     {
@@ -180,7 +182,7 @@
       }]
     },
     {
-      "name": "Survey Data",
+      "name": "Survey Data (Abidjan Workshop)",
       "about": "A validated Naomi survey dataset",
       "resource_type": "naomi-survey",
       "resource_fields": [{
