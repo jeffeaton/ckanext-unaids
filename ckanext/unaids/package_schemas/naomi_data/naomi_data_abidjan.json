@@ -101,7 +101,7 @@
       "label": "Data Type",
       "field_name": "type_name",
       "preset": "hidden_value",
-      "field_value": "Naomi Data",
+      "field_value": "Naomi Inputs and Outputs",
       "validators": "unique_combination",
       "display_group": "Naomi Data Package"
     }

@@ -103,7 +103,7 @@
       "preset": "hidden_value",
       "field_value": "Naomi Data",
       "validators": "unique_combination",
-      "display_group": "Naomi Data Package"
+      "display_group": "Naomi Inputs and Outputs"
     }
   ],
   "resources": [{
