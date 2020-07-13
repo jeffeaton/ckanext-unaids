@@ -13,9 +13,9 @@
       "description": "Area name corresponding to area_id (optional).",
       "type": "string"
     },{
-      "name": "indicator",
-      "title": "Indicator",
-      "description": "The indicator measured by the survey",
+      "name": "indicator_id",
+      "title": "Indicator ID",
+      "description": "The indicator that the value represents.",
       "type": "string",
       "constraints": {
         "required": true,
@@ -49,13 +49,12 @@
         "required": true
       }
     }, {
-      "name": "indicator",
-      "title": "Indicator",
-      "description": "The indicator that value corresponds to.",
+      "name": "sub_population",
+      "title": "Sub Population",
+      "description": "The sub population the value corresponds to e.g. all, fsw, msm, idu",
       "type": "string",
       "constraints": {
-        "required": true,
-        "enum": ["new_hiv_diagnoses", "aids_deaths"]
+        "required": true
       }
     }, {
       "name": "value",

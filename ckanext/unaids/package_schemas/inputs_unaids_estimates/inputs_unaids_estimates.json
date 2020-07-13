@@ -128,7 +128,7 @@
     {
       "name": "ART Data",
       "about": "A validated ART dataset",
-      "resource_type": "inputs-art",
+      "resource_type": "inputs-unaids-art",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -182,7 +182,7 @@
     {
       "name": "HIV Testing Data",
       "about": "A validated HIV testing dataset",
-      "resource_type": "inputs-unaids-geographic",
+      "resource_type": "inputs-unaids-hiv-testing",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
@@ -200,19 +200,19 @@
     {
       "name": "CSAVR Inputs",
       "about": "A validated CSAVR inputs dataset",
-      "resource_type": "inputs-unaids-geographic",
+      "resource_type": "inputs-unaids-csavr",
       "resource_fields": [{
         "field_name": "name",
         "preset": "hidden_value",
-        "field_value": "HIV Testing Data"
+        "field_value": "CSAVR Inputs"
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "inputs_unaids_hiv_testing"
+        "field_value": "inputs_unaids_csavr"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
-        "field_value": "inputs-unaids-hiv-testing"
+        "field_value": "inputs-unaids-csavr"
       }]
     },
     {
