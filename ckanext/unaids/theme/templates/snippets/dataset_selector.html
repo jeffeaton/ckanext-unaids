@@ -3,7 +3,6 @@
 		<i class="fa fa-plus-square"></i> {{_('Add Data Package')}}
 	</button>
 	<div class="dropdown-menu" aria-labelledby="addDatasetMenuButton">
-    {% snippet 'snippets/add_dataset.html', dataset_type='inputs-unaids-estimates' %}
 		{% snippet 'snippets/add_dataset.html', dataset_type='spectrum-file' %}
 		{% snippet 'snippets/add_dataset.html', dataset_type='geographic-data-package' %}
 		{# snippet 'snippets/add_dataset.html', dataset_type='document-data-package' #}
