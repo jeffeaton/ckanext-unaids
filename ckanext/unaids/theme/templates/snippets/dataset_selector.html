@@ -3,9 +3,6 @@
 		<i class="fa fa-plus-square"></i> {{_('Add Dataset')}}
 	</button>
 	<div class="dropdown-menu" aria-labelledby="addDatasetMenuButton">
-		{% snippet 'snippets/add_dataset.html', dataset_type='programmatic-data-package' %}
-		{% snippet 'snippets/add_dataset.html', dataset_type='survey-data-package' %}
-		{% snippet 'snippets/add_dataset.html', dataset_type='population-data-package' %}
 		{% snippet 'snippets/add_dataset.html', dataset_type='spectrum-file' %}
 		{% snippet 'snippets/add_dataset.html', dataset_type='geographic-data-package' %}
 		{# snippet 'snippets/add_dataset.html', dataset_type='document-data-package' #}
