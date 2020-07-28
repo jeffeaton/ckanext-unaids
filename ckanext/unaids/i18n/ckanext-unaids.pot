@@ -388,7 +388,7 @@ msgid "General Data"
 msgstr ""
 
 #: ckanext/unaids/theme/templates/snippets/dataset_selector.html:3
-msgid "Add Data Package"
+msgid "Add Dataset"
 msgstr ""
 
 #: ckanext/unaids/theme/templates/snippets/search_form.html:17

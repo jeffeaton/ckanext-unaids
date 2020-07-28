@@ -427,7 +427,7 @@ msgid "General Data"
 msgstr "Données générales"
 
 #: ckanext/unaids/theme/templates/snippets/dataset_selector.html:3
-msgid "Add Data Package"
+msgid "Add Dataset"
 msgstr "Ajouter un ensemble de données"
 
 #: ckanext/unaids/theme/templates/snippets/search_form.html:17
