@@ -52,9 +52,10 @@
       "type": "number",
       "constraints": {
         "required": true,
-        "minimum": 0
-     },
-     {
+          "minimum": 0
+      }
+    },
+    {
        "name": "art_new",
        "title": "Number newly initiating ART",
        "description": "Number newly initiating ART diruing the reporting period (year).",
@@ -62,7 +63,7 @@
        "constraints": {
          "required": true,
          "minimum": 0
-      }
+       }
     }
   ],
   "require_field_order": false,
